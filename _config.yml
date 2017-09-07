@@ -16,6 +16,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+includes_dir: _external/wai-website-jekyll-templates/_includes
+layouts_dir: _external/wai-website-jekyll-templates/_layouts
 exclude:
   - "_external"
 # Build settings
