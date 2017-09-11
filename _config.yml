@@ -22,3 +22,4 @@ exclude:
   - "_external"
 # Build settings
 markdown: kramdown
+repository: w3c/wai-resource-template
