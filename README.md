@@ -1,5 +1,3 @@
 # wai-resource-template
 
-Fork this repository to create a new resource.
-
-More documentation to come!
+Preview: https://w3c.github.io/wai-resource-template/link/to/page/
