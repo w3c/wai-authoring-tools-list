@@ -1,8 +1,11 @@
 ---
 title: "Page Title"
 permalink: /link/to/page/
+ref: /link/to/page/
+lang: en
 github:
   repository: wai-resource-template
+  path: index.md
 footer: > # Text in footer in HTML
   <p> This is the text in the footer </p>
 ---
