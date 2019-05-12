@@ -3,6 +3,12 @@ title: "Page Title"
 permalink: /link/to/page/
 ref: /link/to/page/
 lang: en
+# translators: # Uncomment (remove #) for translations, one - name line per translator.
+# - name: Translator 1
+# - name: Translator 2
+# contributors:
+# - name: Contributor 1
+# - name: Contributor 2
 github:
   repository: wai-resource-template
   path: index.md
