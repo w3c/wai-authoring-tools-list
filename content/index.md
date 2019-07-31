@@ -1,7 +1,7 @@
 ---
-title: "Page Title"
-permalink: /link/to/page/
-ref: /link/to/page/
+title: "Authoring Tools"
+permalink: /authoring-tools/
+ref: /authoring-tools/
 lang: en
 # translators: # Uncomment (remove #) for translations, one - name line per translator.
 # - name: Translator 1
@@ -10,8 +10,8 @@ lang: en
 # - name: Contributor 1
 # - name: Contributor 2
 github:
-  repository: wai-resource-template
-  path: index.md
+  repository: wai-authoring-tools
+  path: content/index.md
 footer: > # Text in footer in HTML
   <p> This is the text in the footer </p>
 ---

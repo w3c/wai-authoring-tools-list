@@ -1,6 +1,6 @@
 [Settings]
 
-ID = "wai-resource-template"
+ID = "wai-authoring-tools"
 
 [build]
 
@@ -9,4 +9,4 @@ publish = "_site"
 
 [[redirects]]
   from = "/"
-  to = "/link/to/page/"
+  to = "/authoring-tools/"

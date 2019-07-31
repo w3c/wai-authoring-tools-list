@@ -1,3 +1,3 @@
-# wai-resource-template
+# wai-authoring-tools
 
-Preview: https://wai-resource-template.netlify.com/
+Preview: https://wai-authoring-tools.netlify.com/
