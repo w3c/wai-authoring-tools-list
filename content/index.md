@@ -125,6 +125,39 @@ github:
 
 <div class="filters">
   <fieldset>
+    <legend>Type of tool</legend>
+    <label><input type="checkbox"> Content Management System</label>
+    <label><input type="checkbox"> Online learning platform</label>
+    <label><input type="checkbox"> Forum / discussion software</label>
+    <label><input type="checkbox"> Website creator</label>
+  </fieldset>
+  <fieldset>
+    <legend>Cost</legend>
+    <label><input type="radio" name="filter-1"> Free</label>
+    <label><input type="radio" name="filter-1"> Paid</label>
+  </fieldset>
+  <fieldset>
+    <legend>License</legend>
+    <label><input type="checkbox"> MIT</label>
+    <label><input type="checkbox"> GNU</label>
+    <label><input type="checkbox"> MPL</label>
+    <label><input type="checkbox"> Closed-source</label>
+  </fieldset>
+  <fieldset>
+    <legend>Accessibility governance</legend>
+    <label><input type="checkbox"> Accessibility features documented</label>
+    <label><input type="checkbox"> Accessibility statement available</label>
+    <label><input type="checkbox"> Regularly audited</label>
+  </fieldset>
+  <fieldset>
+    <legend>Technology</legend>
+    <label><input type="checkbox"> PHP</label>
+    <label><input type="checkbox"> Ruby</label>
+    <label><input type="checkbox"> .NET</label>
+    <label><input type="checkbox"> Java</label>
+    <label><input type="checkbox"> Node</label>
+  </fieldset>
+<!--  <fieldset>
     <legend>Editing experience accessibility</legend>
     <label><input type="checkbox"> Works with keyboard</label>
     <label><input type="checkbox"> Buttons have names</label>
@@ -147,19 +180,7 @@ github:
     <label><input type="checkbox"> Provides automated accessibility checks</label>
     <label><input type="checkbox"> Content spell-checked</label>
     <label><input type="checkbox"> Documentation provided</label>
-  </fieldset>
-  <fieldset>
-    <legend>Cost</legend>
-    <label><input type="radio" name="filter-1"> Free</label>
-    <label><input type="radio" name="filter-1"> Paid</label>
-  </fieldset>
-  <fieldset>
-    <legend>Type of tool</legend>
-    <label><input type="checkbox"> Content Management System</label>
-    <label><input type="checkbox"> Online learning platform</label>
-    <label><input type="checkbox"> Forum / discussion software</label>
-    <label><input type="checkbox"> Website creator</label>
-  </fieldset>
+  </fieldset>-->
 </div>
 <div class="tools">
   <h2>Content Management Systems</h2>
