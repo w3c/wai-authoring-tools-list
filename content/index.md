@@ -1,5 +1,5 @@
 ---
-title: "List of accessible authoring tools"
+title: "List of authoring tools"
 permalink: /authoring-tools/
 ref: /authoring-tools/
 lang: en
