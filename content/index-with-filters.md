@@ -1,7 +1,7 @@
 ---
 title: "[Draft] List of authoring tools"
-permalink: /authoring-tools/
-ref: /authoring-tools/
+permalink: /authoring-tools/with-filters
+ref: /authoring-tools/with-filters
 lang: en
 layout: list-with-filters
 # translators: # Uncomment (remove #) for translations, one - name line per translator.
