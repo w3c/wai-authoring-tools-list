@@ -1,5 +1,5 @@
 ---
-title: "List of authoring tools"
+title: "[Draft] List of authoring tools"
 permalink: /authoring-tools/
 ref: /authoring-tools/
 lang: en
@@ -27,9 +27,6 @@ github:
   }
   .header-sup {
     margin-bottom: 48px;
-  }
-  .info:first-child { 
-    display: none; 
   }
   #site-header { 
     margin-bottom: 64px; 
@@ -103,19 +100,7 @@ github:
     background-color: var(--w3c-blue);
     color: #fff;
   }
-  .draft {
-    background: var(--gold);
-    position: fixed;
-    top: 1em;
-    right: -4em;
-    padding: .5em 5em;
-    transform: rotate(40deg);
-    font-weight: bold;
-    text-transform: uppercase;  
-  }
 </style>
-
-<div class="draft">Draft</div>
 
 <div class="header-sup">
   <a class="button button-more" href="submit-a-tool" style="float: right"><span>Submit a tool</span></a>
