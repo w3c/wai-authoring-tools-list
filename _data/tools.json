@@ -1,0 +1,34 @@
+[
+  {
+  "name": "WordPress",
+  "vendor": "WordPress foundation",
+  "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+  "type_of_tool": "cms",
+  "cost": "free",
+  "license": "MIT"
+  },
+  {
+  "name": "Drupal",
+  "vendor": "WordPress foundation",
+  "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+  "type_of_tool": "cms",
+  "cost": "free",
+  "license": "GNU"
+  },
+  {
+  "name": "Adobe Experience Manager",
+  "vendor": "Adobe",
+  "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+  "type_of_tool": "cms",
+  "cost": "free",
+  "license": "MIT"
+  },
+  {
+  "name": "Wix",
+  "vendor": "Wix",
+  "description": "Wix website builder ",
+  "type_of_tool": "cms",
+  "cost": "paid",
+  "license": "None"
+  }
+]

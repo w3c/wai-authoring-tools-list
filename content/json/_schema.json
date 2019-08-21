@@ -1,0 +1,21 @@
+{
+  "description": "Describes an authoring tool and its accessibility properties",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type_of_tool": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    }
+  }
+}

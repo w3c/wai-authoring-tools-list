@@ -1,0 +1,37 @@
+[
+  {
+  "id": "type-of-tool",
+  "name": "Type of tool",
+  "type": "checkbox",
+  "options": [
+    {
+      "id": "cms",
+      "name": "Content Management System"
+    },
+    {
+      "id": "elearning",
+      "name": "Online learning platform"
+    },
+    {
+      "id": "form",
+      "name": "Forum / discussion software"
+    }
+  ],
+  },
+  {
+    "id": "cost",
+    "name": "Cost",
+    "type": "radio",
+    "options": [
+      {
+        "id": "free",
+        "name": "Free"
+      },
+      {
+        "id": "paid",
+        "name": "Paid"
+      }
+    ]
+  },
+
+]
