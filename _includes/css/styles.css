@@ -42,6 +42,8 @@
   .tools-tools {
     grid-column: 4 / 10;
     grid-row-start: 3;
+    position: relative;
+    display: flex;
   }
   .tools-tools h2:first-child {
     margin-top: 0;
@@ -87,4 +89,15 @@
   .tag:hover {
     background-color: var(--w3c-blue);
     color: #fff;
+  }
+  .status:not([hidden]) {
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .75;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    transition: opacity 0.2s;
   }
