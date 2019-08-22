@@ -26,8 +26,6 @@ github:
 
 <div id="app" class="tools">
   <form class="tools-filters" data-filter-form action="https://hiddedevries.nl/test-api/" method="POST">
-    <div class="status-busy" hidden>busy…</div>
-    <div class="status-failure" hidden>something went wrong…</div>
     {% for filter in site.data.filters %}
     <fieldset id="{{ filter.id }}">
       <legend>{{ filter.name }}</legend>
@@ -39,10 +37,16 @@ github:
     {% endfor %}
     <button>Filter</button> 
   </form>
-  <div class="tools-tools" id="tools-list">
+  <div class="tools-tools">
+    <div role="alert">
+      <p class="status status-busy" hidden>Loading tools…</p>
+      <p class="status status-failure" hidden>something went wrong…</p>
+    </div>
+    <div id="tools-list">
     {% for tool in site.data.tools %}
       {% include tool.html %}
-    {% endfor %}    
+    {% endfor %}
+    </div>
   </div>
 </div>
 

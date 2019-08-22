@@ -1,7 +1,7 @@
 const filterForm = document.querySelector('[data-filter-form]');
 
 filterForm.addEventListener('change', e => {
-  // filterForm.submit();
+  submitForm(filterForm);
 });
 
 filterForm.addEventListener('submit', e => {
@@ -9,9 +9,16 @@ filterForm.addEventListener('submit', e => {
   // Store reference to form to make later code easier to read
   const form = e.target;
 
+  submitForm(form);
+
+  // Prevent the default form submit
+  e.preventDefault();
+});
+
+function submitForm(form) {
   // get status message references
-  const statusBusy = form.querySelector('.status-busy');
-  const statusFailure = form.querySelector('.status-failure');
+  const statusBusy = document.querySelector('.status-busy');
+  const statusFailure = document.querySelector('.status-failure');
 
   // Post data using the Fetch API
   fetch(form.action, {
@@ -72,8 +79,4 @@ filterForm.addEventListener('submit', e => {
 
   // Make sure connection failure message is hidden
   statusFailure.hidden = true;
-
-  // Prevent the default form submit
-  e.preventDefault();
-
-});
+};
