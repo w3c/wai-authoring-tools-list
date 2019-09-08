@@ -77,10 +77,16 @@
   .tool__features dt {
     margin-top: 0;
   }
+  .tool__features dd {
+    margin-left: 0;
+  }
 @media (min-width: 50em) {
   .tool__features { 
     grid-template-columns: repeat(2, auto 1fr);
   }
+}
+.tool__features-a11y {
+  grid-column: 1 / -1;
 }
 .tool__report {
   float: right;

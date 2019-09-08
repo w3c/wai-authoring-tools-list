@@ -20,6 +20,19 @@
       {% endif %}
       <dt>Accessibility statement</dt>
       <dd>{{ tool.accessibility_statement | default: 'Not available' }}</dd>
+      <dt class="tool__features-a11y">Accessibility features</dt>
+      <dd class="tool__features-a11y">
+        <ul>
+      {% for feature in tool.conforms_to %}
+          {% if feature == 'works-with-keyboard' %}
+          <li><strong>{{ feature }}</strong> (partly)<br>
+          Should mostly work, except for the video editor, we plan to release that in version 3.</li> 
+          {% else %}
+          <li><strong>{{ feature }}</strong></li>
+          {% endif %}
+      {% endfor %}
+        </ul>
+      </dd>
     </dl>
   </details>
 </article>
