@@ -44,7 +44,7 @@ github:
     </div>
     <div id="tools-list">
     {% for tool in site.data.tools %}
-      {% include tool.html %}
+      {% include tool.liquid %}
     {% endfor %}
     </div>
   </div>

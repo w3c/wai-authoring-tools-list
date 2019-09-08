@@ -52,7 +52,8 @@
     background-color: white;
     padding: 1em;
     border: 1px solid var(--line-grey);
-    margin-bottom: 16px;
+    margin-bottom: 1em;
+    box-shadow: 1px 1px 4px -4px #000;
   }
   .tool h3 {
     margin: 0;
@@ -65,16 +66,22 @@
     font-size: 75%;
     font-weight: normal;
   }
-  .tool-features {
-    font-size: .8em;
-    padding-left: 0;
-    margin-left: 1em;
-    margin-bottom: 0;
-    columns: 2;
+.tool__features { 
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: .5em 1em;
+  margin: 1em -1em -1em -3em;
+  padding: 1em;
+  background-color: var(--off-white);
+}
+  .tool__features dt {
+    margin-top: 0;
   }
-    .tool-features li {
-      margin-bottom: 4px;
-    }
+@media (min-width: 50em) {
+  .tool__features { 
+    grid-template-columns: repeat(2, auto 1fr);
+  }
+}
   .tag {
     text-decoration: none;
     display: inline-block;

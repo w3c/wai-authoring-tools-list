@@ -1,0 +1,23 @@
+<article class="tool">
+  <h3>{{ tool.name }} <span>by {{ tool.vendor }}</span> <a href="#" class="tag">{{ tool.type_of_tool }}</a></h3>
+  <p>{{ tool.description }}</p>
+  <details>
+    <summary class="button button-secondary">Details</summary>
+    <dl class="tool__features">
+      <dt>License</dt>
+      <dd>{{ tool.license }}</dd>
+      <dt>Version</dt>
+      <dd>{{ tool.version }}</dd>
+      <dt>Submitted</dt>
+      <dd>{{ tool.date_submitted }}</dd>
+      <dt>Released</dt>
+      <dd>{{ tool.date_released }}</dd>
+      {% if tool.website %}
+      <dt>Website</dt>
+      <dd><a href="{{ tool.website }}" rel="external">{{ tool.website }}</a></dd>
+      {% endif %}
+      <dt>Accessibility statement</dt>
+      <dd>{{ tool.accessibility_statement | default: 'Not available' }}</dd>
+    </dl>
+  </details>
+</article>
