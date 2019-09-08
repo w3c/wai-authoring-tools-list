@@ -20,7 +20,7 @@
   },
   {
     "id": "cost",
-    "name": "Cost",
+    "name": "Cost model",
     "type": "radio",
     "options": [
       {
@@ -28,8 +28,35 @@
         "name": "Free"
       },
       {
+        "id": "freemium",
+        "name": "Freemium"
+      },
+      {
         "id": "paid",
         "name": "Paid"
+      }
+    ]
+  },
+  {
+    "id": "license",
+    "name": "License",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "open-source",
+        "name": "Open source"
+      },
+      {
+        "id": "commercial",
+        "name": "Commercial"
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise"
+      },
+      {
+        "id": "trial-or-demo",
+        "name": "Trial or demo available"
       }
     ]
   },
@@ -84,7 +111,26 @@
     {
       "id": "checks-spelling",
       "name": "Automatically checks spelling"
+    },
+    {
+      "id": "documentation-promotes-accessibility",
+      "name": "Documentation promotes accessibility"
+    },
+    {
+      "id": "accessible-templates-available",
+      "name": "Accessible templates available"
     }
   ],
   },
+  {
+    "id": "other",
+    "name": "Other",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "statement-available",
+        "name": "Public accessibility statement available"
+      }
+    ]
+  }
 ]
