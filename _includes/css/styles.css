@@ -82,6 +82,10 @@
     grid-template-columns: repeat(2, auto 1fr);
   }
 }
+.tool__report {
+  float: right;
+  color: var(--grey);
+}
   .tag {
     text-decoration: none;
     display: inline-block;
