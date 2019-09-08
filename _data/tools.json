@@ -5,7 +5,15 @@
   "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. ",
   "type_of_tool": "cms",
   "cost": "free",
-  "license": "MIT"
+  "license": "MIT",
+  "version": "5.2",
+  "website": "https://stripmetics.com",
+  "date_submitted": "2019-06-31",
+  "date_released": "2018-05-25",
+  "conforms_to": [
+      "works-with-keyboard",
+      "can-add-captions"
+    ]
   },
   {
   "name": "Setuphub",
@@ -13,7 +21,16 @@
   "description": " Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
   "type_of_tool": "cms",
   "cost": "free",
-  "license": "GNU"
+  "website": "https://setuphub.org",
+  "license": "GNU",
+  "version": "5.2",
+  "date_submitted": "2019-06-31",
+  "date_released": "2018-05-25",
+  "accessibility_statement": "https://setuphub.tech/info/corporate/accessibility",
+  "conforms_to": [
+      "works-with-keyboard",
+      "buttons-have-names"
+    ]
   },
   {
   "name": "Currce",
@@ -21,7 +38,17 @@
   "description": "Bring to the table win-win survival strategies to ensure proactive domination.",
   "type_of_tool": "cms",
   "cost": "free",
-  "license": "MIT"
+  "license": "MIT",
+  "version": "5.2",
+  "website": "https://currce.tech",
+  "date_submitted": "2019-06-31",
+  "date_released": "2018-05-25",
+  "accessibility_statement": "https://currce.org/currce/info/a11y",
+  "conforms_to": [
+      "previews-accessible",
+      "can-add-captions",
+      "accessible-templates"
+    ]
   },
   {
   "name": "Vider",
@@ -29,7 +56,17 @@
   "description": "At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.",
   "type_of_tool": "cms",
   "cost": "paid",
-  "license": "None"
+  "license": "None",
+  "version": "3.7",
+  "website": "https://getvider.org",
+  "date_submitted": "2019-05-31",
+  "date_released": "2018-02-4",
+  "conforms_to": [
+      "works-with-keyboard",
+      "can-add-captions",
+      "accessibility-documentation-available",
+      "content-spell-checked"
+    ]
   },
   {
   "name": "Groad",
@@ -37,7 +74,17 @@
   "description": "User generated content in real-time will have multiple touchpoints for offshoring.",
   "type_of_tool": "cms",
   "cost": "paid",
-  "license": "None"
+  "website": "https://groad.com",
+  "license": "None",
+  "version": "7",
+  "date_submitted": "2019-09-12",
+  "date_released": "2018-02-24",
+  "accessibility_statement": "https://groad.com/accessibility",
+  "conforms_to": [
+      "content-spell-checked",
+      "no-time-limits",
+      "content-text-search-provided"
+    ]
   },
   {
   "name": "Hoto",
@@ -45,7 +92,15 @@
   "description": "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.",
   "type_of_tool": "cms",
   "cost": "paid",
-  "license": "None"
+  "license": "None",
+  "version": "14",
+  "date_submitted": "2019-05-1",
+  "date_released": "2016-2-2",
+  "accessibility_statement": "https://hoto.com/about-us/inclusion/accessibility-statement",
+  "conforms_to": [
+      "works-with-keyboard",
+      "can-add-captions"
+    ]
   },
   {
   "name": "LogicPocket",
@@ -53,7 +108,15 @@
   "description": "Override the digital divide with additional clickthroughs from DevOps. ",
   "type_of_tool": "cms",
   "cost": "paid",
-  "license": "None"
+  "license": "None",
+  "version": "10",
+  "date_submitted": "2019-02-4",
+  "date_released": "2017-04-5",
+  "accessibility_statement": "https://logictpocket.com/accessibility",
+  "conforms_to": [
+      "flashing-content-optional",
+      "accessible-templates-available"
+    ]
   },
   {
   "name": "Admint",
@@ -61,7 +124,15 @@
   "description": "Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.",
   "type_of_tool": "cms",
   "cost": "paid",
-  "license": "None"
+  "license": "None",
+  "version": "7",
+  "date_submitted": "2019-04-21",
+  "date_released": "2018-04-16",
+  "accessibility_statement": "https://admint.platerstrent.com/accessibility",
+  "conforms_to": [
+      "works-with-keyboard",
+      "can-add-captions"
+    ]
   },
   {
   "name": "Process.ly",
@@ -69,6 +140,15 @@
   "description": "Collaboratively administrate empowered markets via plug-and-play networks. ",
   "type_of_tool": "cms",
   "cost": "paid",
-  "license": "None"
-  }
+  "license": "None",
+  "version": "8",
+  "website": "https://process.ly",
+  "date_submitted": "2019-06-24",
+  "date_released": "2018-01-12",
+  "conforms_to": [
+      "no-time-limits",
+      "works-with-keyboard",
+      "can-add-captions"
+    ]
+  },
 ]

@@ -11,11 +11,29 @@
     "type_of_tool": {
       "type": "string"
     },
-    "cost": {
+    "vendor": {
       "type": "string"
     },
     "license": {
       "type": "string"
+    },
+    "website": {
+      "type": "string",
+    },
+    "version": {
+      "type": "string"
+    },
+    "date_submitted": {
+      "type": "string"
+    },
+    "date_released": {
+      "type": "string"
+    },
+    "accessibility_statement": {
+      "type": "string"
+    },
+    "conforms_to": {
+      "type": "array"
     }
   }
 }
