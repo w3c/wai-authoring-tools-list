@@ -20,8 +20,8 @@ github:
 </style>
 
 <div class="header-sup">
-  <a class="button button-more" href="submit-a-tool" style="float: right"><span>Submit a tool</span></a>
-  <p>Browse <a href="https://www.w3.org/WAI/standards-guidelines/atag">authoring tools</a>, filter for accessibility features.</p>
+  <a class="button button-more" href="submit-a-tool" style="float: right; margin-left: 3em;"><span>Submit a tool</span></a>
+  <p>Browse CMSes, courseware, website creators, discussion forums and other <a href="selecting">authoring tools</a>, and filter for accessibility features.</p>
   <p><em>Note: tools user submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a>.</em></p>
 </div>
 
