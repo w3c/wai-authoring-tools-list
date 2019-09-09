@@ -1,8 +1,9 @@
 ---
-title: "[Draft] List of authoring tools"
+title: "Authoring Tools That Support Accessibility"
 permalink: /authoring-tools/
 ref: /authoring-tools/
 lang: en
+doc-note-type: draft
 layout: list-with-filters
 # translators: # Uncomment (remove #) for translations, one - name line per translator.
 # - name: Translator 1
