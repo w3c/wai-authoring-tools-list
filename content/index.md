@@ -44,6 +44,7 @@ github:
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
     <div id="tools-list">
+    <p>{{ site.data.tools | size }} authoring tools found</p>
     {% for tool in site.data.tools %}
       {% include tool.liquid %}
     {% endfor %}
