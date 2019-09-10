@@ -16,3 +16,27 @@ github:
 ---
 
 If you made or know of an authoring tool that has accessibility in mind, submit it here for inclusion in the [List of Authoring Tools](/wai-authoring-tools/authoring-tools).
+
+<style>
+  label { margin-right: 1em; }
+</style>
+
+<form>
+  <fieldset data-submit-tool-example>
+    <legend>Accessible templates available</legend>
+    <p>There are accessible templates available. If there is a repository of templates, it is easy to find options that prioritise accessibility</p>
+    <label><input type="radio" name="question-1"> Yes</label>
+    <label><input type="radio" name="question-1"> No</label>
+    <label><input type="radio" name="question-1" data-triggers="partially"> Partially</label>
+    <label><input type="radio" name="question-1" data-triggers="not-applicable"> Not applicable / don't know</label>
+    <div id="partially" data-trigger hidden>
+      <p>You selected <b>partial support</b>. Partial support is better than no support at all!</p>
+      <p>Please describe what your support looks like: “accessible templates are available, but it is really hard to find them.”</p>
+      <textarea style="width: 100%" rows="4">
+      </textarea>
+    </div>
+    <div id="not-applicable" data-trigger hidden>
+      <p>You selected <b>not applicable/don't know</b>. We will not list this criterion for your tool.</p>
+    </div>
+  </fieldset>
+</form>
