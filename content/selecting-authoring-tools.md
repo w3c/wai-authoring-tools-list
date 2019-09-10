@@ -51,11 +51,11 @@ The features listed under “editing experience” and “output” map to ATAG 
 {:#editing}
 
 * **Complies with accessibility standards**<br>
-The full editing experience conforms to WCAG 2.0 (or another, platform-specific accessibility guidelines). <br>
-Based on: A.1.1., A.1.2.
+The full editing experience conforms to WCAG 2.0 (or other (platform-specific) accessibility guidelines). <br>
+Based on: A.1.1, A.1.2
 * **Provides text alternatives for icons, video etc**<br>
 For all “non-text content”, like icons, images and video, there is a text alternative, so that it can be perceived by more people. This includes video previews in WYSIWYG editors.<br>
-Based on: A.2.1.,  
+Based on: A.2.1,  
 * **Status/properties conveyed to assistive technologies**<br>
 Statuses like errors, spell check and changed/deleted content are conveyed to users of assistive technologies.<br>
 Based on: A.2.2.1
@@ -123,6 +123,7 @@ Based on: B.4.1
 * **Documentation promotes accessiiblity**<br>
 Examples of how to produce accessible content with best practices are documented and easy to find.<br>
 Based on: B.4.2
+
 ## Further Considerations
 {:#further}
 
@@ -143,4 +144,4 @@ Some questions to ask:
 
 ### Other features
 
-The Authoring Tools List also lets you filter based on cost, license and technology.
+The Authoring Tools List also lets you filter based on cost model, license and technology.
