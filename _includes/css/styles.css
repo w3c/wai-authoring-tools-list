@@ -24,17 +24,14 @@
     margin-bottom: 8px;
   }
   .tools-filters label {
-    display: block;
     margin-bottom: 4px;
     display: flex;
     align-items: baseline;
   }
   .tools-filters input {
     clear: left;
-  }
-  .tools-filters label,
-  .tools-filters input {
     float: left;
+    margin-right: .5em;
   }
   .tools {
     display: contents;
