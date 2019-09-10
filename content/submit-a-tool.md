@@ -2,6 +2,7 @@
 title: "Submit an authoring tool"
 permalink: /authoring-tools/submit-a-tool
 ref: /submit-a-tool/
+doc-note-type: draft
 lang: en
 layout: submit-to-list
 # translators: # Uncomment (remove #) for translations, one - name line per translator.

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Selecting Authoring Tools, or how to find a CMS optimised for accessibility"
+doc-note-type: draft
 permalink: /authoring-tools/selecting
 github:
   repository: wai-authoring-tools
