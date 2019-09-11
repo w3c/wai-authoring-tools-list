@@ -20,10 +20,17 @@ github:
 </style>
 
 <div class="header-sup">
-  <a class="button button-more" href="submit-a-tool" style="float: right; margin-left: 3em;"><span>Submit a tool</span></a>
   <p>Browse CMSes, courseware, website creators, discussion forums and other <a href="selecting">authoring tools</a>, and filter for accessibility features.</p>
   <p><em>Note: tools user submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a>.</em></p>
 </div>
+
+{::nomarkdown}
+<a class="button button-more" href="submit-a-tool" style="grid-column-start: 8;
+  grid-column-end: 10;
+  align-self: start;
+  justify-self: end;
+ margin-bottom: 2em;"><span>Submit a tool</span></a>
+ {:/}
 
 <div id="app" class="tools">
   <form class="tools-filters" data-filter-form action="https://hiddedevries.nl/test-api/" method="POST">
@@ -44,7 +51,7 @@ github:
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
     <div id="tools-list">
-    <p>{{ site.data.tools | size }} authoring tools found</p>
+    <p>Showing {{ site.data.tools | size }} authoring tools</p>
     {% for tool in site.data.tools %}
       {% include tool.liquid %}
     {% endfor %}
