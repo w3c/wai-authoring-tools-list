@@ -6,7 +6,7 @@
   main > header, 
   .header-sup,
   .box {
-    grid-column: 4 / 10;
+    grid-column: 2 / 8;
   }
   .header-sup {
     margin-bottom: 48px;
