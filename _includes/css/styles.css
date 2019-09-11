@@ -42,7 +42,7 @@
     position: relative;
     display: flex;
   }
-  .tools-tools h2:first-child {
+  .tools-tools p:first-child {
     margin-top: 0;
   }
   .tool {
