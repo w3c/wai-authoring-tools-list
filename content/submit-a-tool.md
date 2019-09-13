@@ -35,13 +35,14 @@ If you made or know of an authoring tool that has accessibility in mind, submit 
 
 <form>
   <fieldset data-submit-tool-example>
-    <legend>Accessible templates available</legend>
+    <legend>Are accessible templates available?</legend>
     <p>There are accessible templates available. If there is a repository of templates, it is easy to find options that prioritise accessibility. <small style="margin-left: 1em;"><em>See also: <a href="https://www.w3.org/TR/ATAG20/#gl_b24">ATAG B.2.4</a></em></small></p>
     <p></p>
     <label><input type="radio" name="question-1"> Yes</label>
     <label><input type="radio" name="question-1"> No</label>
     <label><input type="radio" name="question-1" data-triggers="partially"> Partially</label>
-    <label><input type="radio" name="question-1" data-triggers="not-applicable"> Not applicable / don't know</label>
+    <label><input type="radio" name="question-1" data-triggers="not-applicable"> Not applicable</label>
+    <label><input type="radio" name="question-1" data-triggers="not-sure"> Not sure </label>    
     <div id="partially" data-trigger hidden>
       <p>You selected <b>partial support</b>. Partial support is better than no support at all!</p>
       <p>Please describe what your support looks like: “accessible templates are available, but it is really hard to find them.”</p>
@@ -50,7 +51,10 @@ If you made or know of an authoring tool that has accessibility in mind, submit 
       </textarea>
     </div>
     <div id="not-applicable" data-trigger hidden>
-      <p>You selected <b>not applicable/don't know</b>. We will not list this criterion for your tool.</p>
+      <p>You selected <b>not applicable</b>. We will not list this criterion for your tool.</p>
+    </div>
+    <div id="not-sure" data-trigger hidden>
+      <p>You selected <b>not sure</b>. We will not list this criterion for your tool.</p>
     </div>
   </fieldset>
 </form>
