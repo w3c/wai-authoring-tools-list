@@ -36,7 +36,7 @@ If you made or know of an authoring tool that has accessibility in mind, submit 
 <form>
   <fieldset data-submit-tool-example>
     <legend>Are accessible templates available?</legend>
-    <p>There are accessible templates available. If there is a repository of templates, it is easy to find options that prioritise accessibility. <small style="margin-left: 1em;"><em>See also: <a href="https://www.w3.org/TR/ATAG20/#gl_b24">ATAG B.2.4</a></em></small></p>
+    <p>There are accessible templates available. If there is a repository of templates, it is easy to find options that prioritise accessibility. <small style="margin-left: 1em;"><em>See also: <a href="https://www.w3.org/TR/ATAG20/#gl_b24" target="_blank">ATAG B.2.4</a></em></small></p>
     <p></p>
     <label><input type="radio" name="question-1"> Yes</label>
     <label><input type="radio" name="question-1"> No</label>
