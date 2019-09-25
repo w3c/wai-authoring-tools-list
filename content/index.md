@@ -1,5 +1,5 @@
 ---
-title: "Authoring Tools That Support Accessibility"
+title: "Authoring Tools with Accessibility Support"
 permalink: /authoring-tools/
 ref: /authoring-tools/
 lang: en
