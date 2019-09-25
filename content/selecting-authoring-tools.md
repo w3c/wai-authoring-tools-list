@@ -63,7 +63,7 @@ Based on: A.2.2.1
 If an author changes text properties like font weight, this meaning is conveyed to users of assistive technologies<br>
 Based on: A.2.2.2
 * **Works with keyboard**<br>
-Everything that can be done with a mouse, can just as easily be done with a keyboard, including drag and drop and drawing capabilities. There should be note keyboard traps. Keyboard usage should be efficient and easier to use than just with sequential access (for example: use WAI-ARIA landmarks or offer keyboard shortcuts).<br>
+Everything that can be done with a mouse, can just as easily be done with a keyboard, including drag and drop and drawing capabilities. There should be no keyboard traps. Keyboard usage should be efficient and easier to use than just with sequential access (for example: use WAI-ARIA landmarks or offer keyboard shortcuts).<br>
 Based on: A.3.1
 * **Enough time**<br>
 Time limits, like for auto-save, can be turned off or extended (some exceptions apply).<br>
@@ -75,9 +75,9 @@ Based on: A.3.3
 Users can navigate quicker by structure, for example headings, lists or HTML elements.<br>
 Based on: A.3.4
 * **Content searchable**<br>
-Users can search in text content, results are focused when shown. If there are no matches. Search is two-way (backwards and forwards).<br>
+Users can search in text content, results are focused when shown. If there are no matches, this is indicated. User can search in two directions (backwards and forwards).<br>
 Based on: A.3.5
-* **Honours display settings**<br>
+* **Honors display settings**<br>
 If there are user settings for display, this only affects the editing view, not the output. If a content editor uses OS settings like high contrast mode or their own stylesheet, this does not break the editing experience.<br>
 Based on: A.3.6
 * **Previews are accessible**<br>
