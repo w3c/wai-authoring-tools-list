@@ -15,6 +15,14 @@
     {
       "id": "form",
       "name": "Forum / discussion software"
+    },
+    {
+      "id": "creators",
+      "name": "Website creators"
+    },
+    {
+      "id": "wiki",
+      "name": "Wikis"
     }
   ],
   },
