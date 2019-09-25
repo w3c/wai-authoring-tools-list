@@ -44,8 +44,9 @@ If you made or know of an authoring tool that has accessibility in mind, submit 
     <label><input type="radio" name="question-1" data-triggers="not-applicable"> Not applicable</label>
     <label><input type="radio" name="question-1" data-triggers="not-sure"> Not sure </label>    
     <div id="partially" data-trigger hidden>
-      <p>You selected <b>partial support</b>. Partial support is better than no support at all!</p>
-      <p>Please describe what your support looks like: “accessible templates are available, but it is really hard to find them.”</p>
+      <p>You selected <b>partial support</b>.</p>
+      <p>Please describe what your support looks like, for example “accessible templates are available, but it is not very easy to find them. Improvements in search will be available in version 11”.</p>
+      <p>We will display this description with your tool, to help people find what they need.</p>
       <label for="description">Description</label>
       <textarea id="description" style="width: 100%" rows="4">
       </textarea>
