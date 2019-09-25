@@ -71,17 +71,17 @@ Based on: A.3.2
 * **Flashing content optional**<br>
 Flashing content, like videos, including previews of that kind of content, can be paused or turned off.<br>
 Based on: A.3.3 
-* **Content can be selected by structure**<br>
+* **Content can be navigated by structure**<br>
 Users can navigate quicker by structure, for example headings, lists or HTML elements.<br>
 Based on: A.3.4
 * **Content searchable**<br>
 Users can search in text content, results are focused when shown. If there are no matches, this is indicated. User can search in two directions (backwards and forwards).<br>
 Based on: A.3.5
-* **Honors display settings**<br>
+* **Supports display preferences**<br>
 If there are user settings for display, this only affects the editing view, not the output. If a content editor uses OS settings like high contrast mode or their own stylesheet, this does not break the editing experience.<br>
 Based on: A.3.6
 * **Previews are accessible**<br>
-Previews are as accessible as current browsers and other user agents.<br>
+When the tool shows a preview of the content, that preview is at least as accessible as in current browsers and other user agents.<br>
 Based on: A.3.7
 * **Helps user prevent mistakes**<br>
 Lets users undo changes and settings.<br>
@@ -112,7 +112,7 @@ Based on: B.2.4
 If any components or plugins are built-in to the tool, they are accessible. If there is a gallery of components or plug-ins, it indicates accessible options.<br>
 Based on: B.2.5 (interpreting “pre-authored content” as components)
 * **Checks accessibility automatically**<br>
-Has built-in checks for common accessibility problems that identifies things like missing alt text.<br>
+Has built-in checks for common accessibility problems, for example a check to identify missing alt text.<br>
 Based on: B.3.1
 * **Helps content editors fix problems**<br>
 Provides suggestions to content editor about accessibility problems.<br>
