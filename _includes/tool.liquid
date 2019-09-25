@@ -20,7 +20,7 @@
       {% endif %}
       <dt>Accessibility statement</dt>
       <dd>{{ tool.accessibility_statement | default: 'Not available' }}</dd>
-      <dt class="tool__features-a11y">Accessibility features</dt>
+      <dt class="tool__features-a11y">Accessibility features <small>(See <a href="selecting#editing-experience-for-content-editors">list</a>)</small></dt>
       <dd class="tool__features-a11y">
         <ul>
       {% for feature in tool.conforms_to %}

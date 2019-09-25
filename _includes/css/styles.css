@@ -74,6 +74,10 @@
   .tool__features dt {
     margin-top: 0;
   }
+  .tool__features dt small {
+    font-weight: normal;
+    margin-left: 1em;
+  }
   .tool__features dd {
     margin-left: 0;
   }
