@@ -11,6 +11,9 @@
   .header-sup {
     margin-bottom: 48px;
   }
+  .header-sup p:first-child {
+    margin-top: 0;
+  }
   #site-header { 
     margin-bottom: 64px; 
   }
