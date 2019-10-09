@@ -20,7 +20,7 @@ github:
 </style>
 
 <div class="header-sup">
-  <p>Browse CMSes, courseware, website creators, discussion forums and other <a href="selecting">authoring tools</a>, and filter for accessibility features.</p>
+  <p>Browse <a href="selecting">tools that create web content</a>, like <abbr title="content management systems">CMSes</abbr> and <abbr title="learning management systems">LMSes</abbr>, website creators, discussion forums and other authoring tools, and filter for <a href="selecting#features">accessibility features</a>.</p>
   <p><em>Note: tools user submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a>.</em></p>
 </div>
 
