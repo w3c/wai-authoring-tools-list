@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Selecting Authoring Tools, or how to find a CMS that supports accessibility"
+title: "Selecting Authoring Tools"
 doc-note-type: draft
 permalink: /authoring-tools/selecting
 github:
@@ -13,10 +13,10 @@ footer: >
 
 
 {::nomarkdown}
-{% include box.html type="start" h="2" title="Introduction" class="full" %}
+{% include box.html type="start" h="2" title="Tools that create web content" class="full" %}
 {:/}
 
-_Authoring tools_ are tools that create web content, like CMSes, courseware, website creators and social media. If they take accesibility into account, authoring tools can make a huge difference for accessibility, both for content editors and for end users. This page explains how. 
+“Authoring tools” is the umbrella term for <b>tools that create web content</b>, like <abbr title="content management systems">CMSes</abbr> and <abbr title="learning management systems">LMSes</abbr>, website creators, discussion forums and social media. If they take accesibility into account, authoring tools can make a huge difference for accessibility, both for content editors and for end users. This page explains how. 
 
 {::nomarkdown}
 {% include box.html type="end" %}
