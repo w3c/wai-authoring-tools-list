@@ -46,7 +46,10 @@ On this page, we will list accessibility considerations for both of these parts.
 
 The features listed under “editing experience” and “output” map to ATAG success criteria (A and AA level). They sometimes include examples from [Implementing ATAG 2.0](https://www.w3.org/TR/IMPLEMENTING-ATAG20/#gl_a22).
 
-## Editing experience: for content editors
+## Accessibility features in authoring tools
+{:#features}
+
+### Editing experience: for content editors
 
 {:#editing}
 
@@ -90,7 +93,7 @@ Based on: A.4.1
 Documents all features, including accessibility features.
 Based on: A.4.2
 
-## Output: for end users
+### Output: for end users
 {:#output}
 
 * **Generates accessible markup**<br>
