@@ -6,15 +6,15 @@
   "options": [
     {
       "id": "cms",
-      "name": "Content Management System"
+      "name": "Content management system (CMS)"
     },
     {
-      "id": "elearning",
-      "name": "Online learning platform"
+      "id": "lms",
+      "name": "Learning management system (LMS)"
     },
     {
       "id": "form",
-      "name": "Forum / discussion software"
+      "name": "Forum or discussion software"
     },
     {
       "id": "creators",
@@ -22,7 +22,7 @@
     },
     {
       "id": "wiki",
-      "name": "Wikis"
+      "name": "Wiki"
     }
   ],
   },
