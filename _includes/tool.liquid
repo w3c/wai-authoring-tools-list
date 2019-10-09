@@ -7,11 +7,7 @@
       <dt>License</dt>
       <dd>{{ tool.license }}</dd>
       <dt>Version</dt>
-      <dd>{{ tool.version }}</dd>
-      <dt>Submitted</dt>
-      <dd>{{ tool.date_submitted }}</dd>
-      <dt>Released</dt>
-      <dd>{{ tool.date_released }}</dd>
+      <dd>{{ tool.version }} (released: {{ tool.date_released }})</dd>
       {% if tool.website %}
       <dt>Website</dt>
       <dd><a href="{{ tool.website }}" rel="external">{{ tool.website }}</a></dd>
