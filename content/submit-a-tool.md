@@ -53,24 +53,44 @@ main > header { grid-column: 4 / span 4; }
     <input type="text" id="tool-name" required>
   </div>
   <div class="field">
-    <label for="submitter-vendor">Vendor (required)</label>
-    <input type="text" id="submitter-vendor" required>
+    <label for="tool-vendor">Vendor (required)</label>
+    <input type="text" id="tool-vendor" required>
   </div>
   <div class="field">
-    <label for="submitter-description">Description</label>
-    <textarea id="submitter-description"></textarea>
+    <label for="tool-description">Description</label>
+    <textarea id="tool-description"></textarea>
   </div>
   <div class="field">
-    <label for="submitter-license">License (required)</label>
-    <input type="text" id="submitter-license" required>
+    <label for="tool-statement">Link to accessibility statement</label>
+    <input type="text" id="tool-statement" placeholder="https://">
   </div>
   <div class="field">
-    <label for="submitter-version">Version</label>
-    <input type="text" id="submitter-version">
+    <label for="tool-license">License (required)</label>
+    <input type="text" id="tool-license" required>
   </div>
   <div class="field">
-    <label for="submitter-release-date">Release date (of this version)</label>
-    <input type="date" id="submitter-release-date">
+    <legend>Cost model (required)</legend>
+    <p>Pick what best describes what using your tool would cost.</p>
+    <div class="radio-field">
+      <input id="tool-cost-model-free" type="radio" name="tool-cost-model">
+      <label for="tool-cost-model-free">Free</label>
+    </div>
+    <div class="radio-field">
+      <input id="tool-cost-model-freemium" type="radio" name="tool-cost-model">
+      <label for="tool-cost-model-freemium">Freemium</label>
+    </div>
+    <div class="radio-field">
+      <input id="tool-cost-model-paid" type="radio" name="tool-cost-model">
+      <label for="tool-cost-model-paid">Paid</label>
+    </div>
+  </div>
+  <div class="field">
+    <label for="tool-version">Version</label>
+    <input type="text" id="tool-version">
+  </div>
+  <div class="field">
+    <label for="tool-release-date">Release date (of this version)</label>
+    <input type="date" id="tool-release-date">
   </div>
   {% include excol.html type="end" %}
 
