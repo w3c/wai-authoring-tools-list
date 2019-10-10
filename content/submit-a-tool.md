@@ -24,6 +24,9 @@ github:
 <form>
   <p>The Authoring Tools List shows tools from different vendors. With this form, you can submit your tool.</p>
   <p>Note: all information will be publicly available as this page generates a Pull Request on our GitHub repository.</p>
+
+  <div class="excol-all"></div>
+  
   {% include excol.html type="start" %}
   <h2 id="about-you">About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
