@@ -5,10 +5,10 @@
   }
   main > header, 
   .header-sup {
-    grid-column: 2 / 6;
+    grid-column: 2 / 8;
   }
   .box {
-    grid-column: 4 / 8;
+    grid-column: 2 / 10;
   }
   .header-sup {
     margin-bottom: 48px;
@@ -22,7 +22,7 @@
   .tools-filters {
     font-size: 85%;
     grid-row-start: 3;
-    grid-column: 2 / 4;
+    grid-column: 3 / 5;
   }
   .tools-filters legend {
     font-size: 1em;
@@ -42,7 +42,7 @@
     display: contents;
   }
   .tools-tools {
-    grid-column: 4 / 8;
+    grid-column: 5 / 10;
     grid-row-start: 3;
     position: relative;
     display: flex;

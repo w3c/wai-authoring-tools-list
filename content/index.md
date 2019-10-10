@@ -25,8 +25,8 @@ github:
 </div>
 
 {::nomarkdown}
-<a class="button button-more" href="submit-a-tool" style="grid-column-start: 6;
-  grid-column-end: 8;
+<a class="button button-more" href="submit-a-tool" style="grid-column-start: 8;
+  grid-column-end: 10;
   align-self: start;
   justify-self: end;
  margin-bottom: 2em;"><span>Submit a tool</span></a>
