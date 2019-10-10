@@ -77,6 +77,14 @@ github:
   {% include excol.html type="middle" %}
   <div class="field">
 
+  {% for feature in site.data.features_a %}
+  {% include report-feature-support.liquid %}
+  {% endfor %}
+
+  {% for feature in site.data.features_b %}
+  {% include report-feature-support.liquid %}
+  {% endfor %}
+
   </div>
   {% include excol.html type="end" %}
 
