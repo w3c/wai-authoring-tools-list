@@ -77,7 +77,7 @@ main > header { grid-column: 4 / span 4; }
 
   {% include excol.html type="start" %}
   <h2 id="accessibility-features">Accessibility features</h2>
-  <p>Tell us which accessibility features are supported by your tool (fully or partially), so that we can list this. If you explain what support looks like, we will also list that information.</p>
+  <p>Tell us which <a href="../selecting#features">accessibility features</a> are supported by your tool (fully or partially), so that we can list this. If you explain what support looks like, we will also list that information.</p>
 
   {% include excol.html type="middle" %}
   <div class="field">
