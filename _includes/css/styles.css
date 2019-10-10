@@ -4,9 +4,11 @@
     }
   }
   main > header, 
-  .header-sup,
+  .header-sup {
+    grid-column: 2 / 6;
+  }
   .box {
-    grid-column: 2 / 8;
+    grid-column: 4 / 8;
   }
   .header-sup {
     margin-bottom: 48px;
@@ -40,7 +42,7 @@
     display: contents;
   }
   .tools-tools {
-    grid-column: 4 / 10;
+    grid-column: 4 / 8;
     grid-row-start: 3;
     position: relative;
     display: flex;
