@@ -90,7 +90,7 @@
     margin-bottom: 0;
   }
 @media (min-width: 50em) {
-  .tool__features { 
+  .tool__features dl { 
     grid-template-columns: repeat(2, auto 1fr);
   }
 }
