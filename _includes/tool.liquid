@@ -3,7 +3,8 @@
   <p>{{ tool.description }}</p>
   <details>
     <summary class="button button-secondary">Details</summary>
-    <dl class="tool__features">
+    <div class="tool__features">
+    <dl>
       <dt>License</dt>
       <dd>{{ tool.license }}</dd>
       <dt>Version</dt>
@@ -14,7 +15,7 @@
       {% endif %}
       <dt>Accessibility statement</dt>
       <dd>{{ tool.accessibility_statement | default: 'Not available' }}</dd>
-      <dt class="tool__features-a11y">Accessibility features <small>(See <a href="selecting#editing-experience-for-content-editors">list</a>)</small></dt>
+      <dt class="tool__features-a11y">Accessibility features</dt>
       <dd class="tool__features-a11y">
         <ul>
           {% for feature in tool.conforms_to %}
@@ -28,5 +29,7 @@
         </ul>
       </dd>
     </dl>
+    <p><small>Not supported or applicable: Helps user prevent mistakes, Previews are accessible, Content can be navigated by structure. See <a href="selecting#features">full list of accessibility features</a></small></p>
+  </div>
   </details>
 </article>

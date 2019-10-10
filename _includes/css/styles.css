@@ -67,13 +67,15 @@
     font-weight: normal;
   }
 .tool__features { 
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: .5em 1em;
   margin: 1em -1em -1em -3em;
   padding: 1em;
   background-color: var(--off-white);
 }
+  .tool__features dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: .5em 1em;
+  }
   .tool__features dt {
     margin-top: 0;
   }
@@ -83,6 +85,9 @@
   }
   .tool__features dd {
     margin-left: 0;
+  }
+  .tool__features p:last-child {
+    margin-bottom: 0;
   }
 @media (min-width: 50em) {
   .tool__features { 
