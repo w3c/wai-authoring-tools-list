@@ -83,7 +83,7 @@ if (filterForm) {
   };
 }
 
-const options = document.querySelectorAll('[data-submit-tool-example]');
+const options = document.querySelectorAll('[data-indicate-feature-conformance]');
 
 if (options) {
   [].forEach.call(options, option => {
