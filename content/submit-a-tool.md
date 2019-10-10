@@ -15,47 +15,97 @@ github:
   path: content/submit-a-tool.md
 ---
 
-If you made or know of an authoring tool that has accessibility in mind, submit it here for inclusion in the [List of Authoring Tools](/wai-authoring-tools/authoring-tools).
+<div style="grid-column: 2 / -2">
 
 <style>
-  form {
-    margin-top: 2em;
-  }
-  label { margin-right: 1em; }
-  .info:first-child,  
-  #site-header,
-  #main > header,
-  #main > p:first-of-type,
-  #helpimprove,
-  .site-footer,
-  section:last-of-type {
-    display: none;
-  }
+{% include css/styles.css %}
 </style>
 
 <form>
-  <fieldset data-submit-tool-example>
-    <legend>Are accessible templates available?</legend>
-    <p>There are accessible templates available. If there is a repository of templates, it is easy to find options that prioritise accessibility. <small style="margin-left: 1em;"><em>See also: <a href="https://www.w3.org/TR/ATAG20/#gl_b24" target="_blank">ATAG B.2.4</a></em></small></p>
-    <p></p>
-    <label><input type="radio" name="question-1"> Yes</label>
-    <label><input type="radio" name="question-1"> No</label>
-    <label><input type="radio" name="question-1" data-triggers="partially"> Partially</label>
-    <label><input type="radio" name="question-1" data-triggers="not-applicable"> Not applicable</label>
-    <label><input type="radio" name="question-1" data-triggers="not-sure"> Not sure </label>    
-    <div id="partially" data-trigger hidden>
-      <p>You selected <b>partial support</b>.</p>
-      <p>Please describe what your support looks like, for example “accessible templates are available, but it is not very easy to find them. Improvements in search will be available in version 11”.</p>
-      <p>We will display this description with your tool, to help people find what they need.</p>
-      <label for="description">Description</label>
-      <textarea id="description" style="width: 100%" rows="4">
-      </textarea>
-    </div>
-    <div id="not-applicable" data-trigger hidden>
-      <p>You selected <b>not applicable</b>. We will not list this criterion for your tool.</p>
-    </div>
-    <div id="not-sure" data-trigger hidden>
-      <p>You selected <b>not sure</b>. We will not list this criterion for your tool.</p>
-    </div>
-  </fieldset>
+  <p>Note: all information will be publicly available as this page generates a Pull Request on our GitHub repository.</p>
+  {% include excol.html type="start" %}
+  <h2 id="about-you">About you</h2>
+  <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
+
+  {% include excol.html type="middle" %}
+  <div class="field">
+    <label for="submitter-name">Name (required)</label>
+    <input type="text" id="submitter-name" required>
+  </div>
+  <div class="field">
+    <label for="submitter-email">Email (required)</label>
+    <input type="email" id="submitter-email" required>
+  </div>
+  {% include excol.html type="end" %}
+
+  {% include excol.html type="start" %}
+  <h2 id="the-tool">About the tool</h2>
+  <p>Provide some information about your tool, that we will list with the tool.</p>
+
+  {% include excol.html type="middle" %}
+  <div class="field">
+    <label for="tool-name">Name (required)</label>
+    <input type="text" id="tool-name" required>
+  </div>
+  <div class="field">
+    <label for="submitter-vendor">Vendor (required)</label>
+    <input type="text" id="submitter-vendor" required>
+  </div>
+  <div class="field">
+    <label for="submitter-description">Description</label>
+    <textarea id="submitter-description"></textarea>
+  </div>
+  <div class="field">
+    <label for="submitter-license">License (required)</label>
+    <input type="text" id="submitter-license" required>
+  </div>
+  <div class="field">
+    <label for="submitter-version">Version</label>
+    <input type="text" id="submitter-version">
+  </div>
+  <div class="field">
+    <label for="submitter-release-date">Release date (of this version)</label>
+    <input type="date" id="submitter-release-date">
+  </div>
+  {% include excol.html type="end" %}
+
+
+  {% include excol.html type="start" %}
+  <h2 id="accessibility-features">Accessibility features</h2>
+  <p>Tell us which accessibility features are supported by your tool (fully or partially), so that we can list this. If you explain what support looks like, we will also list that information.</p>
+
+  {% include excol.html type="middle" %}
+  <div class="field">
+
+  </div>
+  {% include excol.html type="end" %}
+
+  {% include excol.html type="start" %}
+  <h2 id="comments">Further comments</h2>
+  <p>Let us know if you have any comments.</p>
+
+  {% include excol.html type="middle" %}
+  <div class="field">
+    <label for="comments">Comments</label>
+    <textarea id="comments"></textarea>
+  </div>
+  {% include excol.html type="end" %}
+
+
+  {% include excol.html type="start" %}
+  <h2 id="comments">Submit your tool</h2>
+
+  {% include excol.html type="middle" %}
+  <h3>Consent</h3>
+  <div class="field">
+    <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
+    <label><input type="checkbox" required> I give permission for my information to be published in the W3C's authoring tools list.</label>
+  </div>
+  <h3>Submit</h3>
+  <div class="field">
+    <button type="submit">Submit your tool</button>
+  </div>
+  {% include excol.html type="end" %}
 </form>
+
+</div>
