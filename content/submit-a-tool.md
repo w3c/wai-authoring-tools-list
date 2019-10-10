@@ -27,7 +27,7 @@ github:
 
   <div class="excol-all"></div>
   
-  {% include excol.html type="start" %}
+  {% include excol.html type="start" open="true" %}
   <h2 id="about-you">About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
 
