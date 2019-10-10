@@ -15,14 +15,15 @@ github:
   path: content/submit-a-tool.md
 ---
 
-<div style="grid-column: 2 / -2">
+<div style="grid-column: 4 / span 4">
 
 <style>
 {% include css/styles.css %}
+main > header { grid-column: 4 / span 4; }
 </style>
 
 <form>
-  <p>The Authoring Tools List shows tools from different vendors. With this form, you can submit your tool.</p>
+  <p>The <a href="../">Authoring Tools List</a> shows tools from different vendors. With this form, you can submit your tool.</p>
   <p>Note: all information will be publicly available as this page generates a Pull Request on our GitHub repository.</p>
 
   <div class="excol-all"></div>
