@@ -4,21 +4,21 @@
   <p></p>
   <label><input type="radio" name="question-{{ feature.id }}"> Yes</label>
   <label><input type="radio" name="question-{{ feature.id }}"> No</label>
-  <label><input type="radio" name="question-{{ feature.id }}" data-triggers="partially"> Partially</label>
-  <label><input type="radio" name="question-{{ feature.id }}" data-triggers="not-applicable"> Not applicable</label>
-  <label><input type="radio" name="question-{{ feature.id }}" data-triggers="not-sure"> Not sure </label>    
-  <div id="partially" data-trigger hidden>
+  <label><input type="radio" name="question-{{ feature.id }}" data-triggers="{{ feature.id }}-partially"> Partially</label>
+  <label><input type="radio" name="question-{{ feature.id }}" data-triggers="{{ feature.id }}-not-applicable"> Not applicable</label>
+  <label><input type="radio" name="question-{{ feature.id }}" data-triggers="{{ feature.id }}-not-sure"> Not sure </label>    
+  <div id="{{ feature.id }}-partially" data-trigger hidden>
     <p>You selected <b>partial support</b>.</p>
     <p>Please describe what your support looks like, for example “accessible templates are available, but it is not very easy to find them. Improvements in search will be available in version 11”.</p>
     <p>We will display this description with your tool, to help people find what they need.</p>
-    <label for="description">Description</label>
-    <textarea id="description" style="width: 100%" rows="4">
+    <label for="{{ feature.id }}-partially-description">Description</label>
+    <textarea id="{{ feature.id }}-partially-description" style="width: 100%" rows="4">
     </textarea>
   </div>
-  <div id="not-applicable" data-trigger hidden>
+  <div id="{{ feature.id }}-not-applicable" data-trigger hidden>
     <p>You selected <b>not applicable</b>. We will not list this criterion for your tool.</p>
   </div>
-  <div id="not-sure" data-trigger hidden>
+  <div id="{{ feature.id }}-not-sure" data-trigger hidden>
     <p>You selected <b>not sure</b>. We will not list this criterion for your tool.</p>
   </div>
 </fieldset>

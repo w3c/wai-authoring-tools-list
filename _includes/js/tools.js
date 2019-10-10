@@ -83,21 +83,24 @@ if (filterForm) {
   };
 }
 
-const options = document.querySelector('[data-submit-tool-example]');
+const options = document.querySelectorAll('[data-submit-tool-example]');
 
 if (options) {
-  options.addEventListener('change', e => {
-    const triggers = options.querySelectorAll('[data-trigger]');
+  [].forEach.call(options, option => {
+    
+    option.addEventListener('change', e => {
+      const triggers = option.querySelectorAll('[data-trigger]');
 
-    if (triggers) {
-      [].forEach.call(triggers, trigger => {
-        trigger.setAttribute('hidden', 'true');
-      });
-    }
+      if (triggers) {
+        [].forEach.call(triggers, trigger => {
+          trigger.setAttribute('hidden', 'true');
+        });
+      }
 
-    if (e.target.getAttribute('data-triggers')) {
-      const triggered = options.querySelector(`#${e.target.getAttribute('data-triggers')}`);
-      triggered.removeAttribute('hidden');
-    }
+      if (e.target.getAttribute('data-triggers')) {
+        const triggered = option.querySelector(`#${e.target.getAttribute('data-triggers')}`);
+        triggered.removeAttribute('hidden');
+      }
+    });
   });
 }
