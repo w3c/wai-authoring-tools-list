@@ -92,32 +92,21 @@ github:
   </div>
   {% include excol.html type="end" %}
 
-  {% include excol.html type="start" %}
-  <h2 id="comments">Further comments</h2>
+  <h2>Submitting your tool</h2>
   <p>Let us know if you have any comments.</p>
-
-  {% include excol.html type="middle" %}
   <div class="field">
     <label for="comments">Comments</label>
     <textarea id="comments"></textarea>
   </div>
-  {% include excol.html type="end" %}
 
-
-  {% include excol.html type="start" %}
-  <h2 id="comments">Submit your tool</h2>
-
-  {% include excol.html type="middle" %}
-  <h3>Consent</h3>
   <div class="field">
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
     <label><input type="checkbox" required> I give permission for my information to be published in the W3C's authoring tools list.</label>
   </div>
-  <h3>Submit</h3>
+  <p>When you submit the form, we will review your tool and add it to the list. This should take 1-4 weeks.</p>
   <div class="field">
     <button type="submit">Submit your tool</button>
   </div>
-  {% include excol.html type="end" %}
 </form>
 
 </div>
