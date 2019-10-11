@@ -1,19 +1,20 @@
-  @media (min-width: 50em) {
+  @media (min-width: 40em) {
     main  {
       display: contents;
     }
   }
   main > header, 
   .header-sup {
-    grid-column: 2 / 9;
+    grid-column: 1 / 8;
   }
-  @media ( min-width: 50em ) {
+  @media ( min-width: 72em ) {
+    main > header, 
     .header-sup {
       grid-column: 2 / 7;
     }
   }
   .box {
-    grid-column: 2 / 9;
+    grid-column: 1 / 9;
   }
   .header-sup {
     margin-bottom: 48px;
@@ -26,11 +27,11 @@
   }
   .tools-filters {
     font-size: 85%;
-    grid-column: 2 / 4;
+    grid-column: 1 / 4;
   }
-  @media (min-width: 40em) {
-    .tools-filter {
-      grid-column: 3 / 4;
+  @media (min-width: 72em) {
+    .tools-filters {
+      grid-column: 2 / 4;
     }
   }
   .tools-filters legend {
@@ -60,7 +61,7 @@
       grid-column: 4 / span 7;
     }
   }
-  @media (min-width: 68em) {
+  @media (min-width: 72em) {
     .tools-tools {
       grid-column: 4 / span 5;
     }
@@ -148,9 +149,14 @@
     transition: opacity 0.2s;
   }
   .submit-a-tool {
-    grid-column-start: 7;
-    grid-column-end: 9;
+    grid-column: 8 / 10;
     align-self: start;
     justify-self: end;
     margin-bottom: 2em;
+  }
+   
+  @media ( min-width: 72em ) {
+    .submit-a-tool {
+      grid-column: 7 / 9;
+    }
   }
