@@ -5,10 +5,15 @@
   }
   main > header, 
   .header-sup {
-    grid-column: 2 / 8;
+    grid-column: 2 / 9;
+  }
+  @media ( min-width: 50em ) {
+    .header-sup {
+      grid-column: 2 / 7;
+    }
   }
   .box {
-    grid-column: 2 / 10;
+    grid-column: 2 / 9;
   }
   .header-sup {
     margin-bottom: 48px;
@@ -21,8 +26,12 @@
   }
   .tools-filters {
     font-size: 85%;
-    grid-row-start: 3;
-    grid-column: 3 / 5;
+    grid-column: 2 / 4;
+  }
+  @media (min-width: 40em) {
+    .tools-filter {
+      grid-column: 3 / 4;
+    }
   }
   .tools-filters legend {
     font-size: 1em;
@@ -42,10 +51,19 @@
     display: contents;
   }
   .tools-tools {
-    grid-column: 5 / 10;
-    grid-row-start: 3;
+    grid-column: 4 / 10;
     position: relative;
     display: flex;
+  }
+  @media (min-width: 40em) {
+    .tools-tools {
+      grid-column: 4 / span 7;
+    }
+  }
+  @media (min-width: 68em) {
+    .tools-tools {
+      grid-column: 4 / span 5;
+    }
   }
   .tools-tools p:first-child {
     margin-top: 0;
@@ -128,4 +146,11 @@
     align-items: start;
     justify-content: center;
     transition: opacity 0.2s;
+  }
+  .submit-a-tool {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    align-self: start;
+    justify-self: end;
+    margin-bottom: 2em;
   }
