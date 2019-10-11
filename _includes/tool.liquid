@@ -5,20 +5,6 @@
     <summary class="button button-secondary">Details</summary>
     <div class="tool__features">
     <dl>
-      <dt>License</dt>
-      <dd>{{ tool.license }}</dd>
-      <dt>Type of tool</dt>
-      <dd>{{ tool.type_of_tool }}</dd>
-      <dt>Cost model</dt>
-      <dd>{{ tool.cost }}</dd>
-      <dt>Version</dt>
-      <dd>{{ tool.version }} (released: {{ tool.date_released }})</dd>
-      {% if tool.website %}
-      <dt>Website</dt>
-      <dd><a href="{{ tool.website }}" rel="external">{{ tool.website }}</a></dd>
-      {% endif %}
-      <dt>Accessibility statement</dt>
-      <dd>{{ tool.accessibility_statement | default: 'Not available' }}</dd>
       <dt class="tool__features-a11y">Accessibility features</dt>
       <dd class="tool__features-a11y">
         <ul>
@@ -34,6 +20,22 @@
       </dd>
     </dl>
     <p><small>Not supported or applicable: Helps user prevent mistakes, Previews are accessible, Content can be navigated by structure. See <a href="selecting#features">full list of accessibility features</a></small></p>
+    <dl>
+      <dt>License</dt>
+      <dd>{{ tool.license }}</dd>
+      <dt>Type of tool</dt>
+      <dd>{{ tool.type_of_tool }}</dd>
+      <dt>Cost model</dt>
+      <dd>{{ tool.cost }}</dd>
+      <dt>Version</dt>
+      <dd>{{ tool.version }} (released: {{ tool.date_released }})</dd>
+      {% if tool.website %}
+      <dt>Website</dt>
+      <dd><a href="{{ tool.website }}" rel="external">{{ tool.website }}</a></dd>
+      {% endif %}
+      <dt>Accessibility statement</dt>
+      <dd>{{ tool.accessibility_statement | default: 'Not available' }}</dd>
+    </dl>
   </div>
   </details>
 </article>

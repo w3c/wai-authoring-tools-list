@@ -23,7 +23,8 @@ main > header { grid-column: 4 / span 4; }
 </style>
 
 <form>
-  <p>The <a href="../">Authoring Tools List</a> shows tools from different vendors. With this form, you can submit your tool.</p>
+  <p>The <a href="../">Authoring Tools List</a> shows tools from different vendors, so that people can make informed decisions when they choose an authoring tool.</p>
+  <p>We'd like to display as many authoring tools as we can, we welcome you to submit yours using this form.</p>
   <p>Note: all information will be publicly available as this page generates a Pull Request on our GitHub repository.</p>
 
   <div class="excol-all"></div>
@@ -45,7 +46,7 @@ main > header { grid-column: 4 / span 4; }
 
   {% include excol.html type="start" %}
   <h2 id="the-tool">About the tool</h2>
-  <p>Provide some information about your tool, that we will list with the tool.</p>
+  <p>Provide some information about your tool. We will list this with the tool.</p>
 
   {% include excol.html type="middle" %}
   <div class="field">
@@ -98,6 +99,9 @@ main > header { grid-column: 4 / span 4; }
   {% include excol.html type="start" %}
   <h2 id="accessibility-features">Accessibility features</h2>
   <p>Tell us which <a href="../selecting#features">accessibility features</a> are supported by your tool (fully or partially), so that we can list this. If you explain what support looks like, we will also list that information.</p>
+  
+  {% assign featurecount = site.data.features_a.length %}
+  <p>There are {{ featurecount }} features.</p>
 
   {% include excol.html type="middle" %}
   <div class="field">
