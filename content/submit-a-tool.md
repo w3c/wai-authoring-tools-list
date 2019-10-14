@@ -22,6 +22,8 @@ github:
 main > header { grid-column: 4 / span 4; }
 </style>
 
+<a href="../">Back to List of Authoring tools</a>
+
 <form>
   <p>The <a href="../">Authoring Tools List</a> shows tools from different vendors, so that people can make informed decisions when they choose an authoring tool.</p>
   <p>We'd like to display as many authoring tools as we can, we welcome you to submit yours using this form.</p>
@@ -100,18 +102,21 @@ main > header { grid-column: 4 / span 4; }
   <h2 id="accessibility-features">Accessibility features</h2>
   <p>Tell us which <a href="../selecting#features">accessibility features</a> are supported by your tool (fully or partially), so that we can list this. If you explain what support looks like, we will also list that information.</p>
   
-  {% assign featurecount = site.data.features_a.length %}
-  <p>There are {{ featurecount }} features.</p>
-
   {% include excol.html type="middle" %}
   <div class="field">
 
-  {% for feature in site.data.features_a %}
+  {% for principle in site.data.features_a %}
+  <h3>{{ principle.principle }}</h3>
+  {% for guideline in principle.guidelines %}
   {% include report-feature-support.liquid %}
   {% endfor %}
+  {% endfor %}
 
-  {% for feature in site.data.features_b %}
+  {% for principle in site.data.features_b %}
+  <h3>{{ principle.principle }}</h3>
+  {% for guideline in principle.guidelines %}
   {% include report-feature-support.liquid %}
+  {% endfor %}
   {% endfor %}
 
   </div>

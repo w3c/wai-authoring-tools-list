@@ -1,62 +1,87 @@
 [
   {
-    "id": "accessible-markup",
-    "name": "Generates accessible markup",
-    "description": "When the tool generates markup, that markup is accessible. If accesssibility information is required, like alternative texts, the content editor is prompted to provide that information.",
-    "related_atag": [ "B.1.1" ]
+    "principle": "Fully automatic processes produce accessible content ",
+    "guidelines": [
+      {
+        "id": "auto-content-accessible",
+        "name": "Generates accessible markup",
+        "description": " When the tool generates markup, that markup is accessible. If accesssibility information is required, like alternative texts, the content editor is prompted to provide that information.",
+        "related_atag": ["B.1.1"]
+      },
+      {
+        "id": "accessibility-information-preserved",
+        "name": "Preserves accessibility information",
+        "description": " If content is pasted from a word processor or converted from one format into another, any accessibility information is preserved.",
+        "related_atag": ["B.1.2"]
+      }
+    ]
   },
   {
-    "id": "preserves-accessible",
-    "name": "Preserves accessibility information",
-    "description": "If content is pasted from a word processor or converted from one format into another, any accessibility information is preserved.",
-    "related_atag": [ "B.1.2" ]
+    "principle": "Supports producing accessible contentt",
+    "guidelines": [
+      {
+        "id": "accessible-content-production-possible",
+        "name": "Accessible content production is possible",
+        "description": "",
+        "related_atag": ["B.2.1"]
+      },
+      {
+        "id": "editors-guided",
+        "name": "Editors guided",
+        "description": "Editors are guided to produce accessible content.",
+        "related_atag": ["B.2.2"]
+      },
+      {
+        "id": "alternatives-manageable",
+        "name": "Text alternatives can be managed",
+        "description": "There is a tool for providing text alternatives to “non-text content”, like images, videos and data visualisation.",
+        "related_atag": ["B.2.3"]
+      },
+      {
+        "id": "accessible-templates-available",
+        "name": "Accessible templates available",
+        "description": " There are accessible templates available. If there is a repository of templates, it is easy to find the ones that prioritise accessibility.",
+        "related_atag": ["B.2.4"]
+      },
+      {
+        "id": "accessible-components-available",
+        "name": "Accessible components/plug-ins available",
+        "description": " If any components or plugins are built-in to the tool, they are accessible. If there is a gallery of components or plug-ins, it indicates accessible options.",
+        "related_atag": ["B.2.5"]
+      }
+    ]
   },
   {
-    "id": "allows-accessible-creation",
-    "name": "Allows for accessible content creation",
-    "description": "Does not block content editor from adding accessibility information to their content, like `alt` attributes to images or captions to videos.",
-    "related_atag": [ "B.2.1" ]
-  },
-  {
-    "id": "alternatives-can-be-added",
-    "name": "Text alternatives can be added",
-    "description": "There is a tool for providing text alternatives to “non-text content”, like images, videos and data visualisation.",
-    "related_atag": [ "B.2.3" ]
-  },
-  {
-    "id": "templates-available",
-    "name": "Accessible templates available",
-    "description": "There are accessible templates available. If there is a repository of templates, it is easy to find options that prioritise accessibility.",
-    "related_atag": [ "B.2.4" ]
-  },
-  {
-    "id": "plugins-available",
-    "name": "Accessible components/plug-ins available",
-    "description": "If any components or plugins are built-in to the tool, they are accessible. If there is a gallery of components or plug-ins, it indicates accessible options.",
-    "related_atag": [ "B.2.5" ]
-  },
-  {
-    "id": "automated-checks",
-    "name": "Checks accessibility automatically",
-    "description": "Has built-in checks for common accessibility problems, for example a check to identify missing alt text.",
-    "related_atag": [ "B.3.1" ]
-  },
-  {
-    "id": "fix-problems",
-    "name": "Helps content editors fix problems",
-    "description": "Provides suggestions to content editor about accessibility problems.",
-    "related_atag": [ "B.3.4" ]
-  },
-  {
-    "id": "accessibility-features-promoted",
-    "name": "Content searchable",
-    "description": "Accessibility features are turned on by default and prominently displayed in the interface.",
-    "related_atag": [ "B.4.2" ]
-  },
-  {
-    "id": "documentation-promotes-accessibility",
-    "name": "Documentation promotes accessiiblity",
-    "description": "Examples of how to produce accessible content with best practices are documented and easy to find.",
-    "related_atag": [ "B.4.2" ]
-  }
-]
+    "principle": "Helps with improving the accessibility of existing content",
+    "guidelines": [
+      {
+        "id": "automatically-checks",
+        "name": "Checks accessibility automatically",
+        "description": " Has built-in checks for common accessibility problems, for example a check to identify missing alternative text.",
+        "related_atag": ["B.3.1"]
+      },
+      {
+        "id": "helps-fix-problems",
+        "name": "Helps content editors fix problems",
+        "description": " Provides suggestions to content editor about accessibility problems.",
+        "related_atag": ["B.3.2"]
+      }
+    ]
+   },
+   {
+    "principle": "Promotes and integrates accessibility features",
+    "guidelines": [
+      {
+        "id": "features-promote-accessibility",
+        "name": "Accessibility features prominent",
+        "description": "Accessibility features are on by default and a prominent part of the editing workflow. Documentation shows examples of how to create accessible content, for instance with example markup or screenshots.",
+        "related_atag": ["B.4.1"]
+      },
+      {
+        "id": "documentation-promotes-accessibility",
+        "name": "Documentation promotes accessibility",
+        "description": " Provides suggestions to content editor about accessibility problems.",
+        "related_atag": ["B.4.2"]
+      }
+    ] 
+  }]
