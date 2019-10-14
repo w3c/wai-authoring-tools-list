@@ -1,24 +1,24 @@
-<fieldset data-indicate-feature-conformance>
-  <legend>{{ feature.name }}</legend>
-  <p>{{ feature.description}} <small style="margin-left: 1em;"><em>See also: {% for criterion in feature.related_atag %}{{ criterion }} {% endfor %}</em></small></p>
+<fieldset data-indicate-guideline.conformance>
+  <legend><h4>{{ guideline.name }}</h4></legend>
+  <p>{{ guideline.description}} <small style="margin-left: 1em;"><em>See also: {% for criterion in guideline.related_atag %}{{ criterion }} {% endfor %}</em></small></p>
   <p></p>
-  <label><input type="radio" name="question-{{ feature.id }}"> Yes</label>
-  <label><input type="radio" name="question-{{ feature.id }}"> No</label>
-  <label><input type="radio" name="question-{{ feature.id }}" data-triggers="{{ feature.id }}-partially"> Partially</label>
-  <label><input type="radio" name="question-{{ feature.id }}" data-triggers="{{ feature.id }}-not-applicable"> Not applicable</label>
-  <label><input type="radio" name="question-{{ feature.id }}" data-triggers="{{ feature.id }}-not-sure"> Not sure </label>    
-  <div id="{{ feature.id }}-partially" data-trigger hidden>
+  <label><input type="radio" name="question-{{ guideline.id }}"> Yes</label>
+  <label><input type="radio" name="question-{{ guideline.id }}"> No</label>
+  <label><input type="radio" name="question-{{ guideline.id }}" data-triggers="{{ guideline.id }}-partially"> Partially</label>
+  <label><input type="radio" name="question-{{ guideline.id }}" data-triggers="{{ guideline.id }}-not-applicable"> Not applicable</label>
+  <label><input type="radio" name="question-{{ guideline.id }}" data-triggers="{{ guideline.id }}-not-sure"> Not sure </label>    
+  <div id="{{ guideline.id }}-partially" data-trigger hidden>
     <p>You selected <b>partial support</b>.</p>
     <p>Please describe what your support looks like, for example “accessible templates are available, but it is not very easy to find them. Improvements in search will be available in version 11”.</p>
     <p>We will display this description with your tool, to help people find what they need.</p>
-    <label for="{{ feature.id }}-partially-description">Description</label>
-    <textarea id="{{ feature.id }}-partially-description" style="width: 100%" rows="4">
+    <label for="{{ guideline.id }}-partially-description">Description</label>
+    <textarea id="{{ guideline.id }}-partially-description" style="width: 100%" rows="4">
     </textarea>
   </div>
-  <div id="{{ feature.id }}-not-applicable" data-trigger hidden>
+  <div id="{{ guideline.id }}-not-applicable" data-trigger hidden>
     <p>You selected <b>not applicable</b>. We will not list this criterion for your tool.</p>
   </div>
-  <div id="{{ feature.id }}-not-sure" data-trigger hidden>
+  <div id="{{ guideline.id }}-not-sure" data-trigger hidden>
     <p>You selected <b>not sure</b>. We will not list this criterion for your tool.</p>
   </div>
 </fieldset>

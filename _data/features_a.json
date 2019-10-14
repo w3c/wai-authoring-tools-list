@@ -10,7 +10,7 @@
       },
       {
         "id": "non-web-based-accessible",
-        "name": "Ensure that non-web-based functionality is accessible",
+        "name": "Non-web-based functionality is accessible",
         "description": "If the interface is not on the web, it conforms to platform-specific accessibility guidelines.",
         "related_atag": ["A.1.2"]
       }
