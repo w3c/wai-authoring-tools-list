@@ -31,10 +31,16 @@
       <dd>{{ tool.version }} (released: {{ tool.date_released }})</dd>
       {% if tool.website %}
       <dt>Website</dt>
-      <dd><a href="{{ tool.website }}" rel="external">{{ tool.website }}</a></dd>
+      <dd><a href="{{ tool.website }}" rel="external">{{ tool.name }} website</a></dd>
       {% endif %}
       <dt>Accessibility statement</dt>
-      <dd>{{ tool.accessibility_statement | default: 'Not available' }}</dd>
+      <dd>
+        {% if tool.accessibility_statement %} 
+        <a href="{{ tool.accessibility_statement }}">{{ tool.name }} statement</a>
+        {% else %}
+          Not available
+        {% endif %}
+      </dd>
     </dl>
   </div>
   </details>
