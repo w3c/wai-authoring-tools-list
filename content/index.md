@@ -39,6 +39,24 @@ github:
       {% endfor %}
     </fieldset>
     {% endfor %}
+    <fieldset id="filters-features-content-editors">
+      <legend>Accessibility for content editors (editing experience)</legend>
+      {% for feature in site.data.features_a %}
+      {% for guideline in feature.guidelines %}
+      <input type="checkbox" id="filter-{{ guideline.id }}" name="features-content-editors">
+      <label for="filter-{{ guideline.id }}">{{ guideline.name }}</label>
+      {% endfor %}
+      {% endfor %}
+    </fieldset>
+    <fieldset id="filters-features-outpput">
+      <legend>Accessibility for end users (output)</legend>
+      {% for feature in site.data.features_b %}
+      {% for guideline in feature.guidelines %}
+      <input type="checkbox" id="filter-{{ guideline.id }}" name="features-output">
+      <label for="filter-{{ guideline.id }}">{{ guideline.name }}</label>
+      {% endfor %}
+      {% endfor %}
+    </fieldset>
     <button>Filter</button> 
   </form>
   <div class="tools-tools">

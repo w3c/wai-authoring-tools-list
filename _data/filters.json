@@ -69,68 +69,6 @@
     ]
   },
   {
-  "id": "accessibility-features-a",
-  "name": "Accessibility for content designers (editing experience)",
-  "type": "checkbox",
-  "options": [
-    {
-      "id": "enough-time",
-      "name": "Enough time"
-    },
-    {
-      "id": "flashing-optional",
-      "name": "Flashing content optional"
-    },
-    {
-      "id": "content-searchable",
-      "name": "Content searchable"
-    },
-    {
-      "id": "works-with-keyboard",
-      "name": "Works with keyboard"
-    },
-    {
-      "id": "previews-accessible",
-      "name": "Previews are accessible"
-    },
-    {
-      "id": "prevent-mistakes",
-      "name": "Helps users prevent mistakes"
-    },
-    {
-      "id": "features-documented",
-      "name": "Accessibility features documented"
-    },
-  ],
-  },
-  {
-  "id": "accessibility-features-b",
-  "name": "Accessibility for end users (output)",
-  "type": "checkbox",
-  "options": [
-    {
-      "id": "explains-alt-texts",
-      "name": "Explains alternative text"
-    },
-    {
-      "id": "allows-video-captions",
-      "name": "Allows for video captions"
-    },
-    {
-      "id": "checks-spelling",
-      "name": "Automatically checks spelling"
-    },
-    {
-      "id": "documentation-promotes-accessibility",
-      "name": "Documentation promotes accessibility"
-    },
-    {
-      "id": "accessible-templates-available",
-      "name": "Accessible templates available"
-    }
-  ],
-  },
-  {
     "id": "other",
     "name": "Other",
     "type": "checkbox",
