@@ -65,12 +65,14 @@ The features listed under “editing experience” and “output” map to ATAG 
 ### Output: for end users
 {:#output}
 
-{% for feature in site.data.features_b %}
-* **{{ feature.name }}**<br>
-{{ feature.description}}<br>
-Based on: {% for criterion in feature.related_atag %}{{ criterion }} {% endfor %}
+{% for principle in site.data.features_b %}
+<!-- <h4>{{ principle.principle }}</h4> -->
+  {% for guideline in principle.guidelines %}
+  * **{{ guideline.name }}**<br>
+  {{ guideline.description}}<br>
+  Based on: {% for criterion in guideline.related_atag %}{{ criterion }} {% endfor %}
+  {% endfor %}
 {% endfor %}
-
 
 ## Further Considerations
 {:#further}
