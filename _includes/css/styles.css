@@ -3,14 +3,20 @@
       display: contents;
     }
   }
-  main > header, 
   .header-sup {
     grid-column: 1 / 8;
   }
   @media ( min-width: 72em ) {
-    main > header, 
     .header-sup {
       grid-column: 2 / 7;
+    }
+  }
+  main > header {
+    grid-column: 1 / 10;
+  }
+  @media ( min-width: 72em ) {
+    main > header {
+      grid-column: 2 / 9;
     }
   }
   .box {
