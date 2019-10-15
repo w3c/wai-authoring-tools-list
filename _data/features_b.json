@@ -22,7 +22,7 @@
       {
         "id": "accessible-content-production-possible",
         "name": "Accessible content production is possible",
-        "description": "",
+        "description": "If some options produce more accessible content than others, they are displayed more prominently. If properties and attributes can be set, those relevant for accessibility can also be set.",
         "related_atag": ["B.2.1"]
       },
       {
