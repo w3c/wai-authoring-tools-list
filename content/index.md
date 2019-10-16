@@ -11,7 +11,7 @@ layout: list-with-filters
 contributors:
  - name: Hidde de Vries
 github:
-  repository: wai-authoring-tools
+  repository: w3c/wai-authoring-tools
   path: content/index.md
 ---
 
