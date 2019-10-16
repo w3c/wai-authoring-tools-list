@@ -24,7 +24,7 @@
   "type_of_tool": "cms",
   "cost": "free",
   "website": "https://setuphub.org",
-  "license": "GNU",
+  "license": "GNU/GPL",
   "version": "5.2",
   "date_submitted": "2019-06-31",
   "date_released": "2018-05-25",
