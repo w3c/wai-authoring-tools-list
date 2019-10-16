@@ -12,8 +12,30 @@
   "date_submitted": "2019-06-31",
   "date_released": "2018-05-25",
   "conforms_to": [
-      "works-with-keyboard",
-      "can-add-captions"
+      "Web-based functionality is accessible",
+      "Non-web-based functionality is accessible",
+      "Alternative content available to editors",
+      "Editing-view presentation can be programmatically determined",
+      "Works with keyboard",
+      "Enough time",
+      "Flashing content optional",
+      "Content can be navigated by structure",
+      "Content searchable",
+      "Supports display preferences",
+      "Previews are accessible",
+      "Helps editor prevent and correct mistakes",
+      "(Accessibility) features documented",
+      "Generates accessible markup",
+      "Preserves accessibility information",
+      "Accessible content production is possible",
+      "Editors guided",
+      "Text alternatives can be managed",
+      "Accessible templates available",
+      "Accessible components/plug-ins available",
+      "Checks accessibility automatically",
+      "Helps content editors fix problems",
+      "Accessibility features prominent",
+      "Documentation promotes accessibility"
     ]
   },
   {
@@ -30,8 +52,8 @@
   "date_released": "2018-05-25",
   "accessibility_statement": "https://setuphub.tech/info/corporate/accessibility",
   "conforms_to": [
-      "works-with-keyboard",
-      "buttons-have-names"
+      "Works with keyboard",
+      "Web-based functionality is accessible"
     ]
   },
   {
@@ -48,9 +70,19 @@
   "date_released": "2018-05-25",
   "accessibility_statement": "https://currce.org/currce/info/a11y",
   "conforms_to": [
-      "previews-accessible",
-      "can-add-captions",
-      "accessible-templates"
+      "Web-based functionality is accessible",
+      "Non-web-based functionality is accessible",
+      "Alternative content available to editors",
+      "Editing-view presentation can be programmatically determined",
+      "Supports display preferences",
+      "Previews are accessible",
+      "Helps editor prevent and correct mistakes",
+      "Flashing content optional",
+      "Content can be navigated by structure",
+      "Content searchable",
+      "Supports display preferences",
+      "Previews are accessible",
+      "Helps editor prevent and correct mistakes",
     ]
   },
   {
@@ -66,11 +98,10 @@
   "date_submitted": "2019-05-31",
   "date_released": "2018-02-4",
   "conforms_to": [
-      "works-with-keyboard",
-      "can-add-captions",
-      "accessibility-documentation-available",
-      "content-spell-checked"
-    ]
+    "Helps content editors fix problems",
+    "Accessibility features prominent",
+    "Documentation promotes accessibility"
+  ]
   },
   {
   "name": "Groad",
@@ -86,9 +117,9 @@
   "date_released": "2018-02-24",
   "accessibility_statement": "https://groad.com/accessibility",
   "conforms_to": [
-      "content-spell-checked",
-      "no-time-limits",
-      "content-text-search-provided"
+    "Alternative content available to editors",
+    "Editing-view presentation can be programmatically determined",
+    "Works with keyboard"
     ]
   },
   {
@@ -104,9 +135,9 @@
   "date_released": "2016-2-2",
   "accessibility_statement": "https://hoto.com/about-us/inclusion/accessibility-statement",
   "conforms_to": [
-      "works-with-keyboard",
-      "can-add-captions"
-    ]
+    "Editing-view presentation can be programmatically determined",
+    "Works with keyboard"
+  ]
   },
   {
   "name": "LogicPocket",
@@ -121,9 +152,9 @@
   "date_released": "2017-04-5",
   "accessibility_statement": "https://logictpocket.com/accessibility",
   "conforms_to": [
-      "flashing-content-optional",
-      "accessible-templates-available"
-    ]
+    "Web-based functionality is accessible",
+    "Non-web-based functionality is accessible"
+  ]
   },
   {
   "name": "Admint",
@@ -138,9 +169,10 @@
   "date_released": "2018-04-16",
   "accessibility_statement": "https://admint.platerstrent.com/accessibility",
   "conforms_to": [
-      "works-with-keyboard",
-      "can-add-captions"
-    ]
+    "Previews are accessible",
+    "Helps editor prevent and correct mistakes",
+    "(Accessibility) features documented"
+   ]
   },
   {
   "name": "Process.ly",
@@ -155,9 +187,9 @@
   "date_submitted": "2019-06-24",
   "date_released": "2018-01-12",
   "conforms_to": [
-      "no-time-limits",
-      "works-with-keyboard",
-      "can-add-captions"
-    ]
+    "Previews are accessible",
+    "Helps editor prevent and correct mistakes",
+    "(Accessibility) features documented"
+   ]
   },
 ]
