@@ -31,7 +31,7 @@ kramwdown:
 highlighter: rouge
 repository: w3c/wai-authoring-tools
 
-ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
+ytkey: ""
 
 remote_theme: w3c/wai-website-theme
 
