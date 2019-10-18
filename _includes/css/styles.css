@@ -27,6 +27,7 @@
   }
   .header-sup p:first-child {
     margin-top: 0;
+    font-size: 125%;
   }
   #site-header { 
     margin-bottom: 64px; 
