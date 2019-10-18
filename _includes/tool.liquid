@@ -9,17 +9,30 @@
       <dd class="tool__features-a11y">
         <ul>
           {% for feature in tool.conforms_to %}
-          {% if feature == 'works-with-keyboard' %}
+          {% case feature %}
+          {% when 'Works with keyboard' %}
           <li><strong>{{ feature }}</strong> (partly)<br>
           Should mostly work, except for the video editor, we plan to release that in version 3.</li> 
+          {% when 'Enough time' %}
+          <li><strong>{{ feature }}</strong> (partly)<br>
+          Our CMS works with the Slovenian e-government login which has a time limit of 15 minutes that we can legally not circumvent.</li> 
+          {% when 'Text alternatives can be managed' %}
+          <li><strong>{{ feature }}</strong> (partly)<br>
+          Alternatives can be managed for images, but not for videos.</li> 
+          {% when '(Accessibility) features documented' %}
+          <li><strong>{{ feature }}</strong> (partly)<br>
+          We are working to document all accessibility features and currently have done about 65% of them. Full support planned for 2023.</li> 
           {% else %}
           <li><strong>{{ feature }}</strong></li>
-          {% endif %}
+          {% endcase %}
           {% endfor %}
         </ul>
       </dd>
     </dl>
+    {% if tool.name == 'Stripmetics' %}
+    {% else %}
     <p><small>Not supported or applicable: Helps user prevent mistakes, Previews are accessible, Content can be navigated by structure. See <a href="selecting#features">full list of accessibility features</a></small></p>
+    {% endif %}
     <dl>
       <dt>License</dt>
       <dd>{{ tool.license }}</dd>
