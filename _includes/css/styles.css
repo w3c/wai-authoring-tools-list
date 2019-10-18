@@ -59,8 +59,8 @@
   }
   .tools-tools {
     grid-column: 4 / 10;
-    position: relative;
     display: flex;
+    position: relative;
   }
   @media (min-width: 40em) {
     .tools-tools {
