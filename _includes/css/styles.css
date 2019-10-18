@@ -39,6 +39,8 @@
   @media (min-width: 72em) {
     .tools-filters {
       grid-column: 2 / 4;
+      border-right: 1px solid #ccc;
+      padding-right: 2em;
     }
   }
   .tools-filters legend {
