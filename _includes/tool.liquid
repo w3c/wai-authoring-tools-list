@@ -1,5 +1,11 @@
 <article class="tool" id="{{ tool.id }}">
-  <h3>{{ tool.name }} <span>by {{ tool.vendor }}</span> <a href="#" class="tag">{{ tool.type_of_tool }}</a></h3>
+  <h3>
+      {% if tool.website %}
+        <a href="{{ tool.website }}" rel="external">{{ tool.name }}</a>
+      {% else %}
+        {{ tool.name }}
+      {% endif %}
+       <span>by {{ tool.vendor }}</span> <a href="#" class="tag">{{ tool.type_of_tool }}</a></h3>
   <p>{{ tool.description }}</p>
   <details>
     <summary class="button button-secondary">Details</summary>
@@ -54,10 +60,6 @@
       <dd>{{ tool.cost }}</dd>
       <dt>Version</dt>
       <dd>{{ tool.version }} (released: {{ tool.date_released }})</dd>
-      {% if tool.website %}
-      <dt>Website</dt>
-      <dd><a href="{{ tool.website }}" rel="external">{{ tool.name }} website</a></dd>
-      {% endif %}
       <dt>Accessibility statement</dt>
       <dd>
         {% if tool.accessibility_statement %} 

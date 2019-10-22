@@ -89,6 +89,9 @@
     margin: 0;
     font-size: 1em;
   }
+  .tool h3 a {
+    color: var(--wai-green);
+  }
   .tool h3 + p {
     margin-top: 0;
   }
