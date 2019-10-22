@@ -47,14 +47,14 @@
     font-size: 1em;
     margin-bottom: 8px;
   }
-  .tools-filters label {
-    margin-bottom: 4px;
+  .tools-filters__filter {
     display: flex;
     align-items: baseline;
+    margin-bottom: 8px;
+  }
+  .tools-filters label {
   }
   .tools-filters input {
-    clear: left;
-    float: left;
     margin-right: .5em;
   }
   .tools {

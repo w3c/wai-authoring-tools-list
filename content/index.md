@@ -34,8 +34,10 @@ github:
     <fieldset id="{{ filter.id }}">
       <legend>{{ filter.name }}</legend>
       {% for option in filter.options %}
-      <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
-      <label for="filter-{{ option.id }}">{{ option.name }}</label>
+      <div class="tools-filters__filter">
+        <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
+        <label for="filter-{{ option.id }}">{{ option.name }}</label>
+      </div>
       {% endfor %}
     </fieldset>
     {% endfor %}
@@ -43,8 +45,10 @@ github:
       <legend>Accessibility for content editors (editing experience)</legend>
       {% for feature in site.data.features_a %}
       {% for guideline in feature.guidelines %}
-      <input type="checkbox" id="filter-{{ guideline.id }}" name="features-content-editors">
-      <label for="filter-{{ guideline.id }}">{{ guideline.name }}</label>
+      <div class="tools-filters__filter">
+        <input type="checkbox" id="filter-{{ guideline.id }}" name="features-content-editors">
+        <label for="filter-{{ guideline.id }}">{{ guideline.name }}</label>
+      </div>
       {% endfor %}
       {% endfor %}
     </fieldset>
@@ -52,8 +56,10 @@ github:
       <legend>Accessibility for end users (output)</legend>
       {% for feature in site.data.features_b %}
       {% for guideline in feature.guidelines %}
-      <input type="checkbox" id="filter-{{ guideline.id }}" name="features-output">
-      <label for="filter-{{ guideline.id }}">{{ guideline.name }}</label>
+      <div class="tools-filters__filter">
+        <input type="checkbox" id="filter-{{ guideline.id }}" name="features-output">
+        <label for="filter-{{ guideline.id }}">{{ guideline.name }}</label>
+      </div>
       {% endfor %}
       {% endfor %}
     </fieldset>
