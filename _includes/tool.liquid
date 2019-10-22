@@ -12,16 +12,16 @@
           {% for feature in tool.conforms_to.a %}
           {% case feature %}
           {% when 'Works with keyboard' %}
-          <li><strong>{{ feature }}</strong> (partly)<br>
+          <li><strong>{{ feature }} (partly)</strong><br>
           Should mostly work, except for the video editor, we plan to release that in version 3.</li> 
           {% when 'Enough time' %}
-          <li><strong>{{ feature }}</strong> (partly)<br>
+          <li><strong>{{ feature }} (partly)</strong><br>
           Our CMS works with the Slovenian e-government login which has a time limit of 15 minutes that we can legally not circumvent.</li> 
           {% when 'Text alternatives can be managed' %}
-          <li><strong>{{ feature }}</strong> (partly)<br>
+          <li><strong>{{ feature }} (partly)</strong><br>
           Alternatives can be managed for images, but not for videos.</li> 
           {% when '(Accessibility) features documented' %}
-          <li><strong>{{ feature }}</strong> (partly)<br>
+          <li><strong>{{ feature }} (partly)</strong><br>
           We are working to document all accessibility features and currently have done about 65% of them. Full support planned for 2023.</li> 
           {% else %}
           <li><strong>{{ feature }}</strong></li>
