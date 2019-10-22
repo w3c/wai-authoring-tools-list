@@ -101,6 +101,7 @@
   padding: 1em;
   background-color: var(--off-white);
 }
+@media (min-width: 30em) {
   .tool__features dl {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -118,7 +119,8 @@
   }
   .tool__features p:last-child {
     margin-bottom: 0;
-  }
+  }  
+}
 @media (min-width: 50em) {
   .tool__features dl { 
     grid-template-columns: repeat(2, auto 1fr);
