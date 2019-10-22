@@ -5,10 +5,11 @@
     <summary class="button button-secondary">Details</summary>
     <div class="tool__features">
     <dl>
-      <dt class="tool__features-a11y">Accessibility features</dt>
+      {% if tool.conforms_to.a %}
+      <dt class="tool__features-a11y">Features for content editors</dt>
       <dd class="tool__features-a11y">
         <ul>
-          {% for feature in tool.conforms_to %}
+          {% for feature in tool.conforms_to.a %}
           {% case feature %}
           {% when 'Works with keyboard' %}
           <li><strong>{{ feature }}</strong> (partly)<br>
@@ -28,6 +29,17 @@
           {% endfor %}
         </ul>
       </dd>
+      {% endif %}
+      {% if tool.conforms_to.b %}
+      <dt class="tool__features-a11y">Features for end users</dt>
+      <dd class="tool__features-a11y">
+        <ul>
+          {% for feature in tool.conforms_to.b %}
+          <li><strong>{{ feature }}</strong></li>
+          {% endfor %}
+        </ul>
+      </dd>
+      {% endif %}
     </dl>
     {% if tool.name == 'Stripmetics' %}
     {% else %}
