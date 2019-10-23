@@ -34,12 +34,18 @@
   }
   .tools-filters {
     font-size: 85%;
-    grid-column: 1 / 4;
+  }
+  @media (min-width: 60em) {
+    .tools-filters {
+      font-size: 85%;
+      grid-column: 1 / 4;
+      padding-right: 2em;
+      border-right: 1px solid #ccc;
+    }
   }
   @media (min-width: 72em) {
     .tools-filters {
       grid-column: 2 / 4;
-      border-right: 1px solid #ccc;
       padding-right: 2em;
     }
   }
@@ -52,8 +58,6 @@
     align-items: baseline;
     margin-bottom: 8px;
   }
-  .tools-filters label {
-  }
   .tools-filters input {
     margin-right: .5em;
   }
@@ -61,13 +65,18 @@
     display: contents;
   }
   .tools-tools {
-    grid-column: 4 / 10;
     display: flex;
     position: relative;
+    padding-top: 2em;
+    margin-top: 2em;
+    border-top: 1px solid #ccc;
   }
-  @media (min-width: 40em) {
+  @media (min-width: 60em) {
     .tools-tools {
       grid-column: 4 / span 7;
+      padding-top: 0;
+      margin-top: 0;  
+      border-top: 0;
     }
   }
   @media (min-width: 72em) {
