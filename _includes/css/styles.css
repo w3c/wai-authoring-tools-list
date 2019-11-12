@@ -53,6 +53,13 @@
     font-size: 1em;
     margin-bottom: 8px;
   }
+  .tools-filters legend a {
+    color: var(--w3c-blue)
+  }
+  .tools-filters legend svg {
+    height: 1.5em;
+    vertical-align: baseline;
+  }
   .tools-filters__filter {
     display: flex;
     align-items: baseline;

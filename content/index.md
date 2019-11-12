@@ -43,6 +43,13 @@ github:
     {% endfor %}
     <fieldset id="filters-features-content-editors">
       <legend>Content Editor Features (editing experience)</legend>
+        <a href="selecting#editing-experience-for-content-editors">
+          <span class="visuallyhidden">All features for content editors explained</span>
+          <span aria-hidden="true">
+           {% include icons/info.svg %}
+          </span>
+        </a>
+      </legend>
       {% for feature in site.data.features_a %}
       {% for guideline in feature.guidelines %}
       <div class="tools-filters__filter">
