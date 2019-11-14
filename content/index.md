@@ -42,10 +42,10 @@ github:
     </fieldset>
     {% endfor %}
     <fieldset id="filters-features-content-editors">
-      <legend>Content Editor Features (editing experience)</legend>
-        <a href="selecting#editing-experience-for-content-editors">
+      <legend>Content Editor Features (editing experience)
+        <a href="selecting#editing-experience-for-content-editors" class="tools-filters__info">
           <span class="visuallyhidden">All features for content editors explained</span>
-          <span aria-hidden="true">
+          <span aria-hidden="true" class="tools-filters__info-icon">
            {% include icons/info.svg %}
           </span>
         </a>
@@ -60,7 +60,14 @@ github:
       {% endfor %}
     </fieldset>
     <fieldset id="filters-features-outpput">
-      <legend>End User Features (output)</legend>
+      <legend>End User Features (output)
+        <a href="selecting#output" class="tools-filters__info">
+          <span class="visuallyhidden">All features for end users explained</span>
+          <span aria-hidden="true" class="tools-filters__info-icon">
+           {% include icons/info.svg %}
+          </span>
+        </a>
+      </legend>
       {% for feature in site.data.features_b %}
       {% for guideline in feature.guidelines %}
       <div class="tools-filters__filter">
