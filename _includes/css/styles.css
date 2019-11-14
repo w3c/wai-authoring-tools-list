@@ -53,18 +53,18 @@
     font-size: 1em;
     margin-bottom: 8px;
   }
-  .tools-filters .tools-filters__info {
+  a.more-info {
     color: var(--w3c-blue);
     margin-left: .5em;
   }
-  .tools-filters .tools-filters__info:hover {
+  a.more-info:hover {
     color: var(--ocean);
   }
-  .tools-filters__info-icon {
+  .more-info__icon {
     display: inline-block;
     vertical-align: top;
   }
-  .tools-filters__info-icon svg {
+  .more-info__icon svg {
     height: 1.5em;
   }
   .tools-filters__filter {

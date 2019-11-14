@@ -12,7 +12,14 @@
     <div class="tool__features">
     <dl>
       {% if tool.conforms_to.a %}
-      <dt class="tool__features-a11y">Content Editor Features (editing experience)</dt>
+      <dt class="tool__features-a11y">Content Editor Features (editing experience)
+        <a href="selecting#editing-experience-for-content-editors" class="more-info">
+          <span class="visuallyhidden">All features for content editors explained</span>
+          <span aria-hidden="true" class="more-info__icon">
+           {% include icons/info.svg %}
+          </span>
+        </a>
+      </dt>
       <dd class="tool__features-a11y">
         <ul>
           {% for feature in tool.conforms_to.a %}
@@ -37,7 +44,14 @@
       </dd>
       {% endif %}
       {% if tool.conforms_to.b %}
-      <dt class="tool__features-a11y">End User Features users (output)</dt>
+      <dt class="tool__features-a11y">End User Features users (output)
+        <a href="selecting#output" class="more-info">
+          <span class="visuallyhidden">All features for end users explained</span>
+          <span aria-hidden="true" class="more-info__icon">
+           {% include icons/info.svg %}
+          </span>
+        </a>
+      </dt>
       <dd class="tool__features-a11y">
         <ul>
           {% for feature in tool.conforms_to.b %}
