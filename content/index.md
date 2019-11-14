@@ -30,6 +30,7 @@ github:
 
 <div id="app" class="tools">
   <form class="tools-filters" data-filter-form action="https://hiddedevries.nl/test-api/" method="POST">
+    <h2 class="visuallyhidden">Filters</h2>
     {% for filter in site.data.filters %}
     <fieldset id="{{ filter.id }}">
       <legend>{{ filter.name }}</legend>
@@ -80,6 +81,7 @@ github:
     <button>Filter</button> 
   </form>
   <div class="tools-tools">
+    <h2 class="visuallyhidden">List of tools</h2>
     <div role="alert">
       <p class="status status-busy" hidden>Loading tools…</p>
       <p class="status status-failure" hidden>something went wrong…</p>
