@@ -42,7 +42,7 @@ github:
     </fieldset>
     {% endfor %}
     <fieldset id="filters-features-content-editors">
-      <legend>Accessibility for content editors (editing experience)</legend>
+      <legend>Content Editor Features (editing experience)</legend>
       {% for feature in site.data.features_a %}
       {% for guideline in feature.guidelines %}
       <div class="tools-filters__filter">
@@ -53,7 +53,7 @@ github:
       {% endfor %}
     </fieldset>
     <fieldset id="filters-features-outpput">
-      <legend>Accessibility for end users (output)</legend>
+      <legend>End User Features (output)</legend>
       {% for feature in site.data.features_b %}
       {% for guideline in feature.guidelines %}
       <div class="tools-filters__filter">
