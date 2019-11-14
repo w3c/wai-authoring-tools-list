@@ -121,6 +121,9 @@
   .tool h3 span {
     font-weight: normal;
   }
+  .tool h4 {
+    font-size: 100%;
+  }
 .tool__features { 
   margin: 1em -1em -1em -3em;
   padding: 1em;
