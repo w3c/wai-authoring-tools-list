@@ -197,13 +197,12 @@
 
   .tool__tabs {
     background-color: var(--cloudy-subtle);
+    display: flex;
   }
     .tool__tabs a {
       color: var(--off-black);
     }
   [data-do-tabs] {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
     border-top: 1px solid var(--line-grey);
   }
   [data-tab] {
@@ -226,3 +225,13 @@
   [data-tab-current] {
     background-color: var(--off-white);
   } 
+
+  @media (min-width: 60em) {
+    .tool__tabs {
+      display: block;
+    }
+    [data-do-tabs] {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+    }
+  }
