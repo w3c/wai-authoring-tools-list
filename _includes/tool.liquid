@@ -1,88 +1,115 @@
 <article class="tool" id="{{ tool.id }}">
   <h3>
-      {% if tool.website %}
-        <a href="{{ tool.website }}" rel="external">{{ tool.name }}</a>
-      {% else %}
-        {{ tool.name }}
-      {% endif %}
-       <span>by {{ tool.vendor }}</span> <a href="#" class="tag">{{ tool.type_of_tool }}</a></h3>
+    {% if tool.website %}
+      <a href="{{ tool.website }}" rel="external">{{ tool.name }}</a>
+    {% else %}
+      {{ tool.name }}
+    {% endif %}
+     <span>by {{ tool.vendor }}</span> <a href="#" class="tag">{{ tool.type_of_tool }}</a>
+  </h3>
   <p>{{ tool.description }}</p>
   <details>
     <summary><h4>Details<span class="visuallyhidden"> for {{ tool.name }}</span></h4></summary>
-    <div class="tool__features">
-    <dl>
-      {% if tool.conforms_to.a %}
-      <dt class="tool__features-a11y">Content Editor Features (editing experience)
-        <a href="selecting#editing-experience-for-content-editors" class="more-info">
-          <span class="visuallyhidden">All features for content editors explained</span>
-          <span aria-hidden="true" class="more-info__icon">
-           {% include icons/info.svg %}
-          </span>
-        </a>
-      </dt>
-      <dd class="tool__features-a11y">
-        <ul>
-          {% for feature in tool.conforms_to.a %}
-          {% case feature %}
-          {% when 'Works with keyboard' %}
-          <li><strong>{{ feature }} (partly)</strong><br>
-          Vendor comment: <em>“Should mostly work, except for the video editor, we plan to release that in version 3.”</em></li> 
-          {% when 'Enough time' %}
-          <li><strong>{{ feature }} (partly)</strong><br>
-          Vendor comment: <em>“Our CMS works with the Slovenian e-government login which has a time limit of 15 minutes that we can legally not circumvent.”</em></li> 
-          {% when 'Text alternatives can be managed' %}
-          <li><strong>{{ feature }} (partly)</strong><br>
-          Vendor comment: <em>“Alternatives can be managed for images, but not for videos.”</em></li> 
-          {% when '(Accessibility) features documented' %}
-          <li><strong>{{ feature }} (partly)</strong><br>
-          Vendor comment: <em>“We are working to document all accessibility features and currently have done about 65% of them. Full support planned for 2023.”</em></li> 
-          {% else %}
-          <li><strong>{{ feature }}</strong></li>
-          {% endcase %}
-          {% endfor %}
-        </ul>
-      </dd>
-      {% endif %}
-      {% if tool.conforms_to.b %}
-      <dt class="tool__features-a11y">End User Features users (output)
-        <a href="selecting#output" class="more-info">
-          <span class="visuallyhidden">All features for end users explained</span>
-          <span aria-hidden="true" class="more-info__icon">
-           {% include icons/info.svg %}
-          </span>
-        </a>
-      </dt>
-      <dd class="tool__features-a11y">
-        <ul>
-          {% for feature in tool.conforms_to.b %}
-          <li><strong>{{ feature }}</strong></li>
-          {% endfor %}
-        </ul>
-      </dd>
-      {% endif %}
-    </dl>
-    {% if tool.name == 'Stripmetics' %}
-    {% else %}
-    <p><small>Not supported or applicable: Helps user prevent mistakes, Previews are accessible, Content can be navigated by structure. See <a href="selecting#features">full list of accessibility features</a></small></p>
-    {% endif %}
-    <dl>
-      <dt>License</dt>
-      <dd>{{ tool.license }}</dd>
-      <dt>Type of tool</dt>
-      <dd>{{ tool.type_of_tool }}</dd>
-      <dt>Cost model</dt>
-      <dd>{{ tool.cost }}</dd>
-      <dt>Version</dt>
-      <dd>{{ tool.version }} (released: {{ tool.date_released }})</dd>
-      <dt>Accessibility statement</dt>
-      <dd>
-        {% if tool.accessibility_statement %} 
-        <a href="{{ tool.accessibility_statement }}">{{ tool.name }} statement</a>
-        {% else %}
-          Not available
-        {% endif %}
-      </dd>
-    </dl>
+    <div class="tool__features" data-do-tabs>
+      <div class="tool__tabs">
+        <a href="#{{ tool.id }}-supported" data-tab>Supported</a>
+        <a href="#{{ tool.id }}-not-supported" data-tab>Not Supported</a>
+        <a href="#{{ tool.id }}-meta" data-tab>About this tool</a>
+      </div>
+      <div class="tool_tabpanels">
+        <div id="{{ tool.id }}-supported" tabindex="-1" data-tabpanel>
+          <dl>
+            {% if tool.conforms_to.a %}
+            <dt class="tool__features-a11y">Content Editor Features (editing experience)
+              <a href="selecting#editing-experience-for-content-editors" class="more-info">
+                <span class="visuallyhidden">All features for content editors explained</span>
+                <span aria-hidden="true" class="more-info__icon">
+                 {% include icons/info.svg %}
+                </span>
+              </a>
+            </dt>
+            <dd class="tool__features-a11y">
+              <ul>
+                {% for feature in tool.conforms_to.a %}
+                {% case feature %}
+                {% when 'Works with keyboard' %}
+                <li><strong>{{ feature }} (partly)</strong><br>
+                Vendor comment: <em>“Should mostly work, except for the video editor, we plan to release that in version 3.”</em></li> 
+                {% when 'Enough time' %}
+                <li><strong>{{ feature }} (partly)</strong><br>
+                Vendor comment: <em>“Our CMS works with the Slovenian e-government login which has a time limit of 15 minutes that we can legally not circumvent.”</em></li> 
+                {% when 'Text alternatives can be managed' %}
+                <li><strong>{{ feature }} (partly)</strong><br>
+                Vendor comment: <em>“Alternatives can be managed for images, but not for videos.”</em></li> 
+                {% when '(Accessibility) features documented' %}
+                <li><strong>{{ feature }} (partly)</strong><br>
+                Vendor comment: <em>“We are working to document all accessibility features and currently have done about 65% of them. Full support planned for 2023.”</em></li> 
+                {% else %}
+                <li><strong>{{ feature }}</strong></li>
+                {% endcase %}
+                {% endfor %}
+              </ul>
+            </dd>
+            {% endif %}
+            {% if tool.conforms_to.b %}
+            <dt class="tool__features-a11y">End User Features (output)
+              <a href="selecting#output" class="more-info">
+                <span class="visuallyhidden">All features for end users explained</span>
+                <span aria-hidden="true" class="more-info__icon">
+                 {% include icons/info.svg %}
+                </span>
+              </a>
+            </dt>
+            <dd class="tool__features-a11y">
+              <ul>
+                {% for feature in tool.conforms_to.b %}
+                <li><strong>{{ feature }}</strong></li>
+                {% endfor %}
+              </ul>
+            </dd>
+            {% endif %}
+          </dl>
+        </div>
+        <div id="{{ tool.id }}-not-supported" tabindex="-1" data-tabpanel hidden>
+          <dl>
+            <dt class="tool__features-a11y">End User (output)
+              <a href="selecting#output" class="more-info">
+                <span class="visuallyhidden">All features for end users explained</span>
+                <span aria-hidden="true" class="more-info__icon">
+                 {% include icons/info.svg %}
+                </span>
+              </a>
+            </dt>
+            <dd class="tool__features-a11y">
+              <ul>
+                <li>Helps user prevent mistakes</li>
+                <li>Previews are accessible</li>
+                <li>Content can be navigated by structure</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+        <div id="{{ tool.id }}-meta" tabindex="-1" data-tabpanel hidden>
+          <dl>
+          <dt>License</dt>
+          <dd>{{ tool.license }}</dd>
+          <dt>Type of tool</dt>
+          <dd>{{ tool.type_of_tool }}</dd>
+          <dt>Cost model</dt>
+          <dd>{{ tool.cost }}</dd>
+          <dt>Version</dt>
+          <dd>{{ tool.version }} (released: {{ tool.date_released }})</dd>
+          <dt>Accessibility statement</dt>
+          <dd>
+            {% if tool.accessibility_statement %} 
+            <a href="{{ tool.accessibility_statement }}">{{ tool.name }} statement</a>
+            {% else %}
+              Not available
+            {% endif %}
+          </dd>
+          </dl>
+        </div>
+    </div>
   </div>
   </details>
 </article>
