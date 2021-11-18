@@ -2,9 +2,9 @@
 layout: default
 title: "Selecting Authoring Tools"
 doc-note-type: draft
-permalink: /authoring-tools/selecting
+permalink: /authoring-tools-list/selecting
 github:
-  repository: wai-authoring-tools
+  repository: wai-authoring-tools-list
   path: content/selecting-authoring-tools.md
 footer: >
   <p>Developed by the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>).</p>

@@ -1,6 +1,6 @@
 ---
 title: "Submit an authoring tool"
-permalink: /authoring-tools/submit-a-tool
+permalink: /authoring-tools-list/submit-a-tool
 ref: /submit-a-tool/
 doc-note-type: draft
 lang: en
@@ -11,7 +11,7 @@ layout: submit-to-list
 contributors:
  - name: Hidde de Vries
 github:
-  repository: wai-authoring-tools
+  repository: wai-authoring-tools-list
   path: content/submit-a-tool.md
 ---
 

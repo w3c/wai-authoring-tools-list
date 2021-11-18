@@ -1,7 +1,7 @@
 ---
 title: "Authoring Tools with Accessibility Support"
-permalink: /authoring-tools/
-ref: /authoring-tools/
+permalink: /authoring-tools-list/
+ref: /authoring-tools-list/
 lang: en
 doc-note-type: draft
 layout: list-with-filters
@@ -11,7 +11,7 @@ layout: list-with-filters
 contributors:
  - name: Hidde de Vries
 github:
-  repository: w3c/wai-authoring-tools
+  repository: w3c/wai-authoring-tools-list
   path: content/index.md
 ---
 
