@@ -9,4 +9,4 @@ publish = "_site"
 
 [[redirects]]
   from = "/"
-  to = "/authoring-tools/"
+  to = "/authoring-tools-list/"
