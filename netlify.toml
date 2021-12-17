@@ -1,5 +1,5 @@
 [build]
-command = "git submodule update --init --remote && bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
+command = "bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
 publish = "_site"
 
 [build.environment]
@@ -8,3 +8,7 @@ RUBY_VERSION = "2.6.2"
 [[redirects]]
   from = "/"
   to = "/authoring-tools-list/"
+
+[dev]
+# NB on win64 (cmd or bash shells) --live reload is broken - s/-w --livereload/--no-watch
+command = "bundle exec jekyll serve -w --livereload --config _config.yml,_config_staging.yml"

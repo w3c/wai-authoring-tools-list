@@ -1,5 +1,7 @@
 _site
 .sass-cache
-.jekyll-metadata
+.jekyll-*
 .DS_Store
 Gemfile.lock
+# Local Netlify folder
+.netlify
