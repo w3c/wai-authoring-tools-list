@@ -1,50 +1,50 @@
 // @ts-check
-import { test, expect } from "@playwright/test";
-import { v1 as uuidv1 } from "uuid";
+import { test, expect } from '@playwright/test'
+import { v1 as uuidv1 } from 'uuid'
 
 // Form submission details
-// const DOMAIN = "https://deploy-preview-32--wai-authoring-tools-list.netlify.app";
-const DOMAIN = "localhost:8888";
-const URI = `${DOMAIN}/authoring-tools-list/test-form`; // NB no trailing /
-const FORM_REF = `test-${uuidv1()}`;
+const DOMAIN = 'https://deploy-preview-73--wai-authoring-tools-list.netlify.app'
+//const DOMAIN = "localhost:8888";
+const URI = `${DOMAIN}/authoring-tools-list/test-form` // NB no trailing /
+const FORM_REF = `test-${uuidv1()}`
 
 // GtHub constants
-const GH_USER = "w3c";
-const GH_REPO = "wai-authoring-tools-list";
-const GH_URI = `https://github.com/${GH_USER}/${GH_REPO}`;
+const GH_USER = 'w3c'
+const GH_REPO = 'wai-authoring-tools-list'
+const GH_URI = `https://github.com/${GH_USER}/${GH_REPO}`
 
 test('Form "test-form" submission should create a Pull Request - slow test', async ({
   page,
 }) => {
   // Submit form
-  await page.goto(URI);
+  await page.goto(URI)
 
   // Set the form
   await page.evaluate(
     (formRef) =>
       (document.querySelector('input[name="form-ref"]').value = formRef),
     FORM_REF
-  );
+  )
 
-  await page.fill('"Text:"', "Text");
-  await page.selectOption('"Select:"', { label: "Option one" });
-  await page.check('"Checkbox one:"');
-  await page.check('"Grouped checkbox one:"');
-  await page.check('"Radio one"');
+  await page.fill('"Text:"', 'Text')
+  await page.selectOption('"Select:"', { label: 'Option one' })
+  await page.check('"Checkbox one:"')
+  await page.check('"Grouped checkbox one:"')
+  await page.check('"Radio one"')
 
   // log request
-  page.on("request", (request) =>
+  page.on('request', (request) =>
     console.info(
-      `Request sent: ${JSON.stringify(request.allHeaders(), null, "  ")}`
+      `Request sent: ${JSON.stringify(request.allHeaders(), null, '  ')}`
     )
-  );
+  )
 
   let [response] = await Promise.all([
     page.waitForResponse(
       (response) => /*response.url() === URI &&*/ response.status() === 200
     ),
     page.click('text="Submit"'),
-  ]);
+  ])
 
   /*
   https: await expect(
@@ -85,4 +85,4 @@ test('Form "test-form" submission should create a Pull Request - slow test', asy
     await page.click(`text=Close pull request`)
     await page.click(`text=Delete Branch`)
     */
-});
+})
