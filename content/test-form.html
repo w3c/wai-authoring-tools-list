@@ -1,21 +1,21 @@
 ---
-title: 'Submit an authoring tool'
+title: 'Test Form'
 permalink: /authoring-tools-list/test-form
 ---
 
-{% include netlify-action-form.liquid type="start"
-name="authoring-tool-submission-1" %}
+{% include netlify-action-form.liquid type="start" name="authoring-tool-submission-1" %}
 
 <div class="field">
-  <label
-    >Text:
-    <input type="text" name="text" />
+  <label>Text one:
+    <input type="text" name="text-one" />
+  </label>
+  <label>Text two:
+    <input type="text" name="text-two" />
   </label>
 </div>
 
 <div class="field">
-  <label
-    >Select:
+  <label>Select:
     <select name="option">
       <option value="">--Please choose an option--</option>
       <option value="one">Option one</option>
@@ -25,29 +25,25 @@ name="authoring-tool-submission-1" %}
 </div>
 
 <div class="field">
-  <label
-    >Checkbox one:
-    <input type="checkbox" name="checkbox-one" value="checked" />
+  <label>Checkbox one:
+    <input type="checkbox" name="checkbox-one" />
   </label>
-</div>
-
-<div class="field">
-  <label
-    >Checkbox two:
-    <input type="checkbox" name="checkbox-two" value="checked" />
+  <label>Checkbox two:
+    <input type="checkbox" name="checkbox-two" />
   </label>
 </div>
 
 <div class="field">
   <fieldset>
     <legend>Checkbox group:</legend>
-    <label
-      >Grouped checkbox one:
-      <input type="checkbox" name="checkbox-group" value="cb-one" />
+    <label>Grouped checkbox one:
+      <input type="checkbox" name="checkbox-group-one" />
     </label>
-    <label
-      >Grouped checkbox two:
-      <input type="checkbox" name="checkbox-group" value="cb-two" />
+    <label>Grouped checkbox two:
+      <input type="checkbox" name="checkbox-group-two" />
+    </label>
+    <label>Grouped checkbox three:
+      <input type="checkbox" name="checkbox-group-three" />
     </label>
   </fieldset>
 </div>
@@ -55,13 +51,11 @@ name="authoring-tool-submission-1" %}
 <div class="field">
   <fieldset>
     <legend>Radio group:</legend>
-    <label
-      >Radio one
+    <label>Radio one
       <input type="radio" name="radio" value="one" />
     </label>
 
-    <label
-      >Radio two
+    <label>Radio two
       <input type="radio" name="radio" value="two" />
     </label>
   </fieldset>

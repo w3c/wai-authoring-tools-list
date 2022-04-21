@@ -1,25 +1,22 @@
 ---
-title: 'Authoring Tools with Accessibility Support'
+title: "Authoring Tools with Accessibility Support"
 permalink: /authoring-tools-list/
 ref: /authoring-tools-list/
 lang: en
 doc-note-type: draft
-layout: list-with-filters
-# translators: # Uncomment (remove #) for translations, one - name line per translator.
-# - name: Translator 1
-# - name: Translator 2
 contributors:
-- name: Hidde de Vries
+ - name: Steve Lee
 github:
-repository: w3c/wai-authoring-tools-list
-path: content/index.md
+  repository: w3c/wai-authoring-tools-list
+  path: content/index.md
 ---
+<!-- markdownlint-disable no-inline-html -->
 
 <style>
   {% include css/styles.css %}
 </style>
 
-< div class="header-sup">
+<div class="header-sup">
   <p>
     Browse <a href="selecting">tools that create web content</a>, like
     <abbr title="content management systems">CMSes</abbr> and

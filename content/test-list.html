@@ -1,0 +1,13 @@
+---
+title: 'Test List'
+permalink: /authoring-tools-list/test-list
+---
+
+
+{% include sort-data-folder.liquid data=site.data.submissions sortKey="form-ref" %}
+{{itemsSorted | inspect}}
+
+
+{% for course in itemsSorted %}
+{% include course.liquid %}
+{% endfor %}

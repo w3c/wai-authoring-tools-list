@@ -1,4 +1,9 @@
-  @media (min-width: 40em) {
+.minimal-header-container{
+  display: grid !important;
+  grid-column-gap: 32px;
+}
+
+@media (min-width: 40em) {
     main  {
       display: contents;
     }
@@ -29,8 +34,8 @@
     margin-top: 0;
     font-size: 125%;
   }
-  #site-header { 
-    margin-bottom: 64px; 
+  #site-header {
+    margin-bottom: 64px;
   }
   .tools-filters {
     font-size: 85%;
@@ -90,7 +95,7 @@
     .tools-tools {
       grid-column: 4 / span 7;
       padding-top: 0;
-      margin-top: 0;  
+      margin-top: 0;
       border-top: 0;
     }
   }
@@ -125,7 +130,7 @@
   .tool h4 {
     font-size: 100%;
   }
-.tool__features { 
+.tool__features {
   margin: 1em -1em -1em -3em;
   background-color: var(--off-white);
 }
@@ -139,10 +144,10 @@
   }
   .tool__features p:last-child {
     margin-bottom: 0;
-  }  
+  }
 }
 @media (min-width: 50em) {
-  .tool__features dl { 
+  .tool__features dl {
     grid-template-columns: repeat(2, auto 1fr);
   }
 }
@@ -189,7 +194,7 @@
     justify-self: end;
     margin-bottom: 2em;
   }
-   
+
   @media ( min-width: 72em ) {
     .submit-a-tool {
       grid-column: 7 / 9;
@@ -225,7 +230,7 @@
   }
   [data-tab-current] {
     background-color: var(--off-white);
-  } 
+  }
 
   @media (min-width: 60em) {
     .tool__tabs {

@@ -3,8 +3,8 @@ import { test, expect } from '@playwright/test'
 import { v1 as uuidv1 } from 'uuid'
 
 // Form submission details
-const DOMAIN = 'https://deploy-preview-73--wai-authoring-tools-list.netlify.app'
-//const DOMAIN = "localhost:8888";
+// const DOMAIN = 'https://deploy-preview-73--wai-authoring-tools-list.netlify.app'
+const DOMAIN = 'localhost:8888'
 const URI = `${DOMAIN}/authoring-tools-list/test-form` // NB no trailing /
 const FORM_REF = `test-${uuidv1()}`
 
@@ -19,25 +19,35 @@ test('Form "test-form" submission should create a Pull Request - slow test', asy
   // Submit form
   await page.goto(URI)
 
-  // Set the form
+  // Set up the form
   await page.evaluate(
     (formRef) =>
       (document.querySelector('input[name="form-ref"]').value = formRef),
     FORM_REF
   )
-
-  await page.fill('"Text:"', 'Text')
+  await page.fill('"Text one:"', 'Text')
   await page.selectOption('"Select:"', { label: 'Option one' })
   await page.check('"Checkbox one:"')
   await page.check('"Grouped checkbox one:"')
+  await page.check('"Grouped checkbox two:"')
   await page.check('"Radio one"')
 
-  // log request
+  // watch the HTTP action
   page.on('request', (request) =>
     console.info(
-      `Request sent: ${JSON.stringify(request.allHeaders(), null, '  ')}`
+      `U: ${request.url()}`,
+      `H: ${JSON.stringify(request.allHeaders(), null, '  ')}`,
+      `B: ${JSON.stringify(request.postData(), null, '  ')}`
     )
   )
+  page.on('response', (response) => {
+    response.body().then((v) => console.info(`B: ${v}`))
+    console.info(
+      `U: ${response.url()}`,
+      `S: ${response.status()}`,
+      `H: ${JSON.stringify(response.allHeaders(), null, '  ')}`
+    )
+  })
 
   let [response] = await Promise.all([
     page.waitForResponse(

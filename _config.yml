@@ -10,7 +10,7 @@ title: 'Web Accessibility Initiative (WAI)'
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
-baseurl: '/wai-authoring-tools-list' # the subpath of your site, e.g. /blog
+baseurl: "/wai-authoring-tools-list" # the subpath of your site, e.g. /blog
 url: 'https://w3c.github.io' # the base hostname & protocol for your site
 twitter:
   username: w3c_wai
@@ -21,6 +21,7 @@ exclude:
   - 'Gemfile.lock'
   - 'README.md'
   - 'w3c.json'
+  - 'playwright.config.js'
 
 # Build settings
 markdown: kramdown
@@ -35,27 +36,18 @@ ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
 
 remote_theme: w3c/wai-website-theme
 
-collections:
-#  business-case:
-#    area: "Plan & Manage"
-#    name: "Business Case"
-#    shortname: "Business Case"
-#    icon: "book" # TODO
-#    repostitory: w3c/wai-bcase
-#    output: true
-#    acknowledgements: false
-#    permalink: /:collection/:path/
-
 defaults:
-  - scope:
-      path: ''
+  -
+    scope:
+      path: ""
     values:
-      layout: 'default'
-#  -
-#    scope:
-#      path: "_business-case"
-#    values:
-#      layout: "sidenav"
+      layout: standalone_resource
+      standalone_resource_header:
+        title: List of Authoring Tools with Accessibility Support
+      footer: >
+        <p><strong>Date:</strong> <!-- Updated @@ Month 2022.--> First published Month 20@@. CHANGELOG.</p>
+        <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
+        <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
 
 plugins:
   - jekyll-seo-tag

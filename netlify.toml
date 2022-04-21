@@ -1,16 +1,6 @@
 [build]
 command = "git submodule update --init --remote && bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
 publish = "_site"
-# always ignore github workflows
-# for the obscure pathspec syntax see https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
-ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ':(exclude).github/workflows/'"
-
-#[context.production.environment]
-#  NODE_ENV = "production"   # so playwright is not installed (it's listed in dev deps)
-#[context.deploy-preview.environment]
-#  NODE_ENV = "production"   # so playwright is not installed (it's listed in dev deps)
-#[context.branch-deploy.environment]
-#  NODE_ENV = "production"   # so playwright is not installed (it's listed in dev deps)
 
 [build.environment]
 RUBY_VERSION = "2.6.2"
@@ -21,10 +11,10 @@ RUBY_VERSION = "2.6.2"
 
 [dev]
 # NB on win64 (cmd or bash shells) --live reload is broken - s/-w --livereload/--no-watch
-command = "bundle exec jekyll serve -w --livereload --config _config.yml,_config_staging.yml"
+command = "bundle exec jekyll serve -w --livereload --trace --config _config.yml,_config_staging.yml"
 
 [functions]
-directory = "functions"
+directory = "_functions"
 node_bundler = "esbuild"
 
 [[plugins]]
