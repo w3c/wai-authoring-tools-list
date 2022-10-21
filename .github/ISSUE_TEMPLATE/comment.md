@@ -7,15 +7,15 @@ assignees: ''
 
 ---
 
-{Consider starting the title with a verb, for example: “Make the logo bigger”.}
+{{ instructions: Consider starting the title with a verb, for example: “Make the logo bigger”. }}
 
-Suggestion: {briefly state your specific suggestion}
+Suggestion: {{ briefly state your specific suggestion }}
 
-Rationale: {describe why you suggest this}
+Rationale: {{ describe why you suggest this }}
 
-Level of importance:
-* [ ] Low importance for first iteration or later
-* [ ] Medium importance for first iteration or later
-* [ ] High importance before publication of first iteration
+Level of importance: {{ delete two below }}
+* Low importance for first iteration or later
+* Medium importance for first iteration or later
+* High importance before publication of first iteration
 
-{Please create a new issue for each separate comment.}
+{{ Please create a new issue for each separate comment. }}
