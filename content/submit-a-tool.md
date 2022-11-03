@@ -40,43 +40,32 @@ main > header { grid-column: 4 / span 4; }
 
 <a href="../">Back to List of Authoring tools</a>
 
-<form>
+<form class="submission-form">
   <p>The <a href="../">Authoring Tools List</a> shows tools from different vendors, so that people can make informed decisions when they choose an authoring tool.</p>
   <p>We'd like to display as many authoring tools as we can, we welcome you to submit yours using this form.</p>
   <p>Note: all information will be publicly available as this page generates a Pull Request on our GitHub repository.</p>
 
-  <div class="excol-all"></div>
-
-{% include excol.html type="start" open="true" %}
-
-  <h2 id="about-you">About you</h2>
+  <h2 id="about-you"><span>1/3</span> About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
 
-{% include excol.html type="middle" %}
-
   <div class="field">
-    <label for="submitter-name">Name (required)</label>
+    <label for="submitter-name">Name <span>(Required)</span></label>
     <input type="text" id="submitter-name" required>
   </div>
   <div class="field">
-    <label for="submitter-email">Email (required)</label>
+    <label for="submitter-email">Email <span>(Required)</span></label>
     <input type="email" id="submitter-email" required>
   </div>
-  {% include excol.html type="end" %}
 
-{% include excol.html type="start" %}
-
-  <h2 id="the-tool">About the tool</h2>
+  <h2 id="the-tool"><span>2/3</span> About the tool</h2>
   <p>Provide some information about your tool. We will list this with the tool.</p>
 
-{% include excol.html type="middle" %}
-
   <div class="field">
-    <label for="tool-name">Name (required)</label>
+    <label for="tool-name">Name <span>(Required)</span></label>
     <input type="text" id="tool-name" required>
   </div>
   <div class="field">
-    <label for="tool-vendor">Vendor (required)</label>
+    <label for="tool-vendor">Vendor <span>(Required)</span></label>
     <input type="text" id="tool-vendor" required>
   </div>
   <div class="field">
@@ -88,11 +77,11 @@ main > header { grid-column: 4 / span 4; }
     <input type="text" id="tool-statement" placeholder="https://">
   </div>
   <div class="field">
-    <label for="tool-license">License (required)</label>
+    <label for="tool-license">License <span>(Required)</span></label>
     <input type="text" id="tool-license" required>
   </div>
   <div class="field">
-    <legend>Cost model (required)</legend>
+    <legend>Cost model <span>(Required)</span></legend>
     <p>Pick what best describes what using your tool would cost.</p>
     <div class="radio-field">
       <input id="tool-cost-model-free" type="radio" name="tool-cost-model">
@@ -115,14 +104,9 @@ main > header { grid-column: 4 / span 4; }
     <label for="tool-release-date">Release date (of this version)</label>
     <input type="date" id="tool-release-date">
   </div>
-  {% include excol.html type="end" %}
 
-{% include excol.html type="start" %}
-
-  <h2 id="accessibility-features">Accessibility features</h2>
+  <h2 id="accessibility-features"><span>3/3</span> Accessibility features</h2>
   <p>Tell us which <a href="../selecting#features">accessibility features</a> are supported by your tool (fully or partially), so that we can list this. If you explain what support looks like, we will also list that information.</p>
-
-{% include excol.html type="middle" %}
 
   <div class="field">
 
@@ -143,7 +127,6 @@ main > header { grid-column: 4 / span 4; }
   {% endfor %}
 
   </div>
-  {% include excol.html type="end" %}
 
   <h2>Submitting your tool</h2>
   <p>Let us know if you have any comments.</p>
@@ -158,7 +141,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <p>When you submit the form, we will review your tool and add it to the list. This should take 1-4 weeks.</p>
   <div class="field">
-    <button type="submit">Submit your tool</button>
+    <button type="submit">Submit tool</button>
   </div>
 </form>
 

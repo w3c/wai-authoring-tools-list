@@ -233,3 +233,31 @@
       grid-template-columns: 1fr 4fr;
     }
   }
+
+  .submission-form h2 span {
+    font-size: 12px;
+    margin-right: 1rem;
+    colour: var(--wai-green);
+    margin-left: -2rem;
+  }
+
+  .submission-form label {
+    font-weight: 700;
+    font-size: initial;
+    color: var(--wai-green);
+  }
+
+  .submission-form label span {
+    margin-left: 3px;
+    color: var(--wai-green);
+    font-weight: normal;
+  }
+
+  .submission-form h3 {
+    margin: 1.5rem 0 0 0;
+  }
+
+  .submission-form fieldset {
+    margin-left: 2rem;
+    margin-bottom: 1em;
+  }
