@@ -1,24 +1,40 @@
 ---
-title: "Submit an authoring tool"
-permalink: /authoring-tools-list/submit-a-tool
-ref: /submit-a-tool/
 doc-note-type: draft
+no-sidenav: true
+title: 'Submit an authoring tool'
+nav_title: 'Submit an authoring tool'
+permalink: /authoring-tools-list/submit-a-tool
 lang: en
-layout: submit-to-list
-# translators: # Uncomment (remove #) for translations, one - name line per translator.
-# - name: Translator 1
-# - name: Translator 2
-contributors:
- - name: Hidde de Vries
 github:
   repository: wai-authoring-tools-list
   path: content/submit-a-tool.md
+ref: /submit-a-tool/
+description: # NEW: aa 150ish-character-description for social media   # translate the description
+# image: /content-images/wai-authoring-tools-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this resource)
+footer: >
+  <p><strong>Date:</strong> Updated @@@. @@@.</p>
+  <p><strong>Editors:</strong> @@@. <strong>Contributors:</strong> @@@.</p>
+  <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
 ---
+
+<!-- markdownlint-disable no-inline-html -->
+
+{% comment %}
+To DEBUG set any of the following to true.
+NB!! ensure to reset all to false before committing
+
+PREVIEW_BUTTON - add a preview button which allows submission without filling all the required fields
+DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
+DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
+{% endcomment %}
+{% assign DEBUG_PREVIEW_BUTTON = false %}
+{% assign DEBUG_SUBMISSION_FUNCTION = false %}
+{% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
 
 <div style="grid-column: 4 / span 4">
 
 <style>
-{% include css/styles.css %}
+{% include wai-authoring-tools-list/css/styles.css %}
 main > header { grid-column: 4 / span 4; }
 </style>
 
@@ -91,17 +107,19 @@ main > header { grid-column: 4 / span 4; }
 
   <h2 id="accessibility-features"><span>3/3</span> Accessibility features</h2>
   <p>Tell us which <a href="../selecting#features">accessibility features</a> are supported by your tool (fully or partially), so that we can list this. If you explain what support looks like, we will also list that information.</p>
-  
+
   <div class="field">
 
-  {% for principle in site.data.features_a %}
+{% for principle in site.data.features_a %}
+
   <h3>{{ principle.principle }}</h3>
   {% for guideline in principle.guidelines %}
   {% include report-feature-support.liquid %}
   {% endfor %}
   {% endfor %}
 
-  {% for principle in site.data.features_b %}
+{% for principle in site.data.features_b %}
+
   <h3>{{ principle.principle }}</h3>
   {% for guideline in principle.guidelines %}
   {% include report-feature-support.liquid %}

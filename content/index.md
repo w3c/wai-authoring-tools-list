@@ -8,18 +8,19 @@ layout: list-with-filters
 # translators: # Uncomment (remove #) for translations, one - name line per translator.
 # - name: Translator 1
 # - name: Translator 2
-contributors:
-- name: Hidde de Vries
 github:
 repository: w3c/wai-authoring-tools-list
 path: content/index.md
 ---
 
+<!-- markdownlint-disable no-inline-html -->
+
 <style>
-  {% include css/styles.css %}
+  {% include wai-authoring-tools-list/css/styles.css %}
 </style>
 
 < div class="header-sup">
+
   <p>
     Browse <a href="selecting">tools that create web content</a>, like
     <abbr title="content management systems">CMSes</abbr> and
@@ -33,9 +34,9 @@ path: content/index.md
   </p>
   </div>
 
-  {::nomarkdown}
-  <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit a tool</span></a>
-  {:/}
+{::nomarkdown}
+<a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit a tool</span></a>
+{:/}
 
   <div id="app" class="tools">
     <form class="tools-filters" data-filter-form action="https://hiddedevries.nl/test-api/" method="POST">
@@ -57,7 +58,7 @@ path: content/index.md
           <a href="selecting#editing-experience-for-content-editors" class="more-info">
             <span class="visuallyhidden">All features for content editors explained</span>
             <span aria-hidden="true" class="more-info__icon">
-              {% include icons/info.svg %}
+              {% include icons/info.svg %} <!-- TODO fix path -->
             </span>
           </a>
         </legend>
@@ -103,5 +104,5 @@ path: content/index.md
   </div>
 
   <script>
-    {% include js/tools.js %}
+    {% include wai-authoring-tools-list/js/tools.js %}
   </script>
