@@ -234,6 +234,7 @@
     }
   }
 
+  /* TODO - class not definable on form include */
   .submission-form h2 span {
     font-size: 12px;
     margin-right: 1rem;
@@ -261,3 +262,78 @@
     margin-left: 2rem;
     margin-bottom: 1em;
   }
+
+  #preview-submission-overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    /*align-items: center;*/
+    justify-content: center;
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    overflow: scroll;
+
+}
+
+.overlay-content {
+    width: 50em;
+    height: min-content;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 5rem;
+    padding-bottom: 5em;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-top: 2rem;
+}
+
+.details-preview {
+    text-align: left;
+    margin-bottom: 2em;
+    padding: 0 3em 0 1em;
+}
+
+.overlay-content ul {
+    line-height: 3em;
+}
+
+
+.button-close_preview.icon {
+    background-color: white;
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 2em;
+    margin-top: 2em;
+    height: 30px !important;
+    width: 30px;
+    padding: 1em 0 .5em 0;
+}
+
+.button-close_preview.icon svg {
+    fill: black;
+}
+
+svg.icon-ex-circle {
+    height: 30px !important;
+    width: 30px;
+}
+
+.result-status-message {
+    margin: 20px 0 30px 0;
+}

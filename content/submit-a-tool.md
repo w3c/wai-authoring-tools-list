@@ -27,8 +27,8 @@ PREVIEW_BUTTON - add a preview button which allows submission without filling al
 DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
 DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
 {% endcomment %}
-{% assign DEBUG_PREVIEW_BUTTON = false %}
-{% assign DEBUG_SUBMISSION_FUNCTION = false %}
+{% assign DEBUG_PREVIEW_BUTTON = true %}
+{% assign DEBUG_SUBMISSION_FUNCTION = true %}
 {% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
 
 <div style="grid-column: 4 / span 4">
@@ -38,9 +38,28 @@ DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one expose
 main > header { grid-column: 4 / span 4; }
 </style>
 
-<a href="../">Back to List of Authoring tools</a>
+<!-- <a href="../">Back to List of Authoring tools</a> -->
 
-<form class="submission-form">
+<script>
+  // TODO this may not be the best place for the handler
+function onSubmit(e) {
+  e.preventDefault();
+  getPreviewSubmission();
+}
+</script>
+
+{% capture success_page %}{{ page.dir }}success.html{% endcapture %}
+{% capture failure_page %}{{ page.dir }}failure.html{% endcapture %}
+{%- include list-submission-form.liquid type="start"
+                                   name="submission"
+                                   version="1"
+                                   success=success_page
+                                   failure=failure_page
+                                   repository="wai-evaluation-tools-list"
+                                   onsubmit="onSubmit"
+                                   DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
+                                   DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
+
   <p>The <a href="../">Authoring Tools List</a> shows tools from different vendors, so that people can make informed decisions when they choose an authoring tool.</p>
   <p>We'd like to display as many authoring tools as we can, we welcome you to submit yours using this form.</p>
   <p>Note: all information will be publicly available as this page generates a Pull Request on our GitHub repository.</p>
@@ -140,9 +159,38 @@ main > header { grid-column: 4 / span 4; }
     <label><input type="checkbox" required> I give permission for my information to be published in the W3C's authoring tools list.</label>
   </div>
   <p>When you submit the form, we will review your tool and add it to the list. This should take 1-4 weeks.</p>
-  <div class="field">
-    <button type="submit">Submit tool</button>
-  </div>
-</form>
 
+  <div class="field">
+    <button type="submit">Review and submit information</button>
+  </div>
+
+{% include list-submission-form.liquid type="end"%}
+
+<script>
+{% include wai-authoring-tools-list/js/preview.js %}
+
+{% if DEBUG_PREVIEW_BUTTON %}
+(function(){
+  const button = document.createElement('button')
+  button.innerText = 'Show Preview'
+  button.addEventListener('click', e => {
+      getPreviewSubmission();
+  })
+  const form = document.querySelector('[name="submission"]');
+  form.insertBefore(button, form.firstChild)
+})();
+{% endif %}
+</script>
+
+<div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
+<div class="overlay-content">
+  <button class="button button-close_preview icon" title="Close preview and go back to the form"><span><svg focusable="false" aria-hidden="true" class="icon-ex-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg> </span></button>
+  <h2 id="preview_title">Review your submission</h2>
+  <p>Please review the information provided. If you need to correct any information, you can go back to the form and then proceed to your submission.</p>
+  <div class="details-preview box"></div>
+  <p>{{strings.info_submission}}</p>
+  {% include_cached button.html label="Close preview and go back to the form" class="close_preview"%}
+  {% include_cached button.html label="Submit information" class="button button-submit_form" %}
 </div>
+</div>
+
