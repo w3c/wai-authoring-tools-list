@@ -7,11 +7,11 @@
   <input type="radio" name="question-{{ guideline.id }}" id="question-{{ guideline.id }}-no" value="no">
   <label for="question-{{ guideline.id }}-no"> No</label>
   <input type="radio" name="question-{{ guideline.id }}" data-triggers="{{ guideline.id }}-partially" id="question-{{ guideline.id }}-partially-id" value="partially">
-  <label for="question-{{ guideline.id }}-partially-is"> Partially</label>
+  <label for="question-{{ guideline.id }}-partially-id"> Partially</label>
   <input type="radio" name="question-{{ guideline.id }}" data-triggers="{{ guideline.id }}-not-applicable" id="question-{{ guideline.id }}-not-applicable-id" value="not applicable">
-  <label for="question-{{ guideline.id }}-not-applicable-is"> Not applicable</label>
-  <input type="radio" name="question-{{ guideline.id }}" data-triggers="{{ guideline.id }}-not-sure" value="not sure" id="question-{{ guideline.id }}-not-sure-is">
-  <label for="question-{{ guideline.id }}-not-sure-is"> Not sure </label>
+  <label for="question-{{ guideline.id }}-not-applicable-id"> Not applicable</label>
+  <input type="radio" name="question-{{ guideline.id }}" data-triggers="{{ guideline.id }}-not-sure" value="not sure" id="question-{{ guideline.id }}-not-sure-id">
+  <label for="question-{{ guideline.id }}-not-sure-id"> Not sure </label>
   <div id="{{ guideline.id }}-partially" data-trigger hidden>
     <p>You selected <b>partial support</b>.</p>
     <p>Please describe what your support looks like, for example “accessible templates are available, but it is not very easy to find them. Improvements in search will be available in version 11”.</p>

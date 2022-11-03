@@ -1,6 +1,6 @@
 ---
 title: 'Something went wrong'
-permalink: /authoring-tools-list/submit-a-tool/failure
+permalink: /authoring-tools-list/failure
 ---
 
 <!-- markdownlint-disable no-inline-html -->
