@@ -39,12 +39,12 @@ function getPreviewSubmission() {
         if(el.id == "description"){
 
             var label = document.querySelector("label[for='" + el.id + "']");
-            if(label === null) 
+            if(label === null)
                 label = el.closest('fieldset').querySelector('legend');
 
 
             var value = "";
-            if (el.value === "") value = "{{strings.not_provided}}";
+            if (el.value === "") value = "Not provided";
             else {
                 value = el.value;
 
@@ -64,12 +64,12 @@ function getPreviewSubmission() {
         if ((elType === "text" || elType === "email" || elType === "url" || elType === "date") && (!el.classList.contains('input_hidden')) && (!el.classList.contains('new-option-field'))) {
 
             var label = document.querySelector("label[for='" + el.id + "']");
-            if(label === null) 
+            if(label === null)
                 label = el.closest('fieldset').querySelector('legend');
 
 
             var value = "";
-            if (el.value === "") value = "{{strings.not_provided}}";
+            if (el.value === "") value = "Not provided";
             else {
                 value = el.value;
 
@@ -90,19 +90,17 @@ function getPreviewSubmission() {
             var label = el.querySelector("legend");
 
             var value = "";
-            if (radiosChecked) value = document.querySelector("label[for='" + radiosChecked.id + "']").innerText;
-            else value = "{{strings.not_provided}}";
-
-            var newField = el.querySelector('.new-option-field');
-
-            if (newField && newField.value) {
-                value += " (" + newField.value + ")";
+            if (radiosChecked)
+            {
+              console.info("label[for='" + radiosChecked.id + "']", document.querySelector("label[for='" + radiosChecked.id + "']"))
+              value = document.querySelector("label[for='" + radiosChecked.id + "']").innerText;
             }
-           
-            var finalLabel = label.cloneNode(true);
-            clearChildNodes(finalLabel);
-           
-            appendList(finalLabel.innerText, value);
+            else
+            {
+              value = "Not provided";
+            }
+
+            appendList(label.innerText, value);
 
         }
         if (el.classList.contains('fieldset_select_text')) {
@@ -116,7 +114,7 @@ function getPreviewSubmission() {
             });
 
             var label = el.querySelector("legend");
-            var value = (selectValues.length === 0 ? "{{strings.not_provided}}" : selectValues.join(', '));
+            var value = (selectValues.length === 0 ? "Not provided" : selectValues.join(', '));
 
             var finalLabel = label.cloneNode(true);
             clearChildNodes(finalLabel);
@@ -146,18 +144,18 @@ function getPreviewSubmission() {
 
                         var label = d.querySelector('legend').innerText;
 
-                        var value = label + ": " + (val.length === 0 ? "{{strings.not_provided}}" : val.join('; '));
+                        var value = label + ": " + (val.length === 0 ? "Not provided" : val.join('; '));
 
                         finalValue.push(value);
 
                     });
 
                     //console.log(finalLabel);
-                    //console.log(finalValue);                    
+                    //console.log(finalValue);
 
                     var finalLabel2 = finalLabel.cloneNode(true);
                     clearChildNodes(finalLabel2);
-        
+
                     appendList(finalLabel2.innerText, finalValue, true);
 
 
@@ -173,13 +171,13 @@ function getPreviewSubmission() {
                     });
 
                     var label = el.querySelector("legend");
-                    var value = (selectValues.length === 0 ? "{{strings.not_provided}}" : selectValues.join('; '));
-                    
+                    var value = (selectValues.length === 0 ? "Not provided" : selectValues.join('; '));
+
 
                     var finalLabel = label.cloneNode(true);
                     clearChildNodes(finalLabel);
-        
-                    
+
+
                     appendList(finalLabel.innerText, value);
                 }
             }
@@ -192,7 +190,7 @@ function getPreviewSubmission() {
 
 
         }
-        
+
     });
 
     handleKeyboard();
@@ -246,7 +244,7 @@ function getPreviewSubmission() {
     function handleKeyboard() {
 
         overlayContent.querySelector('button').focus();
-        
+
         window.addEventListener("keyup", function (event) {
             if (event.key === "Escape")
                 closePreviewOverlay();

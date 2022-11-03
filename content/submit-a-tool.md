@@ -27,8 +27,8 @@ PREVIEW_BUTTON - add a preview button which allows submission without filling al
 DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
 DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
 {% endcomment %}
-{% assign DEBUG_PREVIEW_BUTTON = true %}
-{% assign DEBUG_SUBMISSION_FUNCTION = true %}
+{% assign DEBUG_PREVIEW_BUTTON = false %}
+{% assign DEBUG_SUBMISSION_FUNCTION = false %}
 {% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
 
 <div style="grid-column: 4 / span 4">
@@ -68,60 +68,60 @@ function onSubmit(e) {
   <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
 
   <div class="field">
-    <label for="submitter-name">Name <span>(Required)</span></label>
-    <input type="text" id="submitter-name" required>
+    <label for="submitter-name">Your name <span>(Required)</span></label>
+    <input type="text" id="submitter-name" name="submitter-name" required>
   </div>
   <div class="field">
     <label for="submitter-email">Email <span>(Required)</span></label>
-    <input type="email" id="submitter-email" required>
+    <input type="email" id="submitter-email" name="submitter-email" required>
   </div>
 
   <h2 id="the-tool"><span>2/3</span> About the tool</h2>
   <p>Provide some information about your tool. We will list this with the tool.</p>
 
   <div class="field">
-    <label for="tool-name">Name <span>(Required)</span></label>
-    <input type="text" id="tool-name" required>
+    <label for="tool-name">Tool name <span>(Required)</span></label>
+    <input type="text" id="tool-name" name="tool-name" required>
   </div>
   <div class="field">
     <label for="tool-vendor">Vendor <span>(Required)</span></label>
-    <input type="text" id="tool-vendor" required>
+    <input type="text" id="tool-vendor" name="tool-vendor" required>
   </div>
   <div class="field">
     <label for="tool-description">Description</label>
-    <textarea id="tool-description"></textarea>
+    <textarea id="tool-description" name="tool-description"></textarea>
   </div>
   <div class="field">
     <label for="tool-statement">Link to accessibility statement</label>
-    <input type="text" id="tool-statement" placeholder="https://">
+    <input type="text" id="tool-statement" name="tool-statement" placeholder="https://">
   </div>
   <div class="field">
     <label for="tool-license">License <span>(Required)</span></label>
-    <input type="text" id="tool-license" required>
+    <input type="text" id="tool-license" name="tool-license" required>
   </div>
-  <div class="field">
+  <fieldset class="field fieldset_radio">
     <legend>Cost model <span>(Required)</span></legend>
     <p>Pick what best describes what using your tool would cost.</p>
     <div class="radio-field">
-      <input id="tool-cost-model-free" type="radio" name="tool-cost-model">
+      <input id="tool-cost-model-free" type="radio" name="tool-cost-model" value="free">
       <label for="tool-cost-model-free">Free</label>
     </div>
     <div class="radio-field">
-      <input id="tool-cost-model-freemium" type="radio" name="tool-cost-model">
+      <input id="tool-cost-model-freemium" type="radio" name="tool-cost-model" value="fremium">
       <label for="tool-cost-model-freemium">Freemium</label>
     </div>
     <div class="radio-field">
-      <input id="tool-cost-model-paid" type="radio" name="tool-cost-model">
+      <input id="tool-cost-model-paid" type="radio" name="tool-cost-model" value="paid">
       <label for="tool-cost-model-paid">Paid</label>
     </div>
-  </div>
+  </fieldset>
   <div class="field">
     <label for="tool-version">Version</label>
-    <input type="text" id="tool-version">
+    <input type="text" id="tool-version" name="tool-version">
   </div>
   <div class="field">
     <label for="tool-release-date">Release date (of this version)</label>
-    <input type="date" id="tool-release-date">
+    <input type="date" id="tool-release-date" name="tool-release-date">
   </div>
 
   <h2 id="accessibility-features"><span>3/3</span> Accessibility features</h2>
@@ -151,7 +151,7 @@ function onSubmit(e) {
   <p>Let us know if you have any comments.</p>
   <div class="field">
     <label for="comments">Comments</label>
-    <textarea id="comments"></textarea>
+    <textarea id="comments" name="comments"></textarea>
   </div>
 
   <div class="field">
