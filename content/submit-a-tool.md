@@ -55,7 +55,7 @@ function onSubmit(e) {
                                    version="1"
                                    success=success_page
                                    failure=failure_page
-                                   repository="wai-evaluation-tools-list"
+                                   repository="wai-authoring-tools-list"
                                    onsubmit="onSubmit"
                                    DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
                                    DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
