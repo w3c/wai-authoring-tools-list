@@ -61,7 +61,7 @@ function getPreviewSubmission() {
 
         }
 
-        if ((elType === "text" || elType === "email" || elType === "url" || elType === "date") && (!el.classList.contains('input_hidden')) && (!el.classList.contains('new-option-field'))) {
+        if ((elType === "text" || elType === "textarea" || elType === "email" || elType === "url" || elType === "date") && (!el.classList.contains('input_hidden')) && (!el.classList.contains('new-option-field'))) {
 
             var label = document.querySelector("label[for='" + el.id + "']");
             if(label === null)
