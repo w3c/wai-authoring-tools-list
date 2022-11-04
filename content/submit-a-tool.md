@@ -99,7 +99,7 @@ function onSubmit(e) {
     <legend>License <span>(Required)</span></legend>
     <p>Pick what best describes the license used by your tool.</p>
     <div class="radio-field">
-      <input id="tool-license-free" type="radio" name="tool-license" value="free">
+      <input id="tool-license-free" type="radio" name="tool-license" value="free" required>
       <label for="tool-license-free">Free</label>
     </div>
     <div class="radio-field">
