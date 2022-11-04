@@ -133,7 +133,7 @@ function onSubmit(e) {
 
   <div class="field">
 
-{% for principle in site.data.features_a %}
+{% for principle in site.data.wai-authoring-tools-list.json.features_a %}
 
   <h3>{{ principle.principle }}</h3>
   {% for guideline in principle.guidelines %}
@@ -141,7 +141,7 @@ function onSubmit(e) {
   {% endfor %}
   {% endfor %}
 
-{% for principle in site.data.features_b %}
+{% for principle in site.data.wai-authoring-tools-list.json.features_b %}
 
   <h3>{{ principle.principle }}</h3>
   {% for guideline in principle.guidelines %}
