@@ -1,10 +1,10 @@
 ---
+published: false
 title: 'Authoring Tools with Accessibility Support'
 permalink: /tools-list/authoring/
 ref: /tools-list/authoring/
 lang: en
 doc-note-type: draft
-layout: list-with-filters
 # translators: # Uncomment (remove #) for translations, one - name line per translator.
 # - name: Translator 1
 # - name: Translator 2

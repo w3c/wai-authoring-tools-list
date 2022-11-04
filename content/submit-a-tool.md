@@ -171,6 +171,7 @@ function onSubmit(e) {
 {% include list-submission-form.liquid type="end"%}
 
 <script>
+{% include wai-authoring-tools-list/js/tools.js %}
 {% include wai-authoring-tools-list/js/preview.js %}
 
 {% if DEBUG_PREVIEW_BUTTON %}
