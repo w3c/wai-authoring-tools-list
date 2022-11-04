@@ -1,7 +1,7 @@
 ---
 title: 'Authoring Tools with Accessibility Support'
-permalink: /authoring-tools-list/
-ref: /authoring-tools-list/
+permalink: /tools-list/authoring/
+ref: /tools-list/authoring/
 lang: en
 doc-note-type: draft
 layout: list-with-filters
@@ -9,8 +9,8 @@ layout: list-with-filters
 # - name: Translator 1
 # - name: Translator 2
 github:
-repository: w3c/wai-authoring-tools-list
-path: content/index.md
+  repository: w3c/wai-authoring-tools-list
+  path: content/index.md
 ---
 
 <!-- markdownlint-disable no-inline-html -->

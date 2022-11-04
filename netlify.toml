@@ -7,7 +7,7 @@ RUBY_VERSION = "2.6.2"
 
 [[redirects]]
   from = "/"
-  to = "/authoring-tools-list/"
+  to = "/tools-list/authoring/"
 
 [dev]
 # NB on win64 (cmd or bash shells) --live reload is broken - s/-w --livereload/--no-watch

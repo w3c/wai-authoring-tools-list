@@ -3,12 +3,12 @@ doc-note-type: draft
 no-sidenav: true
 title: 'Submit an authoring tool'
 nav_title: 'Submit an authoring tool'
-permalink: /authoring-tools-list/submit-a-tool
+permalink: /tools-list/authoring/submit-a-tool/
 lang: en
 github:
   repository: wai-authoring-tools-list
   path: content/submit-a-tool.md
-ref: /submit-a-tool/
+ref: /tools-list/authoring/submit-a-tool/
 description: # NEW: aa 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-authoring-tools-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this resource)
 footer: >
@@ -27,7 +27,7 @@ PREVIEW_BUTTON - add a preview button which allows submission without filling al
 DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
 DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
 {% endcomment %}
-{% assign DEBUG_PREVIEW_BUTTON = false %}
+{% assign DEBUG_PREVIEW_BUTTON = true %}
 {% assign DEBUG_SUBMISSION_FUNCTION = false %}
 {% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
 

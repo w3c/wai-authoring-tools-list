@@ -67,6 +67,8 @@ function getPreviewSubmission() {
             if(label === null)
                 label = el.closest('fieldset').querySelector('legend');
 
+            if    (elType === "textarea")
+             console.info(el)
 
             var value = "";
             if (el.value === "") value = "Not provided";

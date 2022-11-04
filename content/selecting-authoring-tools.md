@@ -2,13 +2,12 @@
 layout: default
 title: "Selecting Authoring Tools"
 doc-note-type: draft
-permalink: /authoring-tools-list/selecting
+permalink: /tools-list/authoring/selecting/
 github:
   repository: wai-authoring-tools-list
   path: content/selecting-authoring-tools.md
 footer: >
   <p>Developed by the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>).</p>
-
 ---
 
 
@@ -16,7 +15,7 @@ footer: >
 {% include box.html type="start" h="2" title="Tools that create web content" class="full" %}
 {:/}
 
-“Authoring tools” is the umbrella term for <b>tools that create web content</b>, like <abbr title="content management systems">CMSes</abbr> and <abbr title="learning management systems">LMSes</abbr>, website creators, discussion forums and social media. If they take accesibility into account, authoring tools can make a huge difference for accessibility, both for content editors and for end users. This page explains how. 
+“Authoring tools” is the umbrella term for <b>tools that create web content</b>, like <abbr title="content management systems">CMSes</abbr> and <abbr title="learning management systems">LMSes</abbr>, website creators, discussion forums and social media. If they take accesibility into account, authoring tools can make a huge difference for accessibility, both for content editors and for end users. This page explains how.
 
 {::nomarkdown}
 {% include box.html type="end" %}
@@ -37,7 +36,7 @@ footer: >
 
 ## Introduction
 
-There are two parts to the accessibility of authoring tools: 
+There are two parts to the accessibility of authoring tools:
 
 * [editing experience](#editing): does the tool work for people with disabilities?
 * [output](#output): does the tool output accessible content?
@@ -85,12 +84,12 @@ Most authoring tools conform only partly to accessibility guidelines. They may p
 
 ### Governance of accesibility
 
-Authoring tool products are likely regularly improved and updated. Updates could break accessibility, and it is recommended to check with the vendor what their process is for ensuring accessibility throughout their product's lifecycle. 
+Authoring tool products are likely regularly improved and updated. Updates could break accessibility, and it is recommended to check with the vendor what their process is for ensuring accessibility throughout their product's lifecycle.
 
-Some questions to ask: 
+Some questions to ask:
 
-* Are new feature accessibility tested? 
-* How can issues be reported? 
+* Are new feature accessibility tested?
+* How can issues be reported?
 
 ### Other features
 

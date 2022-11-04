@@ -1,6 +1,6 @@
 ---
 title: 'Form Submitted'
-permalink: /authoring-tools-list/success
+permalink: /tools-list/authoring/submit-a-tool/success
 ---
 
 <!-- markdownlint-disable no-inline-html -->
