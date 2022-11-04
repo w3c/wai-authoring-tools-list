@@ -257,7 +257,7 @@
     margin: 1.5rem 0 0 0;
   }
 
-  form[name="submission"] fieldset {
+  form[name="submission"] .field fieldset {
     margin-left: 2rem;
     margin-bottom: 1em;
   }
