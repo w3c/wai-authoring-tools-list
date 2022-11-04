@@ -34,41 +34,13 @@ function getPreviewSubmission() {
 
     Array.from(dataForm.elements).forEach(el => {
 
-        var elType = el.getAttribute("type");
-
-        if(el.id == "description"){
-
-            var label = document.querySelector("label[for='" + el.id + "']");
-            if(label === null)
-                label = el.closest('fieldset').querySelector('legend');
-
-
-            var value = "";
-            if (el.value === "") value = "Not provided";
-            else {
-                value = el.value;
-
-                if (elType === "date") {
-                    value = new Date(value);
-                    value = value.toLocaleDateString(undefined, options);
-                }
-            }
-
-            var finalLabel = label.cloneNode(true);
-            clearChildNodes(finalLabel);
-
-            appendList(finalLabel.innerText, value);
-
-        }
+        var elType = el.getAttribute("type") || el.type;
 
         if ((elType === "text" || elType === "textarea" || elType === "email" || elType === "url" || elType === "date") && (!el.classList.contains('input_hidden')) && (!el.classList.contains('new-option-field'))) {
 
             var label = document.querySelector("label[for='" + el.id + "']");
             if(label === null)
                 label = el.closest('fieldset').querySelector('legend');
-
-            if    (elType === "textarea")
-             console.info(el)
 
             var value = "";
             if (el.value === "") value = "Not provided";
@@ -94,7 +66,6 @@ function getPreviewSubmission() {
             var value = "";
             if (radiosChecked)
             {
-              console.info("label[for='" + radiosChecked.id + "']", document.querySelector("label[for='" + radiosChecked.id + "']"))
               value = document.querySelector("label[for='" + radiosChecked.id + "']").innerText;
             }
             else
