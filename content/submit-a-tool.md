@@ -95,24 +95,28 @@ function onSubmit(e) {
     <label for="tool-statement">Link to accessibility statement</label>
     <input type="text" id="tool-statement" name="tool-statement" placeholder="https://">
   </div>
-  <div class="field">
-    <label for="tool-license">License <span>(Required)</span></label>
-    <input type="text" id="tool-license" name="tool-license" required>
-  </div>
   <fieldset class="field fieldset_radio">
-    <legend>Cost model <span>(Required)</span></legend>
-    <p>Pick what best describes what using your tool would cost.</p>
+    <legend>License <span>(Required)</span></legend>
+    <p>Pick what best describes the license used by your tool.</p>
     <div class="radio-field">
-      <input id="tool-cost-model-free" type="radio" name="tool-cost-model" value="free">
-      <label for="tool-cost-model-free">Free</label>
+      <input id="tool-license-free" type="radio" name="tool-license" value="free">
+      <label for="tool-license-free">Free</label>
     </div>
     <div class="radio-field">
-      <input id="tool-cost-model-freemium" type="radio" name="tool-cost-model" value="fremium">
-      <label for="tool-cost-model-freemium">Freemium</label>
+      <input id="tool-license-limited-free" type="radio" name="tool-license" value="limited-free">
+      <label for="tool-license-limited-free">Limited free functionality</label>
     </div>
     <div class="radio-field">
-      <input id="tool-cost-model-paid" type="radio" name="tool-cost-model" value="paid">
-      <label for="tool-cost-model-paid">Paid</label>
+      <input id="tool-license-free-trial" type="radio" name="tool-license" value="free-trial">
+      <label for="tool-license-free-trial">Time-limited trial</label>
+    </div>
+    <div class="radio-field">
+      <input id="tool-license-subscription" type="radio" name="tool-license" value="subscription">
+      <label for="tool-license-subscription">Subscription</label>
+    </div>
+    <div class="radio-field">
+      <input id="tool-license-purchase" type="radio" name="tool-license" value="purchase">
+      <label for="tool-license-purchase">One-time purchase</label>
     </div>
   </fieldset>
   <div class="field">
@@ -193,4 +197,3 @@ function onSubmit(e) {
   {% include_cached button.html label="Submit information" class="button button-submit_form" %}
 </div>
 </div>
-
