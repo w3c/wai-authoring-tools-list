@@ -129,7 +129,7 @@ function onSubmit(e) {
   </div>
 
   <h2 id="accessibility-features"><span>3/3</span> Accessibility features</h2>
-  <p>Tell us which <a href="../selecting#features">accessibility features</a> are supported by your tool (fully or partially), so that we can list this. If you explain what support looks like, we will also list that information.</p>
+  <p>Tell us which accessibility features are supported by your tool (fully or partially), so that we can list this. If you explain what support looks like, we will also list that information.</p>
 
   <div class="field">
 
