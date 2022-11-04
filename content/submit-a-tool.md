@@ -137,7 +137,7 @@ function onSubmit(e) {
 
   <h3>{{ principle.principle }}</h3>
   {% for guideline in principle.guidelines %}
-  {% include report-feature-support.liquid %}
+  {% include wai-authoring-tools-list/liquid/report-feature-support.liquid %}
   {% endfor %}
   {% endfor %}
 
@@ -145,7 +145,7 @@ function onSubmit(e) {
 
   <h3>{{ principle.principle }}</h3>
   {% for guideline in principle.guidelines %}
-  {% include report-feature-support.liquid %}
+  {% include wai-authoring-tools-list/liquid/report-feature-support.liquid %}
   {% endfor %}
   {% endfor %}
 

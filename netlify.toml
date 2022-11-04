@@ -1,9 +1,7 @@
 [build]
 command = "git submodule update --init --remote && bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
 publish = "_site"
-
-[build.environment]
-RUBY_VERSION = "2.6.2"
+environment = { RUBY_VERSION = "2.6.2" }
 
 [[redirects]]
   from = "/"
@@ -11,11 +9,4 @@ RUBY_VERSION = "2.6.2"
 
 [dev]
 # NB on win64 (cmd or bash shells) --live reload is broken - s/-w --livereload/--no-watch
-command = "bundle exec jekyll serve -w --livereload --config _config.yml,_config_staging.yml"
-
-[functions]
-directory = "functions"
-node_bundler = "esbuild"
-
-[[plugins]]
-package = "@netlify/plugin-functions-install-core"
+command = "bundle exec jekyll serve -w --livereload --trace --config _config.yml,_config_staging.yml"

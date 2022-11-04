@@ -58,7 +58,7 @@ github:
           <a href="selecting#editing-experience-for-content-editors" class="more-info">
             <span class="visuallyhidden">All features for content editors explained</span>
             <span aria-hidden="true" class="more-info__icon">
-              {% include icons/info.svg %} <!-- TODO fix path -->
+              {% include wai-authoring-tools-list/icons/info.svg %} <!-- TODO fix path -->
             </span>
           </a>
         </legend>
@@ -76,7 +76,7 @@ github:
           <a href="selecting#output" class="more-info">
             <span class="visuallyhidden">All features for end users explained</span>
             <span aria-hidden="true" class="more-info__icon">
-              {% include icons/info.svg %}
+              {% include wai-authoring-tools-list/icons/info.svg %}
             </span>
           </a>
         </legend>
@@ -98,7 +98,7 @@ github:
       </div>
       <div id="tools-list">
         <p>Showing {{ site.data.tools | size }} authoring tools</p>
-        {% for tool in site.data.tools %} {% include tool.liquid %} {% endfor %}
+        {% for tool in site.data.tools %} {% include wai-authoring-tools-list/liquid/tool.liquid %} {% endfor %}
       </div>
     </div>
   </div>

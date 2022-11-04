@@ -24,7 +24,7 @@
               <a href="selecting#editing-experience-for-content-editors" class="more-info">
                 <span class="visuallyhidden">All features for content editors explained</span>
                 <span aria-hidden="true" class="more-info__icon">
-                 {% include icons/info.svg %}
+                 {% include wai-authoring-tools-list/icons/info.svg %}
                 </span>
               </a>
             </dt>
@@ -34,16 +34,16 @@
                 {% case feature %}
                 {% when 'Works with keyboard' %}
                 <li><strong>{{ feature }} (partly)</strong><br>
-                Vendor comment: <em>“Should mostly work, except for the video editor, we plan to release that in version 3.”</em></li> 
+                Vendor comment: <em>“Should mostly work, except for the video editor, we plan to release that in version 3.”</em></li>
                 {% when 'Enough time' %}
                 <li><strong>{{ feature }} (partly)</strong><br>
-                Vendor comment: <em>“Our CMS works with the Slovenian e-government login which has a time limit of 15 minutes that we can legally not circumvent.”</em></li> 
+                Vendor comment: <em>“Our CMS works with the Slovenian e-government login which has a time limit of 15 minutes that we can legally not circumvent.”</em></li>
                 {% when 'Text alternatives can be managed' %}
                 <li><strong>{{ feature }} (partly)</strong><br>
-                Vendor comment: <em>“Alternatives can be managed for images, but not for videos.”</em></li> 
+                Vendor comment: <em>“Alternatives can be managed for images, but not for videos.”</em></li>
                 {% when '(Accessibility) features documented' %}
                 <li><strong>{{ feature }} (partly)</strong><br>
-                Vendor comment: <em>“We are working to document all accessibility features and currently have done about 65% of them. Full support planned for 2023.”</em></li> 
+                Vendor comment: <em>“We are working to document all accessibility features and currently have done about 65% of them. Full support planned for 2023.”</em></li>
                 {% else %}
                 <li><strong>{{ feature }}</strong></li>
                 {% endcase %}
@@ -56,7 +56,7 @@
               <a href="selecting#output" class="more-info">
                 <span class="visuallyhidden">All features for end users explained</span>
                 <span aria-hidden="true" class="more-info__icon">
-                 {% include icons/info.svg %}
+                 {% include wai-authoring-tools-list/icons/info.svg %}
                 </span>
               </a>
             </dt>
@@ -76,7 +76,7 @@
               <a href="selecting#output" class="more-info">
                 <span class="visuallyhidden">All features for end users explained</span>
                 <span aria-hidden="true" class="more-info__icon">
-                 {% include icons/info.svg %}
+                 {% include wai-authoring-tools-list/icons/info.svg %}
                 </span>
               </a>
             </dt>
@@ -101,7 +101,7 @@
           <dd>{{ tool.version }} (released: {{ tool.date_released }})</dd>
           <dt>Accessibility statement</dt>
           <dd>
-            {% if tool.accessibility_statement %} 
+            {% if tool.accessibility_statement %}
             <a href="{{ tool.accessibility_statement }}">{{ tool.name }} statement</a>
             {% else %}
               Not available
