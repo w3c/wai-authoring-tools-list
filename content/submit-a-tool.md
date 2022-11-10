@@ -12,9 +12,10 @@ ref: /tools-list/authoring/submit-a-tool/
 description: # NEW: aa 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-authoring-tools-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this resource)
 footer: >
-  <p><strong>Date:</strong> Updated @@@. @@@.</p>
-  <p><strong>Editors:</strong> @@@. <strong>Contributors:</strong> @@@.</p>
-  <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
+  <p><strong>Date:</strong> Updated 10 November 2022.</p>
+  <p><strong>Editor:</strong> Hidde de Vries. <strong>Contributors:</strong> Steve Lee, Shawn Lawton Henry, Kevin White, and <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
+  <p>Developed by the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
+  
 ---
 
 <!-- markdownlint-disable no-inline-html -->
@@ -60,9 +61,8 @@ function onSubmit(e) {
                                    DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
                                    DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
-  <p>The <a href="../">Authoring Tools List</a> shows tools from different vendors, so that people can make informed decisions when they choose an authoring tool.</p>
-  <p>We'd like to display as many authoring tools as we can, we welcome you to submit yours using this form.</p>
-  <p>Note: all information will be publicly available as this page generates a Pull Request on our GitHub repository.</p>
+  <p>W3C will provide a list of authoring tools with accessibility support in December 2022. The purpose is to help tool procureres and users make informed decisions when choosing an authoring tool. This list shows how tools meet <a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) </a>. An <a href="https://wai-authoring-tools-list.netlify.app/tools-list/authoring/)">incomplete draft with fake data</a> gives you an idea of what the list will provide. <!-- <a href="../">Authoring Tools List</a> --></p>
+  <p>Use this form to submit your tool to the list. When you submit the form, the data is publicly available on GitHub. We will process it and add it to the list or contact you &mdash; usually within 2 weeks. If you have any questions, please send them to: group-wai-list-authoring-tools@w3.org</p>
 
   <h2 id="about-you"><span>1/3</span> About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
