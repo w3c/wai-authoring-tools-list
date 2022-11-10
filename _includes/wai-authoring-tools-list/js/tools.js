@@ -6,7 +6,7 @@ if (filterForm) {
   });
 
   filterForm.addEventListener('submit', e => {
-     
+
     // Store reference to form to make later code easier to read
     const form = e.target;
 
@@ -83,11 +83,11 @@ if (filterForm) {
   };
 }
 
-const options = document.querySelectorAll('[data-indicate-feature-conformance]');
+const conformanceOptions = document.querySelectorAll('[data-guideline-conformance]');
 
-if (options) {
-  [].forEach.call(options, option => {
-    
+if (conformanceOptions) {
+  [].forEach.call(conformanceOptions, option => {
+
     option.addEventListener('change', e => {
       const triggers = option.querySelectorAll('[data-trigger]');
 
@@ -109,7 +109,7 @@ const tabsets = document.querySelectorAll('[data-do-tabs]');
 
 if (tabsets) {
   [].forEach.call(tabsets, tabset => {
-    
+
     const tabs = tabset.querySelectorAll('[data-tab]');
     const tabpanels = tabset.querySelectorAll('[data-tabpanel]');
 

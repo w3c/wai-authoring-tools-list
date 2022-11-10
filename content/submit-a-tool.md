@@ -172,6 +172,7 @@ function onSubmit(e) {
 
 <script>
 {% include wai-authoring-tools-list/js/preview.js %}
+{% include wai-authoring-tools-list/js/tools.js %}
 
 {% if DEBUG_PREVIEW_BUTTON %}
 (function(){

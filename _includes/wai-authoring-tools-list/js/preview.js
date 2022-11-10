@@ -1,4 +1,4 @@
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
+const dateFormat = { year: 'numeric', month: 'long', day: 'numeric' };
 
 function getPreviewSubmission() {
 
@@ -49,7 +49,7 @@ function getPreviewSubmission() {
 
                 if (elType === "date") {
                     value = new Date(value);
-                    value = value.toLocaleDateString(undefined, options);
+                    value = value.toLocaleDateString(undefined, dateFormat);
                 }
             }
 
