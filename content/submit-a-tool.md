@@ -61,7 +61,7 @@ function onSubmit(e) {
                                    DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
                                    DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
-  <p>W3C will provide a list of Authoring Tools in December 2022. It will list tools with accessibility support to help people make informed decisions when they choose an authoring tool. It shows how tools meet <a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) </a>. An <a href="https://deploy-preview-74--wai-authoring-tools-list.netlify.app/authoring-tools-list/">incomplete draft with fake data</a> gives you an idea of what the list will provide. <!-- <a href="../">Authoring Tools List</a> --></p>
+  <p>W3C will provide a list of authoring tools with accessibility support in December 2022. The purpose is to help tool procureres and users make informed decisions when choosing an authoring tool. This list shows how tools meet <a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) </a>. An <a href="https://wai-authoring-tools-list.netlify.app/tools-list/authoring/)">incomplete draft with fake data</a> gives you an idea of what the list will provide. <!-- <a href="../">Authoring Tools List</a> --></p>
   <p>Use this form to submit your tool to the list. When you submit the form, the data is publicly available on GitHub. We will process it and add it to the list or contact you &mdash; usually within 2 weeks. If you have any questions, please send them to: group-wai-list-authoring-tools@w3.org</p>
 
   <h2 id="about-you"><span>1/3</span> About you</h2>
