@@ -40,6 +40,8 @@
       border-right: 1px solid #ccc;
     }
   }
+
+
   @media (min-width: 72em) {
     .tools-filters {
       grid-column: 2 / 4;
@@ -77,12 +79,12 @@
     display: contents;
   }
   .tools-tools {
-    display: flex;
     position: relative;
     padding-top: 2em;
     margin-top: 2em;
     border-top: 1px solid #ccc;
   }
+
   @media (min-width: 60em) {
     .tools-tools {
       grid-column: 4 / span 7;
@@ -336,4 +338,17 @@ svg.icon-ex-circle {
 
 .result-status-message {
     margin: 20px 0 30px 0;
+}
+
+
+.box-infobox>div {
+  padding: 5px 5px 5px 2em !important;
+  font-size: .85em;
+  position: relative;
+}
+
+.box-infobox>div>svg {
+  margin-left: -1.5em !important;
+  margin-top: 3px !important;
+  position: absolute;
 }

@@ -1,6 +1,9 @@
 ---
-published: false
-title: 'Authoring Tools with Accessibility Support'
+published: true
+no-sidenav: true
+title: 'Authoring Tools list'
+title_html: 'Authoring tools List - @@@'
+nav_title: 'Authoring Tools list'
 permalink: /tools-list/authoring/
 ref: /tools-list/authoring/
 lang: en
@@ -11,6 +14,11 @@ doc-note-type: draft
 github:
   repository: w3c/wai-authoring-tools-list
   path: content/index.md
+description: Lists authoring tools with accessibility support. You can filter to find courses matching your specific interests.
+footer: >
+  <p><strong>Date:</strong> Updated @@@. @@@.</p>
+  <p><strong>Editors:</strong> @@@. <strong>Contributors:</strong> @@@.</p>
+  <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
 ---
 
 <!-- markdownlint-disable no-inline-html -->
@@ -19,29 +27,24 @@ github:
   {% include wai-authoring-tools-list/css/styles.css %}
 </style>
 
-< div class="header-sup">
-
-  <p>
-    Browse <a href="selecting">tools that create web content</a>, like
-    <abbr title="content management systems">CMSes</abbr> and
-    <abbr title="learning management systems">LMSes</abbr>, website creators,
-    discussion forums and other authoring tools, and filter for
-    <a href="selecting#features">accessibility features</a>.
-  </p>
-  <p>
-    <em>Note: tools are user-submitted, not W3C-endorsed, see
-      <a href="#disclaimer">disclaimer for vendor-submitted content</a>.</em>
-  </p>
+  <div class="header-sup">
+    <p>
+      Browse <a href="selecting">tools that create web content</a>, like
+      <abbr title="content management systems">CMSes</abbr> and
+      <abbr title="learning management systems">LMSes</abbr>, website creators,
+      discussion forums and other authoring tools, and filter for
+      <a href="selecting#features">accessibility features</a>.
+    </p>
+    <p>
+      <em>Note: tools are user-submitted, not W3C-endorsed, see
+        <a href="#disclaimer">disclaimer for vendor-submitted content</a>.</em>
+    </p>
+    <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit a tool</span></a>
   </div>
-
-{::nomarkdown}
-<a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit a tool</span></a>
-{:/}
-
-  <div id="app" class="tools">
-    <form class="tools-filters" data-filter-form action="https://hiddedevries.nl/test-api/" method="POST">
-      <h2 class="visuallyhidden">Filters</h2>
-      {% for filter in site.data.filters %}
+  <div id="left-col" class="tools-filters">
+    <form data-filter-form action="https://hiddedevries.nl/test-api/" method="POST">
+      <h2 class="filters_title">Filters</h2>
+      {% for filter in site.data.wai-authoring-tools-list.json.filters %}
       <fieldset id="{{ filter.id }}">
         <legend>{{ filter.name }}</legend>
         {% for option in filter.options %}
@@ -62,7 +65,7 @@ github:
             </span>
           </a>
         </legend>
-        {% for feature in site.data.features_a %} {% for guideline in
+        {% for feature in site.data.wai-authoring-tools-list.json.features_a %} {% for guideline in
         feature.guidelines %}
         <div class="tools-filters__filter">
           <input type="checkbox" id="filter-{{ guideline.id }}" name="features-content-editors" />
@@ -80,7 +83,7 @@ github:
             </span>
           </a>
         </legend>
-        {% for feature in site.data.features_b %} {% for guideline in
+        {% for feature in site.data.wai-authoring-tools-list.json.features_b %} {% for guideline in
         feature.guidelines %}
         <div class="tools-filters__filter">
           <input type="checkbox" id="filter-{{ guideline.id }}" name="features-output" />
@@ -90,16 +93,18 @@ github:
       </fieldset>
       <button>Filter</button>
     </form>
-    <div class="tools-tools">
-      <h2 class="visuallyhidden">List of tools</h2>
-      <div role="alert">
-        <p class="status status-busy" hidden>Loading tools…</p>
-        <p class="status status-failure" hidden>something went wrong…</p>
-      </div>
-      <div id="tools-list">
-        <p>Showing {{ site.data.tools | size }} authoring tools</p>
-        {% for tool in site.data.tools %} {% include wai-authoring-tools-list/liquid/tool.liquid %} {% endfor %}
-      </div>
+  </div>
+  <div style="width:100%" class="tools-tools">
+    <h2>List of tools</h2>
+    <div role="alert">
+      <p class="status status-busy" hidden>Loading tools…</p>
+      <p class="status status-failure" hidden>something went wrong…</p>
+    </div>
+    <div id="tools-list">
+      <p>Showing {{ site.data.wai-authoring-tools-list.json.tools | size }} authoring tools</p>
+      {% for tool in site.data.wai-authoring-tools-list.json.tools %}
+        {% include wai-authoring-tools-list/liquid/tool.liquid %}
+      {% endfor %}
     </div>
   </div>
 
