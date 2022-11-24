@@ -11,8 +11,8 @@ Details
 
 <dt>Accessibility statement</dt>
 <dd>
-{% if tool.tool-statement %}
-  <a href="{{ tool.tool-statement }}" rel="external">{{tool.tool-statement}}</a>
+{% if tool.tool-statement != "" %}
+  <a href="{{ tool.tool-statement }}" rel="external">{{ tool.tool-statement }}</a>
 {% else %}
 {{ not_provided }}
 {% endif %}
@@ -20,7 +20,7 @@ Details
 
 <dt>License</dt>
 <dd>
-{% if tool.tool-license %}
+{% if tool.tool-license != "" %}
   {{ tool.tool-license }}
 {% else %}
 {{ not_provided }}
@@ -29,7 +29,7 @@ Details
 
 <dt>Version</dt>
 <dd>
-{% if tool.tool-version %}
+{% if tool.tool-version != "" %}
   {{ tool.tool-version }}
 {% else %}
 {{ not_provided }}
@@ -38,7 +38,7 @@ Details
 
 <dt>Release Date</dt>
 <dd>
-{% if tool.tool-release-date %}
+{% if tool.tool-release-date != "" %}
   {{ tool.tool-release-date }}
 {% else %}
 {{ not_provided }}
