@@ -75,7 +75,8 @@
   .tools-filters input {
     margin-right: .5em;
   }
-  .tools {
+  .tools,
+  #app {
     display: contents;
   }
   .tools-tools {
