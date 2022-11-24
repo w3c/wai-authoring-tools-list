@@ -3,7 +3,6 @@ published: true
 no-sidenav: true
 title: 'Authoring Tools list'
 title_html: 'Authoring tools List - @@@'
-nav_title: 'Authoring Tools list'
 permalink: /tools-list/authoring/
 ref: /tools-list/authoring/
 lang: en
@@ -41,8 +40,13 @@ footer: >
     </p>
     <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit a tool</span></a>
   </div>
+
+  {% assign defaultSort = site.data.wai-authoring-tools-list.json.sorting.first.sortkey %}
+  {% include wai-authoring-tools-list/liquid/sort-data-folder.liquid data=site.data.wai-authoring-tools-list.submissions sortKey=defaultSort %}
+  <div id="app" >
+
   <div id="left-col" class="tools-filters">
-    <form data-filter-form action="https://hiddedevries.nl/test-api/" method="POST">
+    <form data-filter-form action="...">
       <h2 class="filters_title">Filters</h2>
       {% for filter in site.data.wai-authoring-tools-list.json.filters %}
       <fieldset id="{{ filter.id }}">
@@ -95,16 +99,17 @@ footer: >
     </form>
   </div>
   <div style="width:100%" class="tools-tools">
-    <h2>List of tools</h2>
+    <h2>Tools</h2>
     <div role="alert">
       <p class="status status-busy" hidden>Loading tools…</p>
       <p class="status status-failure" hidden>something went wrong…</p>
     </div>
-    <div id="tools-list">
-      <p>Showing {{ site.data.wai-authoring-tools-list.json.tools | size }} authoring tools</p>
-      {% for tool in site.data.wai-authoring-tools-list.json.tools %}
-        {% include wai-authoring-tools-list/liquid/tool.liquid %}
-      {% endfor %}
+      <p>Showing {{ itemsSorted | size }} authoring tools</p>
+      {% include excol.html type="all" %}
+      <div id="tools-list">
+        {% for tool in itemsSorted %}
+          {% include wai-authoring-tools-list/liquid/tool.liquid %}
+        {% endfor %}
     </div>
   </div>
 
