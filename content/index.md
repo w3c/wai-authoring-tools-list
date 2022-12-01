@@ -59,42 +59,6 @@ footer: >
         {% endfor %}
       </fieldset>
       {% endfor %}
-      <fieldset id="filters-features-content-editors">
-        <legend>
-          Content Editor Features (editing experience)
-          <a href="selecting#editing-experience-for-content-editors" class="more-info">
-            <span class="visuallyhidden">All features for content editors explained</span>
-            <span aria-hidden="true" class="more-info__icon">
-              {% include wai-authoring-tools-list/icons/info.svg %} <!-- TODO fix path -->
-            </span>
-          </a>
-        </legend>
-        {% for feature in site.data.wai-authoring-tools-list.json.features_a %} {% for guideline in
-        feature.guidelines %}
-        <div class="tools-filters__filter">
-          <input type="checkbox" id="filter-{{ guideline.id }}" name="features-content-editors" />
-          <label for="filter-{{ guideline.id }}">{{ guideline.name }}</label>
-        </div>
-        {% endfor %} {% endfor %}
-      </fieldset>
-      <fieldset id="filters-features-outpput">
-        <legend>
-          End User Features (output)
-          <a href="selecting#output" class="more-info">
-            <span class="visuallyhidden">All features for end users explained</span>
-            <span aria-hidden="true" class="more-info__icon">
-              {% include wai-authoring-tools-list/icons/info.svg %}
-            </span>
-          </a>
-        </legend>
-        {% for feature in site.data.wai-authoring-tools-list.json.features_b %} {% for guideline in
-        feature.guidelines %}
-        <div class="tools-filters__filter">
-          <input type="checkbox" id="filter-{{ guideline.id }}" name="features-output" />
-          <label for="filter-{{ guideline.id }}">{{ guideline.name }}</label>
-        </div>
-        {% endfor %} {% endfor %}
-      </fieldset>
       <button>Filter</button>
     </form>
   </div>

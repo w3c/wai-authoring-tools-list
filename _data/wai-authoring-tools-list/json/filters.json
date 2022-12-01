@@ -1,70 +1,24 @@
 [
   {
-  "id": "type-of-tool",
-  "name": "Type of tool",
-  "type": "checkbox",
-  "options": [
-    {
-      "id": "cms",
-      "name": "Content management system (CMS)"
-    },
-    {
-      "id": "lms",
-      "name": "Learning management system (LMS)"
-    },
-    {
-      "id": "form",
-      "name": "Forum or discussion software"
-    },
-    {
-      "id": "creators",
-      "name": "Website creators"
-    },
-    {
-      "id": "wiki",
-      "name": "Wiki"
-    }
-  ],
-  },
-  {
-    "id": "cost",
-    "name": "Cost model",
-    "type": "radio",
+    "id": "license",
+    "name": "License",
+    "type": "checkbox",
     "options": [
       {
         "id": "free",
         "name": "Free"
       },
       {
-        "id": "freemium",
-        "name": "Freemium"
+        "id": "limited-free",
+        "name": "Limited free"
       },
       {
-        "id": "paid",
-        "name": "Paid"
-      }
-    ]
-  },
-  {
-    "id": "license",
-    "name": "License",
-    "type": "checkbox",
-    "options": [
-      {
-        "id": "open-source",
-        "name": "Open source"
+        "id": "free-trial",
+        "name": "Time-limited free"
       },
       {
-        "id": "commercial",
-        "name": "Commercial"
-      },
-      {
-        "id": "enterprise",
-        "name": "Enterprise"
-      },
-      {
-        "id": "trial-or-demo",
-        "name": "Trial or demo available"
+        "id": "subscription",
+        "name": "Subscription"
       }
     ]
   },
