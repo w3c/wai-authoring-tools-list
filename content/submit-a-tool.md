@@ -5,7 +5,7 @@ nav_title: 'Submit an authoring tool'
 permalink: /tools-list/authoring/submit-a-tool/
 lang: en
 github:
-  repository: wai-authoring-tools-list
+  repository: w3c/wai-authoring-tools-list
   path: content/submit-a-tool.md
 ref: /tools-list/authoring/submit-a-tool/
 description: # NEW: aa 150ish-character-description for social media   # translate the description
