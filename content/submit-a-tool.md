@@ -1,7 +1,6 @@
 ---
 no-sidenav: true
-title: 'Submit an authoring tool'
-nav_title: 'Submit an authoring tool'
+title: 'Submit an Authoring Tool'
 permalink: /tools-list/authoring/submit-a-tool/
 lang: en
 github:
