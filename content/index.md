@@ -2,22 +2,18 @@
 published: true
 no-sidenav: true
 title: 'Authoring Tools list'
-title_html: 'Authoring tools List - @@@'
 permalink: /tools-list/authoring/
 ref: /tools-list/authoring/
 lang: en
 doc-note-type: draft
-# translators: # Uncomment (remove #) for translations, one - name line per translator.
-# - name: Translator 1
-# - name: Translator 2
 github:
   repository: w3c/wai-authoring-tools-list
   path: content/index.md
 description: Lists authoring tools with accessibility support. You can filter to find courses matching your specific interests.
 footer: >
-  <p><strong>Date:</strong> Updated @@@. @@@.</p>
-  <p><strong>Editors:</strong> @@@. <strong>Contributors:</strong> @@@.</p>
-  <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
+  <p><strong>Date:</strong> Updated 7 December 2022.</p>
+  <p><strong>Previous Editor:</strong> Hidde de Vries. <strong>Contributors:</strong> Steve Lee, Shawn Lawton Henry, Kevin White, and <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
+  <p>Developed by the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
 ---
 
 <!-- markdownlint-disable no-inline-html -->
@@ -28,15 +24,7 @@ footer: >
 
   <div class="header-sup">
     <p>
-      Browse <a href="selecting">tools that create web content</a>, like
-      <abbr title="content management systems">CMSes</abbr> and
-      <abbr title="learning management systems">LMSes</abbr>, website creators,
-      discussion forums and other authoring tools, and filter for
-      <a href="selecting#features">accessibility features</a>.
-    </p>
-    <p>
-      <em>Note: tools are user-submitted, not W3C-endorsed, see
-        <a href="#disclaimer">disclaimer for vendor-submitted content</a>.</em>
+      <em>Disclaimer: W3C does not endorse specific tools. Inclusion of tools in this list does not indicate endorsement by W3C. Tools are listed with no quality rating. Tool descriptions, search criteria, and other information in this database are submitted by providers. W3C does not verify the accuracy of the information. The list is not a review of tools, nor a complete or definitive list of all tools. The information can change at any time.</em>
     </p>
     <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit a tool</span></a>
   </div>
