@@ -1,7 +1,7 @@
 ---
 published: true
 no-sidenav: true
-title: 'Authoring Tools list'
+title: 'Authoring Tools List'
 permalink: /tools-list/authoring/
 ref: /tools-list/authoring/
 lang: en
