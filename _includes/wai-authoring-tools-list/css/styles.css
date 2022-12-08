@@ -370,3 +370,7 @@ svg.icon-ex-circle {
   margin-top: 3px !important;
   position: absolute;
 }
+
+.radio-field:hover label {
+    color: white;
+}
