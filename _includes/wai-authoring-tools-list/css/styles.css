@@ -289,12 +289,10 @@ form[name='submission'] h2 span {
 form[name='submission'] label {
   font-weight: 700;
   font-size: initial;
-  color: var(--wai-green);
 }
 
 form[name='submission'] label span {
   margin-left: 3px;
-  color: var(--wai-green);
   font-weight: normal;
 }
 
