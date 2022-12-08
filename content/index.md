@@ -34,6 +34,7 @@ footer: >
   <div id="app" >
 
   <div id="left-col" class="tools-filters">
+<!--
     <form data-filter-form action="...">
       <h2 class="filters_title">Filters</h2>
       {% for filter in site.data.wai-authoring-tools-list.json.filters %}
@@ -49,6 +50,7 @@ footer: >
       {% endfor %}
       <button>Filter</button>
     </form>
+-->
   </div>
   <div style="width:100%" class="tools-tools">
     <h2>Tools</h2>
