@@ -22,15 +22,16 @@ footer: >
   {% include wai-authoring-tools-list/css/styles.css %}
 </style>
 
-  {% include box.html type="start" class="simple" %}
-  <p>Disclaimer: W3C does not endorse specific tools. Inclusion of tools in this list does not indicate endorsement by W3C. Tools are listed with no quality rating. Tool descriptions, search criteria, and other information in this database are submitted by providers. W3C does not verify the accuracy of the information. The list is not a review of tools, nor a complete or definitive list of all tools. The information can change at any time.</p>
-  {% include box.html type="end" %}
+  <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit a tool</span></a>
 
   {% assign defaultSort = site.data.wai-authoring-tools-list.json.sorting.first.sortkey %}
   {% include wai-authoring-tools-list/liquid/sort-data-folder.liquid data=site.data.wai-authoring-tools-list.submissions sortKey=defaultSort %}
   <div id="app" >
 
   <div id="left-col" class="tools-filters">
+  {% include box.html type="start" title="Disclaimer:"%}
+  <p>W3C does not endorse specific tools. Inclusion of tools in this list does not indicate endorsement by W3C. Tools are listed with no quality rating. Tool descriptions, search criteria, and other information in this database are submitted by providers. W3C does not verify the accuracy of the information. The list is not a review of tools, nor a complete or definitive list of all tools. The information can change at any time.</p>
+  {% include box.html type="end" %}
 <!--
     <form data-filter-form action="...">
       <h2 class="filters_title">Filters</h2>
