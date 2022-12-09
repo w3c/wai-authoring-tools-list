@@ -29,6 +29,26 @@
 Details
 {% include excol.html type="middle"%}
 
+<dt>Version</dt>
+<dd>
+{% if tool.tool-version != "" %}
+  {{ tool.tool-version }}
+{% else %}
+{{ not_provided }}
+{% endif %}
+</dd>
+
+<dt>Release Date</dt>
+<dd>
+{% if tool.tool-release-date != "" %}
+  {{ tool.tool-release-date }}
+{% else %}
+{{ not_provided }}
+{% endif %}
+</dd>
+
+_This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}._
+
 <h4>Authoring tool user interface accessibility</h4>
 
 <dt>Web-based functionality is accessible</dt>
@@ -321,34 +341,6 @@ Details
 {% endif %}
 </dd>
 
-<h4>Additional information</h4>
-
-<dt>Version</dt>
-<dd>
-{% if tool.tool-version != "" %}
-  {{ tool.tool-version }}
-{% else %}
-{{ not_provided }}
-{% endif %}
-</dd>
-
-<dt>Release Date</dt>
-<dd>
-{% if tool.tool-release-date != "" %}
-  {{ tool.tool-release-date }}
-{% else %}
-{{ not_provided }}
-{% endif %}
-</dd>
-
-<dt>Comments</dt>
-<dd>
-{% if tool.comments %}
-  {{ tool.comments }}
-{% endif %}
-</dd>
-
-_This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}._
 {% include excol.html type="end" %}
 {% include box.html type="end" %}
 
