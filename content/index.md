@@ -32,6 +32,9 @@ footer: >
   <div id="app" >
 
   <div id="left-col" class="tools-filters">
+    
+    <p>The <strong>details</strong> section under the tool listing provides information on how the tool meets the web standard: Authoring Tool Accessibility Guidelines (<a href="https://www.w3.org/WAI/standards-guidelines/atag">ATAG</a>). For a brief summary of ATAG, see <a href="https://www.w3.org/WAI/standards-guidelines/atag/glance/">ATAG at a Glance</a>.</p>
+
     <p>License type options are:</p>
     <ul>
       <li>Free</li>
@@ -60,7 +63,6 @@ footer: >
   </div>
   <div style="width:100%" class="tools-tools">
     <h2>Tools</h2>
-    <p><em>The details below provide information on how the tool meets the web standard: Authoring Tool Accessibility Guidelines (<a href="https://www.w3.org/WAI/standards-guidelines/atag">ATAG</a>). For a summary, see <a href="https://www.w3.org/WAI/standards-guidelines/atag/glance/">ATAG at a Glance</a>.</em></p>
     <div role="alert">
       <p class="status status-busy" hidden>Loading tools…</p>
       <p class="status status-failure" hidden>something went wrong…</p>
