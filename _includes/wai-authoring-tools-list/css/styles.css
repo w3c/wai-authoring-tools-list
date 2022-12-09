@@ -36,6 +36,7 @@ main > header {
 .box {
   grid-column: 2 / 10;
 }
+/*
 .header-sup {
   margin-bottom: 48px;
 }
@@ -43,6 +44,7 @@ main > header {
   margin-top: 0;
   font-size: 125%;
 }
+*/
 .tools-filters {
   font-size: 85%;
 }
