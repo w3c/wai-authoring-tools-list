@@ -1,6 +1,8 @@
 ---
 title: 'Form Submitted'
 permalink: /tools-list/authoring/submit-a-tool/success
+github:
+  repository: w3c/wai-authoring-tools-list
 ---
 
 <!-- markdownlint-disable no-inline-html -->
