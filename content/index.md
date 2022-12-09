@@ -24,7 +24,7 @@ footer: >
 
   <div class="header-sup">
         <p>This list provides information on accessibility support in content management systems (CMS), learning management systems (LMS), web page editors, and other '<a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">authoring tools</a>'. The information is submitted by vendors and others. <abbr title="World Wide Web Consortium">W3C</abbr> W3C does not verify the accuracy of the information. W3C does not endorse specific tools. See <a href="#disclaimer">Disclaimer</a>.</p>
-        <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit a tool</span></a>
+        <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit an authoring tool</span></a>
 </div> 
 
   {% assign defaultSort = site.data.wai-authoring-tools-list.json.sorting.first.sortkey %}
@@ -32,6 +32,14 @@ footer: >
   <div id="app" >
 
   <div id="left-col" class="tools-filters">
+    <p>License type options are:</p>
+    <ul>
+      <li>Free</li>
+      <li>Limited free functionality</li>
+      <li>Time-limited trial</li>
+      <li>Subscription</li>
+      <li>One-time purchase</li>
+    </ul>
 <!--
     <form data-filter-form action="...">
       <h2 class="filters_title">Filters</h2>
