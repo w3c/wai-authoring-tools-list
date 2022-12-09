@@ -5,9 +5,6 @@
 
 {% include box.html type="start" title=tool_title id=tool.submission_ref class="tool" h="3"%}
 {{ tool.tool-description }}
-{% include excol.html type="start" id=tool_details_id %}
-Details
-{% include excol.html type="middle"%}
 
 <dt>Accessibility statement</dt>
 <dd>
@@ -27,6 +24,10 @@ Details
 {% endif %}
 </dd>
 
+{% include excol.html type="start" id=tool_details_id %}
+Details
+{% include excol.html type="middle"%}
+
 <dt>Version</dt>
 <dd>
 {% if tool.tool-version != "" %}
@@ -44,6 +45,8 @@ Details
 {{ not_provided }}
 {% endif %}
 </dd>
+
+<h4>Authoring tool user interface accessibility</h4>
 
 <dt>Web-based functionality is accessible</dt>
 <dd>
@@ -201,6 +204,8 @@ Details
 {% endif %}
 </dd>
 
+<h4>Support for producing accessible content</h4>
+
 <dt>Generates accessible markup</dt>
 <dd>
 {% if tool.question-auto-content-accessible %}
@@ -332,6 +337,8 @@ Details
 {{ not_provided }}
 {% endif %}
 </dd>
+
+<h4>Additional information</h4>
 
 <dt>Comments</dt>
 <dd>
