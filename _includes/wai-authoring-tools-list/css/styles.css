@@ -400,3 +400,8 @@ svg.icon-ex-circle {
 .box-disclaimer {
     margin: 0px !important;
 }
+
+.button-submit-end {
+    grid-column: 2 / 8;
+    margin-top: 2em;
+}
