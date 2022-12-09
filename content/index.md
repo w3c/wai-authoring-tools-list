@@ -33,7 +33,7 @@ footer: >
 
   <div id="left-col" class="tools-filters">
     
-    <p>The <strong>details</strong> section under the tool listing provides information on how the tool meets the web standard: Authoring Tool Accessibility Guidelines (<a href="https://www.w3.org/WAI/standards-guidelines/atag">ATAG</a>). For a brief summary of ATAG, see <a href="https://www.w3.org/WAI/standards-guidelines/atag/glance/">ATAG at a Glance</a>.</p>
+    <p>The <strong>Details</strong> section under the <strong>Tools</strong> listing has information on how the tool meets the web standard: <cite>Authoring Tool Accessibility Guidelines (<a href="https://www.w3.org/WAI/standards-guidelines/atag">ATAG</a>)</cite>. For a brief summary of ATAG, see <a href="https://www.w3.org/WAI/standards-guidelines/atag/glance/">ATAG at a Glance</a>.</p>
 
     <p>License type options are:</p>
     <ul>
