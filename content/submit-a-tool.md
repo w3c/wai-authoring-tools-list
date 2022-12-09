@@ -84,6 +84,10 @@ function onSubmit(e) {
     <input type="text" id="tool-name" name="tool-name" required>
   </div>
   <div class="field">
+    <label for="tool-link">Link to tool main page</label>
+    <input type="text" id="tool-link" name="tool-link" required>
+  </div>
+  <div class="field">
     <label for="tool-vendor">Vendor <span>(Required)</span></label>
     <input type="text" id="tool-vendor" name="tool-vendor" required>
   </div>
@@ -92,7 +96,7 @@ function onSubmit(e) {
     <textarea id="tool-description" name="tool-description"></textarea>
   </div>
   <div class="field">
-    <label for="tool-statement">Link to accessibility statement</label>
+    <label for="tool-statement">Link to accessibility statement for the tool</label>
     <input type="text" id="tool-statement" name="tool-statement" placeholder="https://">
   </div>
   <fieldset class="field fieldset_radio">
