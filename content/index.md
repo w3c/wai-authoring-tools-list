@@ -23,15 +23,8 @@ footer: >
 </style>
 
   <div class="header-sup">
-    <div class="header-left">
-        <p>This list provides information on accessibility support in content management systems (CMS), learning management systems (LMS), web page editors, and other '<a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">authoring tools</a>'.</p>
+        <p>This list provides information on accessibility support in content management systems (CMS), learning management systems (LMS), web page editors, and other '<a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">authoring tools</a>'. The information is submitted by vendors and others. <abbr title="World Wide Web Consortium">W3C</abbr> W3C does not verify the accuracy of the information. W3C does not endorse specific tools. See <a href="#disclaimer">Disclaimer</a>.</p>
         <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit a tool</span></a>
-    </div>
-    <div class="header-right">
-        {% include box.html type="start" title="Disclaimer:"%}
-        <p>W3C does not endorse specific tools. Inclusion of tools in this list does not indicate endorsement by W3C. Tools are listed with no quality rating. Tool descriptions, search criteria, and other information in this database are submitted by providers. W3C does not verify the accuracy of the information. The list is not a review of tools, nor a complete or definitive list of all tools. The information can change at any time.</p>
-        {% include box.html type="end" %}
-    </div>
 </div> 
 
   {% assign defaultSort = site.data.wai-authoring-tools-list.json.sorting.first.sortkey %}
@@ -70,6 +63,16 @@ footer: >
           {% include wai-authoring-tools-list/liquid/tool.liquid %}
         {% endfor %}
     </div>
+  </div>
+
+  <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit an authoring tool</span></a>
+  
+  <div id="disclaimer">
+  {% include box.html type="start" title="Disclaimer:"%}
+  <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers or courses. Inclusion of courses in this list does not indicate endorsement by W3C. Courses and search criteria are listed with no quality rating.</p>
+  <p>Courses descriptions, search criteria, and other information in this database are submitted by providers. W3C does not verify the accuracy of the information.</p>
+  <p>The list is not a review of courses, nor a complete or definitive list of all courses. The information can change at any time.</p>
+  {% include box.html type="end" %}
   </div>
 
   <script>
