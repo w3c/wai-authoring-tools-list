@@ -153,7 +153,7 @@ function onSubmit(e) {
   </div>
 
   <h2>Submitting your tool</h2>
-  <p>Let us know if you have any comments.</p>
+  <p>Let us know if you have any comments. This comment will be publicly available in GitHub, and not published on the tools list.</p>
   <div class="field">
     <label for="comments">Comments</label>
     <textarea id="comments" name="comments"></textarea>
