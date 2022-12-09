@@ -65,7 +65,9 @@ footer: >
     </div>
   </div>
 
+  <div class="button-submit-end">
   <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit an authoring tool</span></a>
+  </div>
   
   <div id="disclaimer">
   {% include box.html type="start" title="Disclaimer:"%}
