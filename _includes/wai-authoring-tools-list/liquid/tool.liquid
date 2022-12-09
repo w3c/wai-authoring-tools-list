@@ -5,11 +5,18 @@
 
 {% include box.html type="start" title=tool_title id=tool.submission_ref class="tool" h="3"%}
 {{ tool.tool-description }}
-{% include excol.html type="start" id=tool_details_id %}
-Details
-{% include excol.html type="middle"%}
 
-<dt>Accessibility statement</dt>
+<br><br>
+
+<dt>License:</dt>
+<dd>
+{% if tool.tool-license != "" %}
+  {{ tool.tool-license }}
+{% else %}
+{{ not_provided }}
+{% endif %}
+</dd>
+<dt>Accessibility statement:</dt>
 <dd>
 {% if tool.tool-statement != "" %}
   <a href="{{ tool.tool-statement }}" rel="external">{{ tool.tool-statement }}</a>
@@ -18,14 +25,9 @@ Details
 {% endif %}
 </dd>
 
-<dt>License</dt>
-<dd>
-{% if tool.tool-license != "" %}
-  {{ tool.tool-license }}
-{% else %}
-{{ not_provided }}
-{% endif %}
-</dd>
+{% include excol.html type="start" id=tool_details_id %}
+Details
+{% include excol.html type="middle"%}
 
 <dt>Version</dt>
 <dd>
@@ -44,6 +46,10 @@ Details
 {{ not_provided }}
 {% endif %}
 </dd>
+
+_This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}._
+
+<h4>Authoring tool user interface accessibility</h4>
 
 <dt>Web-based functionality is accessible</dt>
 <dd>
@@ -201,6 +207,8 @@ Details
 {% endif %}
 </dd>
 
+<h4>Support for producing accessible content</h4>
+
 <dt>Generates accessible markup</dt>
 <dd>
 {% if tool.question-auto-content-accessible %}
@@ -333,15 +341,6 @@ Details
 {% endif %}
 </dd>
 
-<dt>Comments</dt>
-<dd>
-{% if tool.comments %}
-  {{ tool.comments }}
-{% endif %}
-</dd>
-
-
-_This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}._
 {% include excol.html type="end" %}
 {% include box.html type="end" %}
 

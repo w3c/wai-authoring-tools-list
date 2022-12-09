@@ -36,6 +36,7 @@ main > header {
 .box {
   grid-column: 2 / 10;
 }
+/*
 .header-sup {
   margin-bottom: 48px;
 }
@@ -46,9 +47,10 @@ main > header {
 .tools-filters {
   font-size: 85%;
 }
+*/
 @media (min-width: 60em) {
   .tools-filters {
-    font-size: 85%;
+    /* font-size: 85%; */
     grid-column: 1 / 4;
     padding-right: 2em;
     border-right: 1px solid #ccc;
@@ -388,4 +390,25 @@ svg.icon-ex-circle {
   margin-left: -1.5em !important;
   margin-top: 3px !important;
   position: absolute;
+}
+
+#disclaimer {
+    grid-column: 2/10;
+    /* margin-top: 2em; */
+}
+
+.box-disclaimer {
+    margin: 0px !important;
+}
+
+.button-submit-end {
+    grid-column: 2 / 8;
+    margin-top: 2em;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+h2 {
+    margin: 0 0 20px;
 }

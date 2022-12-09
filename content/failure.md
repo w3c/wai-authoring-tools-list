@@ -1,6 +1,8 @@
 ---
 title: 'Something went wrong'
 permalink: /tools-list/authoring/submit-a-tool/failure
+github:
+  repository: w3c/wai-authoring-tools-list
 ---
 
 <!-- markdownlint-disable no-inline-html -->
