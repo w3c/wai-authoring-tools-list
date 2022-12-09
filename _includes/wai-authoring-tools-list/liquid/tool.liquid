@@ -6,7 +6,9 @@
 {% include box.html type="start" title=tool_title id=tool.submission_ref class="tool" h="3"%}
 {{ tool.tool-description }}
 
-<dt>Accessibility statement</dt>
+<br>
+
+<dt>Accessibility statement:</dt>
 <dd>
 {% if tool.tool-statement != "" %}
   <a href="{{ tool.tool-statement }}" rel="external">{{ tool.tool-statement }}</a>
@@ -15,7 +17,7 @@
 {% endif %}
 </dd>
 
-<dt>License</dt>
+<dt>License:</dt>
 <dd>
 {% if tool.tool-license != "" %}
   {{ tool.tool-license }}
@@ -27,24 +29,6 @@
 {% include excol.html type="start" id=tool_details_id %}
 Details
 {% include excol.html type="middle"%}
-
-<dt>Version</dt>
-<dd>
-{% if tool.tool-version != "" %}
-  {{ tool.tool-version }}
-{% else %}
-{{ not_provided }}
-{% endif %}
-</dd>
-
-<dt>Release Date</dt>
-<dd>
-{% if tool.tool-release-date != "" %}
-  {{ tool.tool-release-date }}
-{% else %}
-{{ not_provided }}
-{% endif %}
-</dd>
 
 <h4>Authoring tool user interface accessibility</h4>
 
@@ -340,13 +324,30 @@ Details
 
 <h4>Additional information</h4>
 
+<dt>Version</dt>
+<dd>
+{% if tool.tool-version != "" %}
+  {{ tool.tool-version }}
+{% else %}
+{{ not_provided }}
+{% endif %}
+</dd>
+
+<dt>Release Date</dt>
+<dd>
+{% if tool.tool-release-date != "" %}
+  {{ tool.tool-release-date }}
+{% else %}
+{{ not_provided }}
+{% endif %}
+</dd>
+
 <dt>Comments</dt>
 <dd>
 {% if tool.comments %}
   {{ tool.comments }}
 {% endif %}
 </dd>
-
 
 _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}._
 {% include excol.html type="end" %}
