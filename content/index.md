@@ -22,9 +22,9 @@ footer: >
   {% include wai-authoring-tools-list/css/styles.css %}
 </style>
 
-        {% include box.html type="start" class="simple" %}
-        <p>Disclaimer: W3C does not endorse specific tools. Inclusion of tools in this list does not indicate endorsement by W3C. Tools are listed with no quality rating. Tool descriptions, search criteria, and other information in this database are submitted by providers. W3C does not verify the accuracy of the information. The list is not a review of tools, nor a complete or definitive list of all tools. The information can change at any time.</p>
-        {% include box.html type="end" %}
+  {% include box.html type="start" class="simple" %}
+  <p>Disclaimer: W3C does not endorse specific tools. Inclusion of tools in this list does not indicate endorsement by W3C. Tools are listed with no quality rating. Tool descriptions, search criteria, and other information in this database are submitted by providers. W3C does not verify the accuracy of the information. The list is not a review of tools, nor a complete or definitive list of all tools. The information can change at any time.</p>
+  {% include box.html type="end" %}
 
   {% assign defaultSort = site.data.wai-authoring-tools-list.json.sorting.first.sortkey %}
   {% include wai-authoring-tools-list/liquid/sort-data-folder.liquid data=site.data.wai-authoring-tools-list.submissions sortKey=defaultSort %}
