@@ -391,3 +391,12 @@ svg.icon-ex-circle {
   margin-top: 3px !important;
   position: absolute;
 }
+
+#disclaimer {
+    grid-column: 2/10;
+    /* margin-top: 2em; */
+}
+
+.box-disclaimer {
+    margin: 0px !important;
+}
