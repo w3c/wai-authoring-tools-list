@@ -92,8 +92,8 @@ function onSubmit(e) {
     <input type="text" id="tool-vendor" name="tool-vendor" required>
   </div>
   <div class="field">
-    <label for="tool-description">Description <span>(required, 350 characters maximum, plain text)</span></label>
-    <textarea id="tool-description" name="tool-description" required></textarea>
+    <label for="tool-description">Description <span>(required, 500 characters maximum, plain text)</span></label>
+    <textarea id="tool-description" name="tool-description" maxlength="500" rows="5" required></textarea>
   </div>
   <div class="field">
     <label for="tool-statement">Link to tool's <a href="https://www.w3.org/WAI/planning/statements/">accessibility statement</a></label>
