@@ -85,14 +85,14 @@ function onSubmit(e) {
   </div>
   <div class="field">
     <label for="tool-link">Link to tool main page <span>(required)</span></label>
-    <input type="text" id="tool-link" name="tool-link" required>
+    <input type="text" id="tool-link" name="tool-link"  placeholder="https://"required>
   </div>
   <div class="field">
     <label for="tool-vendor">Vendor <span>(required)</span></label>
     <input type="text" id="tool-vendor" name="tool-vendor" required>
   </div>
   <div class="field">
-    <label for="tool-description">Description <span>(350 characters maximum, plain text)</span></label>
+    <label for="tool-description">Description <span>(required, 350 characters maximum, plain text)</span></label>
     <textarea id="tool-description" name="tool-description" required></textarea>
   </div>
   <div class="field">
