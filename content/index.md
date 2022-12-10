@@ -33,6 +33,8 @@ footer: >
 
   <div id="left-col" class="tools-filters">
     
+    <p><em><strong>NOTE:</strong> The list has fake datat for now, while we provide time for authoring tools to sibmit their tool.</em></p>
+  
     <p>The <strong>Details</strong> section under the <strong>Tools</strong> listing has information on how the tool meets the web standard: <cite>Authoring Tool Accessibility Guidelines (<a href="https://www.w3.org/WAI/standards-guidelines/atag">ATAG</a>)</cite>. For a brief summary of ATAG, see <a href="https://www.w3.org/WAI/standards-guidelines/atag/glance/">ATAG at a Glance</a>.</p>
 
     <p>License type options are:</p>
