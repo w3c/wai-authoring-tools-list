@@ -11,7 +11,7 @@ github:
   path: content/index.md
 description: Lists authoring tools with accessibility support. You can filter to find courses matching your specific interests.
 footer: >
-  <p><strong>Date:</strong> Updated 7 December 2022.</p>
+  <p><strong>Date:</strong> Updated 9 December 2022.</p>
   <p><strong>Previous Editor:</strong> Hidde de Vries. <strong>Contributors:</strong> Steve Lee, Shawn Lawton Henry, Kevin White, and <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
   <p>Developed by the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
 ---
@@ -32,9 +32,7 @@ footer: >
   <div id="app" >
 
   <div id="left-col" class="tools-filters">
-    
-    <p><em><strong>NOTE:</strong> The list has fake datat for now, while we provide time for authoring tools to sibmit their tool.</em></p>
-  
+      
     <p>The <strong>Details</strong> section under the <strong>Tools</strong> listing has information on how the tool meets the web standard: <cite>Authoring Tool Accessibility Guidelines (<a href="https://www.w3.org/WAI/standards-guidelines/atag">ATAG</a>)</cite>. For a brief summary of ATAG, see <a href="https://www.w3.org/WAI/standards-guidelines/atag/glance/">ATAG at a Glance</a>.</p>
 
     <p>License type options are:</p>
@@ -65,6 +63,7 @@ footer: >
   </div>
   <div style="width:100%" class="tools-tools">
     <h2>Tools</h2>
+    <p><em><strong>NOTE:</strong> This draft list has fake tools for now, while we provide time for authoring tools to submit their tool.</em></p>
     <div role="alert">
       <p class="status status-busy" hidden>Loading tools…</p>
       <p class="status status-failure" hidden>something went wrong…</p>
