@@ -23,7 +23,7 @@ footer: >
 </style>
 
   <div class="header-sup">
-        <p>This list provides information on accessibility support in content management systems (CMS), learning management systems (LMS), web page editors, and other '<a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">authoring tools</a>'. The information is submitted by vendors and others. <abbr title="World Wide Web Consortium">W3C</abbr> W3C does not verify the accuracy of the information. W3C does not endorse specific tools. See <a href="#disclaimer">Disclaimer</a>.</p>
+        <p>This list provides information on accessibility support in content management systems (CMS), learning management systems (LMS), web page editors, and other '<a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">authoring tools</a>'. The information is submitted by vendors and others. <abbr title="World Wide Web Consortium">W3C</abbr> does not verify the accuracy of the information. W3C does not endorse specific tools. See <a href="#disclaimer">Disclaimer</a>.</p>
         <a class="button button-more submit-a-tool" href="submit-a-tool"><span>Submit an authoring tool</span></a>
 </div> 
 
