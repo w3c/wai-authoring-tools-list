@@ -85,7 +85,7 @@ function onSubmit(e) {
   </div>
   <div class="field">
     <label for="tool-link">Link to tool main page <span>(required)</span></label>
-    <input type="text" id="tool-link" name="tool-link"  placeholder="https://"required>
+    <input type="text" id="tool-link" name="tool-link"  placeholder="https://" required>
   </div>
   <div class="field">
     <label for="tool-vendor">Vendor <span>(required)</span></label>
