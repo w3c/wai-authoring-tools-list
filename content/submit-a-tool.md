@@ -68,11 +68,11 @@ function onSubmit(e) {
   <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
 
   <div class="field">
-    <label for="submitter-name">Your name <span>(Required)</span></label>
+    <label for="submitter-name">Your name <span>(required)</span></label>
     <input type="text" id="submitter-name" name="submitter-name" required>
   </div>
   <div class="field">
-    <label for="submitter-email">Email <span>(Required)</span></label>
+    <label for="submitter-email">Email <span>(required)</span></label>
     <input type="email" id="submitter-email" name="submitter-email" required>
   </div>
 
@@ -80,27 +80,31 @@ function onSubmit(e) {
   <p>Provide some information about your tool. We will list this with the tool.</p>
 
   <div class="field">
-    <label for="tool-name">Tool name <span>(Required)</span></label>
+    <label for="tool-name">Tool name <span>(required)</span></label>
     <input type="text" id="tool-name" name="tool-name" required>
   </div>
   <div class="field">
-    <label for="tool-link">Link to tool main page</label>
-    <input type="text" id="tool-link" name="tool-link" required>
+    <label for="tool-link">Link to tool main page <span>(required)</span></label>
+    <input type="text" id="tool-link" name="tool-link"  placeholder="https://" required>
   </div>
   <div class="field">
-    <label for="tool-vendor">Vendor <span>(Required)</span></label>
+    <label for="tool-vendor">Vendor <span>(required)</span></label>
     <input type="text" id="tool-vendor" name="tool-vendor" required>
   </div>
   <div class="field">
-    <label for="tool-description">Description</label>
-    <textarea id="tool-description" name="tool-description"></textarea>
+    <label for="tool-description">Description <span>(required, 350 characters maximum, plain text)</span></label>
+    <textarea id="tool-description" name="tool-description" required></textarea>
   </div>
   <div class="field">
-    <label for="tool-statement">Link to accessibility statement for the tool</label>
+    <label for="tool-statement">Link to tool's <a href="https://www.w3.org/WAI/planning/statements/">accessibility statement</a></label>
     <input type="text" id="tool-statement" name="tool-statement" placeholder="https://">
   </div>
+  <div class="field">
+    <label for="tool-report">Link to tool's <a href="https://www.w3.org/WAI/atag/report-tool/">ATAG Report</a></label>
+    <input type="text" id="tool-report" name="tool-report" placeholder="https://">
+  </div>
   <fieldset class="field fieldset_radio">
-    <legend>License <span>(Required)</span></legend>
+    <legend>License <span>(required)</span></legend>
     <p>Pick what best describes the license used by your tool.</p>
     <div class="radio-field">
       <input id="tool-license-free" type="radio" name="tool-license" value="free" required>
@@ -197,6 +201,8 @@ function onSubmit(e) {
   <button class="button button-close_preview icon" title="Close preview and go back to the form"><span><svg focusable="false" aria-hidden="true" class="icon-ex-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg> </span></button>
   <h2 id="preview_title">Review your submission</h2>
   <p>Please review the information provided. If you need to correct any information, you can go back to the form and then proceed to your submission.</p>
+  {% include_cached button.html label="Close preview and go back to the form" class="close_preview"%}
+  {% include_cached button.html label="Submit information" class="button button-submit_form" %}
   <div class="details-preview box"></div>
   <p>{{strings.info_submission}}</p>
   {% include_cached button.html label="Close preview and go back to the form" class="close_preview"%}
