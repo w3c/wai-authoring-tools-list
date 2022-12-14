@@ -1,4 +1,4 @@
-{% capture tool_title %}<a href="{{ tool.website }}">{{ tool.tool-name }}</a> by {{ tool.tool-vendor }}{% endcapture %}
+{% capture tool_title %}{% if tool.tool-link != "" %}<a href="{{ tool.tool-link }}">{{ tool.tool-name }}</a>{% else %}{{ tool.tool-name }}{% endif %} by {{ tool.tool-vendor }}{% endcapture %}
 {% capture tool_section_identifier %}aside_{{ tool.submission_ref }}{% endcapture %}
 {% capture tool_details_id %}details_{{tool.submission_ref}}{% endcapture %}
 {% assign not_provided = "not provided" %}
