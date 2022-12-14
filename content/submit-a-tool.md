@@ -96,12 +96,8 @@ function onSubmit(e) {
     <textarea id="tool-description" name="tool-description" maxlength="500" rows="5" required></textarea>
   </div>
   <div class="field">
-    <label for="tool-statement">Link to tool's <a href="https://www.w3.org/WAI/planning/statements/">accessibility statement</a></label>
+    <label for="tool-statement">Link to accessibility information, such as the tool's <a href="https://www.w3.org/WAI/planning/statements/">accessibility statement</a></label>
     <input type="text" id="tool-statement" name="tool-statement" placeholder="https://">
-  </div>
-  <div class="field">
-    <label for="tool-report">Link to tool's <a href="https://www.w3.org/WAI/atag/report-tool/">ATAG Report</a></label>
-    <input type="text" id="tool-report" name="tool-report" placeholder="https://">
   </div>
   <fieldset class="field fieldset_radio">
     <legend>License <span>(required)</span></legend>
