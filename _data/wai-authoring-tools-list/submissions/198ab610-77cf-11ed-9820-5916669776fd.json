@@ -53,7 +53,7 @@
   "submitter-email": "mike.gifford@civicactions.com",
   "submitter-name": "Mike Gifford",
   "supports-display-prefs-partially-description": "",
-  "tool-description": "@@500 -- Drupal is an open-source content management system (CMS) that is used to create and manage websites. It is written in the PHP programming language and uses a database to store its content. Drupal is known for its flexibility and modular design, which allows users to easily create and customize their websites to meet their specific needs. It is used by organizations of all sizes, including governments, businesses, and non-profits, to create a wide range of websites, from simple blogs to complex e-commerce platforms. Drupal is maintained and developed by a global community of volunteers and is released under the GNU General Public License.",
+  "tool-description": "Drupal is an open-source CMS used to create and manage websites. It is written in PHP and uses a MySQL as its database. Drupal is known for its flexibility and modular design. It is used by organizations of all sizes and is maintained and developed by a global community of volunteers. It is released under the GNU General Public License.",
   "tool-license": "free",
   "tool-link": "https://www.drupal.org",
   "tool-name": "Drupal",
