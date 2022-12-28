@@ -5,13 +5,12 @@ title: 'Authoring Tools List'
 permalink: /tools-list/authoring/
 ref: /tools-list/authoring/
 lang: en
-doc-note-type: draft
 github:
   repository: w3c/wai-authoring-tools-list
   path: content/index.md
 description: Lists authoring tools with accessibility support. You can filter to find courses matching your specific interests.
 footer: >
-  <p><strong>Date:</strong> Updated 9 December 2022.</p>
+  <p><strong>Date:</strong> Updated 28 December 2022.</p>
   <p><strong>Previous Editor:</strong> Hidde de Vries. <strong>Contributors:</strong> Steve Lee, Shawn Lawton Henry, Kevin White, and <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
   <p>Developed by the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
 ---
@@ -63,7 +62,6 @@ footer: >
   </div>
   <div style="width:100%" class="tools-tools">
     <h2>Tools</h2>
-    <p><em><strong>NOTE:</strong> This draft list has fake tools for now, while we provide time for authoring tools to submit their tool.</em></p>
     <div role="alert">
       <p class="status status-busy" hidden>Loading tools…</p>
       <p class="status status-failure" hidden>something went wrong…</p>

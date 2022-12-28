@@ -10,7 +10,7 @@ ref: /tools-list/authoring/submit-a-tool/
 description: # NEW: aa 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-authoring-tools-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this resource)
 footer: >
-  <p><strong>Date:</strong> Updated 7 December 2022.</p>
+  <p><strong>Date:</strong> Updated 28 December 2022.</p>
   <p><strong>Previous Editor:</strong> Hidde de Vries. <strong>Contributors:</strong> Steve Lee, Shawn Lawton Henry, Kevin White, and <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
   <p>Developed by the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
 
@@ -59,8 +59,8 @@ function onSubmit(e) {
                                    DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
                                    DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
-  <p>W3C will provide a list of authoring tools with accessibility support in December 2022. The purpose is to provide information on tool accessibility for tool procureres and users choosing an authoring tool. This <a href="../">in-progress draft list with fake data</a> gives you an idea of what the list will provide.</p>
-  <p>For background on authoring tool accessibility, see the <a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a>. Under <a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">'Who ATAG is for'</a>, you can find the types of tools that are in scope for this list.</p>
+  <p>The <a href="../">Authoring Tools List</a> provides information on tool accessibility for procureres and users choosing an authoring tool.</p>
+  <p>For background on authoring tool accessibility, see the <a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a>. Under <a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">'Who ATAG is for'</a>, you can find the types of tools that are in scope for this authoring tools list.</p>
   <p>We invite you to use this form to submit your authoring tool to the list. When you submit the form, the data is publicly available in GitHub. We will process it and add it to the list or contact you &mdash; usually within 2 weeks. If you have any questions, please send them to: group-wai-list-authoring-tools@w3.org</p>
   <p>Only the first few form fields are required. You can submit your tool now with some questions left unanswered, and provide an updated submission later.</p>  
 
@@ -165,7 +165,7 @@ function onSubmit(e) {
 
   <div class="field">
     <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
-    <label><input type="checkbox" required> I give permission for my information to be published in the W3C's authoring tools list.</label>
+    <label><input type="checkbox" required> I give permission for the information in this form to be publicly available in GitHub and to be published in the W3C's authoring tools list.</label>
   </div>
   <p>When you submit the form, we will review your tool and add it to the list. This should take 1-4 weeks.</p>
 
