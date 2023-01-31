@@ -6,6 +6,7 @@ name: Process Form Submission
 on:
   repository_dispatch:
     types: [form-submission]
+    token: ${{secrets.GH_TOKEN}}
 
 jobs:
   process-submission:
