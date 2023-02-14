@@ -59,6 +59,10 @@ function onSubmit(e) {
                                    DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
                                    DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
+  <aside class="box"><header class="box-h  box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> This submission form temporarily not working:</header><div class="box-i">
+  <p>We apologize. We expect to get it fixed in February 2023. If you would like to be notified when it is fixed, please e-mail <a href="mailto:group-wai-list-courses@w3.org?subject=Submit%20course">group-wai-list-courses@w3.org</a></p>
+  </div></aside>
+  
   <p>The <a href="../">Authoring Tools List</a> provides information on tool accessibility for procureres and users choosing an authoring tool.</p>
   <p>For background on authoring tool accessibility, see the <a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a>. Under <a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">'Who ATAG is for'</a>, you can find the types of tools that are in scope for this authoring tools list.</p>
   <p>We invite you to use this form to submit your authoring tool to the list. When you submit the form, the data is publicly available in GitHub. We will process it and add it to the list or contact you &mdash; usually within 2 weeks. If you have any questions, please send them to: group-wai-list-authoring-tools@w3.org</p>
