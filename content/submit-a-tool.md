@@ -60,7 +60,7 @@ function onSubmit(e) {
                                    DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
   <aside class="box"><header class="box-h  box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> This submission form temporarily not working:</header><div class="box-i">
-  <p>We apologize. We expect to get it fixed in February 2023. If you would like to be notified when it is fixed, please e-mail <a href="mailto:group-wai-list-courses@w3.org?subject=Submit%20course">group-wai-list-courses@w3.org</a></p>
+  <p>We apologize. We expect to get it fixed in March 2023. If you would like to be notified when it is fixed, please e-mail <a href="mailto:group-wai-list-courses@w3.org?subject=Submit%20course">group-wai-list-courses@w3.org</a></p>
   </div></aside>
   
   <p>The <a href="../">Authoring Tools List</a> provides information on tool accessibility for procureres and users choosing an authoring tool.</p>
