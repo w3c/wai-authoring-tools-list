@@ -10,7 +10,7 @@ ref: /tools-list/authoring/submit-a-tool/
 description: # NEW: aa 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-authoring-tools-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this resource)
 footer: >
-  <p><strong>Date:</strong> Updated 28 December 2022.</p>
+  <p><strong>Date:</strong> Updated 30 March 2022.</p>
   <p><strong>Previous Editor:</strong> Hidde de Vries. <strong>Contributors:</strong> Steve Lee, Shawn Lawton Henry, Kevin White, and <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
   <p>Developed by the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
 
@@ -58,10 +58,6 @@ function onSubmit(e) {
                                    onsubmit="onSubmit"
                                    DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
                                    DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
-
-  <aside class="box"><header class="box-h  box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> This submission form temporarily not working:</header><div class="box-i">
-  <p>We apologize. We expect to get it fixed in March 2023. If you would like to be notified when it is fixed, please e-mail <a href="mailto:group-wai-list-courses@w3.org?subject=Submit%20course">group-wai-list-courses@w3.org</a></p>
-  </div></aside>
   
   <p>The <a href="../">Authoring Tools List</a> provides information on tool accessibility for procureres and users choosing an authoring tool.</p>
   <p>For background on authoring tool accessibility, see the <a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a>. Under <a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">'Who ATAG is for'</a>, you can find the types of tools that are in scope for this authoring tools list.</p>
