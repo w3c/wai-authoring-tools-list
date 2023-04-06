@@ -65,7 +65,7 @@ function onSubmit(e) {
   <p>Only the first few form fields are required. You can submit your tool now with some questions left unanswered, and provide an updated submission later.</p> 
   
     <aside class="box"><header class="box-h  box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> Type text directly, not copy-paste.</header><div class="box-i">
-  <p>The text fields will likely not accept text that is copied and pasted. When you submit the form, you will likely get a "Something went wrong" message.</p>
+  <p>If you copy-paste text, when you submit the form, you will likely get a "Something went wrong" message.</p>
   </div></aside>
   
   <p>When you submit your information, if you get a "Something went wrong" message, you can usually use the browser's back functionality to get back to your data. If you have questions, e-mail group-wai-list-authoring-tools@w3.org</p>
