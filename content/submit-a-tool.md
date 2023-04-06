@@ -62,8 +62,14 @@ function onSubmit(e) {
   <p>The <a href="../">Authoring Tools List</a> provides information on tool accessibility for procureres and users choosing an authoring tool.</p>
   <p>For background on authoring tool accessibility, see the <a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a>. Under <a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">'Who ATAG is for'</a>, you can find the types of tools that are in scope for this authoring tools list.</p>
   <p>We invite you to use this form to submit your authoring tool to the list. When you submit the form, the data is publicly available in GitHub. We will process it and add it to the list or contact you &mdash; usually within 2 weeks. If you have any questions, please send them to: group-wai-list-authoring-tools@w3.org</p>
-  <p>Only the first few form fields are required. You can submit your tool now with some questions left unanswered, and provide an updated submission later.</p>  
-
+  <p>Only the first few form fields are required. You can submit your tool now with some questions left unanswered, and provide an updated submission later.</p> 
+  
+    <aside class="box"><header class="box-h  box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> Type text directly, not copy-paste.</header><div class="box-i">
+  <p>If you copy-paste text, when you submit the form, you will likely get a "Something went wrong" message.</p>
+  </div></aside>
+  
+  <p>When you submit your information, if you get a "Something went wrong" message, you can usually use the browser's back functionality to get back to your data. If you have questions, e-mail group-wai-list-authoring-tools@w3.org</p>
+    
   <h2 id="about-you"><span>1/3</span> About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
 
