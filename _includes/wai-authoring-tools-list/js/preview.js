@@ -14,7 +14,7 @@ function getPreviewSubmission() {
         })
     })
 
-    overlayContent.querySelector('.button-submit_form').addEventListener('click', e => {
+    overlayContent.querySelectorAll('.button-submit_form').addEventListener('click', e => {
         dataForm.submit();
     })
 
