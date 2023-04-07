@@ -104,7 +104,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-works-with-keyboard %}
 {{ tool.question-works-with-keyboard }}
 {% if tool.works-with-keyboard-partially-description != "" %}
-<div>Description: {{ works-with-keyboard-partially-description }}</div>
+<div>Description: {{ tool.works-with-keyboard-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -116,7 +116,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-enough-time %}
 {{ tool.question-enough-time }}
 {% if tool.enough-time-partially-description != "" %}
-<div>Description: {{ enough-time-partially-description }}</div>
+<div>Description: {{ tool.enough-time-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -128,7 +128,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-flashing-optional %}
 {{ tool.question-flashing-optional }}
 {% if tool.flashing-optional-partially-description != "" %}
-<div>Description: {{ flashing-optional-partially-description }}</div>
+<div>Description: {{ tool.flashing-optional-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -140,7 +140,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-navigate-by-structure %}
 {{ tool.question-navigate-by-structure }}
 {% if tool.navigate-by-structure-partially-description != "" %}
-<div>Description: {{ navigate-by-structure-partially-description }}</div>
+<div>Description: {{ tool.navigate-by-structure-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -152,7 +152,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-content-searchable %}
 {{ tool.question-content-searchable }}
 {% if tool.content-searchable-partially-description != "" %}
-<div>Description: {{ content-searchable-partially-description }}</div>
+<div>Description: {{ tool.content-searchable-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -164,7 +164,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-supports-display-prefs %}
 {{ tool.question-supports-display-prefs }}
 {% if tool.supports-display-prefs-partially-description != "" %}
-<div>Description: {{ supports-display-prefs-partially-description }}</div>
+<div>Description: {{ tool.supports-display-prefs-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -176,7 +176,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-previews-accessible %}
 {{ tool.question-previews-accessible }}
 {% if tool.previews-accessible-partially-description != "" %}
-<div>Description: {{ previews-accessible-partially-description }}</div>
+<div>Description: {{ tool.previews-accessible-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -188,7 +188,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-prevent-mistakes %}
 {{ tool.question-prevent-mistakes }}
 {% if tool.prevent-mistakes-partially-description != "" %}
-<div>Description: {{ prevent-mistakes-partially-description }}</div>
+<div>Description: {{ tool.prevent-mistakes-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -200,7 +200,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-features-documented %}
 {{ tool.question-features-documented }}
 {% if tool.features-documented-partially-description != "" %}
-<div>Description: {{ features-documented-partially-description }}</div>
+<div>Description: {{ tool.features-documented-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -214,7 +214,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-auto-content-accessible %}
 {{ tool.question-auto-content-accessible }}
 {% if tool.auto-content-accessible-partially-description != "" %}
-<div>Description: {{ auto-content-accessible-partially-description }}</div>
+<div>Description: {{ tool.auto-content-accessible-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -226,7 +226,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-accessibility-information-preserved %}
 {{ tool.question-accessibility-information-preserved }}
 {% if tool.accessibility-information-preserved-partially-description != "" %}
-<div>Description: {{ accessibility-information-preserved-partially-description }}</div>
+<div>Description: {{ tool.accessibility-information-preserved-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -238,7 +238,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-accessible-content-production-possible %}
 {{ tool.question-accessible-content-production-possible }}
 {% if tool.accessible-content-production-possible-partially-description != "" %}
-<div>Description: {{ accessible-content-production-possible-partially-description }}</div>
+<div>Description: {{ tool.accessible-content-production-possible-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -250,7 +250,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-editors-guided %}
 {{ tool.question-editors-guided }}
 {% if tool.editors-guided-partially-description != "" %}
-<div>Description: {{ editors-guided-partially-description }}</div>
+<div>Description: {{ tool.editors-guided-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -262,7 +262,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-alternatives-manageable %}
 {{ tool.question-alternatives-manageable }}
 {% if tool.alternatives-manageable-partially-description != "" %}
-<div>Description: {{ alternatives-manageable-partially-description }}</div>
+<div>Description: {{ tool.alternatives-manageable-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -274,7 +274,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-accessible-templates-available %}
 {{ tool.question-accessible-templates-available }}
 {% if tool.accessible-templates-available-partially-description != "" %}
-<div>Description: {{ accessible-templates-available-partially-description }}</div>
+<div>Description: {{ tool.accessible-templates-available-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -286,7 +286,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-accessible-components-available %}
 {{ tool.question-accessible-components-available }}
 {% if tool.accessible-components-available-partially-description != "" %}
-<div>Description: {{ accessible-components-available-partially-description }}</div>
+<div>Description: {{ tool.accessible-components-available-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -298,7 +298,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-automatically-checks %}
 {{ tool.question-automatically-checks }}
 {% if tool.automatically-checks-partially-description != "" %}
-<div>Description: {{ automatically-checks-partially-description }}</div>
+<div>Description: {{ tool.automatically-checks-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -310,7 +310,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-helps-fix-problems %}
 {{ tool.question-helps-fix-problems }}
 {% if tool.helps-fix-problems-partially-description != "" %}
-<div>Description: {{ helps-fix-problems-partially-description }}</div>
+<div>Description: {{ tool.helps-fix-problems-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -322,7 +322,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if tool.question-features-promote-accessibility %}
 {{ tool.question-features-promote-accessibility }}
 {% if tool.features-promote-accessibility-partially-description != "" %}
-<div>Description: {{ features-promote-accessibility-partially-description }}</div>
+<div>Description: {{ tool.features-promote-accessibility-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
@@ -334,7 +334,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 {% if question-documentation-promotes-accessibility %}
 {{ tool.question-documentation-promotes-accessibility }}
 {% if tool.documentation-promotes-accessibility-partially-description != "" %}
-<div>Description: {{ documentation-promotes-accessibility-partially-description }}</div>
+<div>Description: {{ tool.documentation-promotes-accessibility-partially-description }}</div>
 {% endif %}
 {% else %}
 {{ not_provided }}
