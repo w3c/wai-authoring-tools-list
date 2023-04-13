@@ -4,4 +4,4 @@
 
 A list of vendor-submitted Authoring Tools
 
-Vendors are encourage to also use the [ATAG Reporting tool](https://github.com/w3c/wai-atag-report-tool) to provide details of their tool. 
+Vendors are encouraged to also use the [ATAG Reporting tool](https://github.com/w3c/wai-atag-report-tool) to provide details of their tool. 
