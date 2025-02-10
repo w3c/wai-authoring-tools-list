@@ -331,7 +331,7 @@ _This tool listing was updated on {{ tool.submission_date | date: "%-d %B %Y" }}
 
 <dt>Documentation promotes accessibility</dt>
 <dd>
-{% if question-documentation-promotes-accessibility %}
+{% if tool.question-documentation-promotes-accessibility %}
 {{ tool.question-documentation-promotes-accessibility }}
 {% if tool.documentation-promotes-accessibility-partially-description != "" %}
 <div>Description: {{ tool.documentation-promotes-accessibility-partially-description }}</div>
