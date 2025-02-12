@@ -80,13 +80,12 @@ footer: >
   </div>
 
   <div id="disclaimer">
-      {% include box.html type="start" title="<h3>Disclaimer</h3>" %}
-          <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
-          <p>Tool descriptions, search criteria, and other information in this database is provided by tool developers, vendors, or others. W3C does not verify the accuracy of the information.</p>
-          <p>The list is not a review of authoring tools, nor a complete or definitive list of all tools. The information can change at any time.</p>
-      {% include box.html type="end" %}
+    {% include box.html type="start" title="Disclaimer" h="3" %}
+    <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+    <p>Tool descriptions, search criteria, and other information in this database is provided by tool developers, vendors, or others. W3C does not verify the accuracy of the information.</p>
+    <p>The list is not a review of authoring tools, nor a complete or definitive list of all tools. The information can change at any time.</p>
+    {% include box.html type="end" %}
   </div>
-
 
   <script>
     {% include wai-authoring-tools-list/js/tools.js %}
