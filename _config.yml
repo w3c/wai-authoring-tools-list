@@ -31,8 +31,6 @@ kramwdown:
 highlighter: rouge
 repository: w3c/wai-authoring-tools-list
 
-ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
-
 remote_theme: w3c/wai-website-theme
 
 collections:
@@ -42,11 +40,6 @@ defaults:
       path: ''
     values:
       layout: 'default'
-#  -
-#    scope:
-#      path: "_business-case"
-#    values:
-#      layout: "sidenav"
 
 plugins:
   - jekyll-seo-tag
