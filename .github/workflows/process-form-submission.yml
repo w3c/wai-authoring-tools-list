@@ -1,4 +1,4 @@
-# GiTHub action triggered as webhook from a Netlify function
+# GitHub action triggered as webhook from a Netlify function
 # NB: this MUST be on the branch set as GitHub's default if it is to be triggered
 
 name: Process Form Submission

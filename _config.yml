@@ -9,7 +9,7 @@
 title: 'Web Accessibility Initiative (WAI)'
 description: >
   The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
-baseurl: '/tools-list/authoring' # the subpath of your site, e.g. /blog
+baseurl: ''
 url: 'https://w3c.github.io' # the base hostname & protocol for your site
 author: w3c_wai
 exclude:
@@ -37,12 +37,6 @@ defaults:
       path: ''
     values:
       layout: 'default'
-
-plugins:
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-remote-theme
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - wai-website-plugin
+      github:
+        repository: w3c/wai-authoring-tools-list
+        branch: main
