@@ -9,8 +9,8 @@
 title: 'Web Accessibility Initiative (WAI)'
 description: >
   The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
-baseurl: ''
-url: 'https://w3c.github.io' # the base hostname & protocol for your site
+baseurl: '/wai-authoring-tools-list' # the subpath of your site (for GitHub Pages)
+url: 'https://w3c.github.io' # the base hostname & protocol for your site (for GitHub Pages)
 author: w3c_wai
 exclude:
   - "_external"
@@ -20,7 +20,7 @@ exclude:
   - "w3c.json"
   - "node_modules"
 repository: w3c/wai-authoring-tools-list
-branch: main
+branch: master
 
 # Build settings
 markdown: kramdown
@@ -39,4 +39,4 @@ defaults:
       layout: 'default'
       github:
         repository: w3c/wai-authoring-tools-list
-        branch: main
+        branch: master
