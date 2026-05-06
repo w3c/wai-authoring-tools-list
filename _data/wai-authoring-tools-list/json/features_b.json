@@ -74,13 +74,13 @@
       {
         "id": "features-promote-accessibility",
         "name": "Accessibility features prominent",
-        "description": "Accessibility features are on by default and a prominent part of the editing workflow. Documentation shows examples of how to create accessible content, for instance with example markup or screenshots.",
+        "description": "Accessibility features are on by default and a prominent part of the editing workflow.",
         "related_atag": ["B.4.1"]
       },
       {
         "id": "documentation-promotes-accessibility",
         "name": "Documentation promotes accessibility",
-        "description": " Provides suggestions to content editor about accessibility problems.",
+        "description": " Documentation shows examples of how to create accessible content, for instance with example markup or screenshots.",
         "related_atag": ["B.4.2"]
       }
     ] 
