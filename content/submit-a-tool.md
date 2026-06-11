@@ -19,12 +19,14 @@ footer: >
 <!-- markdownlint-disable no-inline-html -->
 
 {% comment %}
-To DEBUG set any of the following to true.
-NB!! ensure to reset all to false before committing
+  To DEBUG set any of the following to true.
+  NB!! ensure to reset all to false before committing
 
-PREVIEW_BUTTON - add a preview button which allows submission without filling all the required fields
-DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
-DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
+  PREVIEW_BUTTON - add a preview button which allows submission without filling all the required fields
+  DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
+  DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
+    - This is intended to be used together with running `node _functions/list-submission.js` in wai-website
+    - Note these two DEBUG_* parameters are independent; you may want to set both for testing
 {% endcomment %}
 {% assign DEBUG_PREVIEW_BUTTON = false %}
 {% assign DEBUG_SUBMISSION_FUNCTION = false %}
@@ -58,18 +60,18 @@ function onSubmit(e) {
                                    onsubmit="onSubmit"
                                    DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
                                    DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
-  
+
   <p>The <a href="../">Authoring Tools List</a> provides information on tool accessibility for procurers and users choosing an authoring tool.</p>
   <p>For background on authoring tool accessibility, see the <a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a>. Under <a href="https://www.w3.org/WAI/standards-guidelines/atag/#who-atag-is-for">'Who ATAG is for'</a>, you can find the types of tools that are in scope for this authoring tools list.</p>
   <p>We invite you to use this form to submit your authoring tool to the list. When you submit the form, the data is publicly available in GitHub. We will process it and add it to the list or contact you &mdash; usually within 2 weeks. If you have any questions, please send them to: group-wai-list-authoring-tools@w3.org</p>
-  <p>Only the first few form fields are required. You can submit your tool now with some questions left unanswered, and provide an updated submission later.</p> 
-  
+  <p>Only the first few form fields are required. You can submit your tool now with some questions left unanswered, and provide an updated submission later.</p>
+
     <aside class="box"><header class="box-h  box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> Type text directly, not copy-paste.</header><div class="box-i">
   <p>If you copy-paste text, when you submit the form, you will likely get a "Something went wrong" message.</p>
   </div></aside>
-  
+
   <p>When you submit your information, if you get a "Something went wrong" message, you can usually use the browser's back functionality to get back to your data. If you have questions, e-mail group-wai-list-authoring-tools@w3.org</p>
-    
+
   <h2 id="about-you"><span>1/3</span> About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission.</p>
 
