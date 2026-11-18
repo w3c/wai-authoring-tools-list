@@ -53,7 +53,7 @@
   "submitter-email": "icefrin@sfu.ca",
   "submitter-name": "Israel Cefrin",
   "supports-display-prefs-partially-description": "",
-  "tool-description": "Open Journal Systems (OJS) is an open-source journal management and publishing platform developed by Public Knowledge Project (PKP). It manages the full editorial workflow: author submissions, peer review, editing, scheduling, and publication. It also publishes journals online.\r\nOJS is used both as an authoring environment ( authors can submit their manuscripts and editors create announcements and editorial communications) and as a publishing platform for readers.",
+  "tool-description": "Open Journal Systems (OJS) is an open-source journal management and publishing platform developed by Public Knowledge Project (PKP). It manages the full editorial workflow: author submissions, peer review, editing, scheduling, and publication. It also publishes journals online.\r\nOJS is used both as an authoring environment (authors can submit their manuscripts and editors create announcements and editorial communications) and as a publishing platform for readers.",
   "tool-license": "free",
   "tool-link": "https://pkp.sfu.ca/ojs",
   "tool-name": "Open Journal Systems (OJS)",
