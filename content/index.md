@@ -5,7 +5,7 @@ title: 'Authoring Tools List'
 permalink: /tools-list/authoring/
 ref: /tools-list/authoring/
 lang: en
-last_updated: 2026-05-12
+last_updated: 2026-11-18
 github:
   repository: w3c/wai-authoring-tools-list
   path: content/index.md
